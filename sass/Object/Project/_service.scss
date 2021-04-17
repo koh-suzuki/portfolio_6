@@ -1,0 +1,47 @@
+.service__catch {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center
+}
+.btn__mv {
+  position: absolute;
+  bottom: 17%;
+  left: 5%;
+  padding: 40px 30px;
+  border-radius: 60px;
+}
+.servie__img {
+  max-width: 300px;
+  > img {
+    height: 800px;
+    object-fit: cover;
+    object-position: 30%;
+  }
+}
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__title::before,
+.section__title::after {
+  border-top: 4px solid #707070;
+  content: "";
+  width: 100px; 
+}
+.section__title::before {
+  margin-right: 50px
+}
+.section__title::after {
+  margin-left: 50px
+}
+
+.btn {
+  @include f_around(4.2, 5, false, 0);
+  .btn > a {
+    color: #707070;
+  }
+}
+.service__catch {
+  @include f_around(3.8, 6.8, false, 50);
+}

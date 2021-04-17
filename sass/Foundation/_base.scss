@@ -1,0 +1,39 @@
+@mixin f_around($pixels, $height: false, $weight: false, $spacing: false){
+  font-size: $pixels * 1rem;
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $height {
+    line-height: $height / $pixels;
+  }
+  @if $spacing {
+    letter-spacing: ($spacing / 1000) * 1em;
+  }
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+//main__color: #;
+//main__bg__color: ;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+  font-family: "M PLUS 1p", "メイリオ", sans-serif;
+}
+
+/* ===============================================*/
+/* #  ベース
+/*=============================================== */
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+ul {
+  list-style: none;
+}
