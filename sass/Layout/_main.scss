@@ -1,58 +1,66 @@
-.l-section__wrapper {
-  padding-top: 140px;
-}
-.l-mv-wrapper {
-  width: 66.5%;
-  height: 980px;
-  background: url(/img/mv.jpg);
-  background-size: cover;
-  background-position: 100% 0%;
-  margin-left: auto;
-}
-.mv__bg {
-  position: relative;
-  background-color: #0A3355;
-}
-.main__mv__text {
-  background-color: #ffffff;
-  display: inline-block;
-}
-.mv__text__catch {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  padding: 5px 15px;
-}
-.mv__text__school {
-  position: absolute;
-  top: 27%;
-  left: 5%;
-  padding: 5px 20px;
-}
-.mv__text__logo {
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  padding: 15px 28px;
-}
-.section__title{
-  text-align: center
-}
+/* --------------------------------------
+レスポンシブ max-width: 1920px; 
+----------------------------------------*/
+@include mq-up($breakpoint: lg) {
+  .l-section__wrapper {
+    padding: 150px 0;
+  }
+  .l-mv-wrapper {
+    width: 66.5%;
+    height: 980px;
+    background: url(/img/mv.jpg);
+    background-size: cover;
+    background-position: 100% 0%;
+    margin-left: auto;
+  }
+  .mv__bg {
+    position: relative;
+    background-color: #0A3355;
+  }
+  .main__mv__text {
+    background-color: #ffffff;
+    display: inline-block;
+  }
+  .mv__text__catch {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 7px 15px;
+  }
+  .mv__text__school {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    padding: 5px 20px;
+  }
+  .mv__text__logo {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    padding: 15px 28px;
+  }
+  .section__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+  }
 
-.main__mv__text,
-.service__catch {
-  color: #707070;
-}
-.mv__text__school {
-  @include f_around(6, 10, bold, 0);
-  color: #707070;
-}
-.mv__text__logo {
-  @include f_around(6, 7, bold, 0);
-  color: #707070;
-}
-.mv__text__catch,
-.section__title {
-  @include f_around(4.8, 5.8, bold, 0);
-  color: #707070;
+  .main__mv__text,
+  .service__catch {
+    color: #707070;
+  }
+  .mv__text__school {
+    @include f_around(6, 10, bold, 0);
+    color: #707070;
+  }
+  .mv__text__logo {
+    @include f_around(6, 7, bold, 0);
+    color: #707070;
+  }
+  .mv__text__catch,
+  .section__title {
+    @include f_around(4.8, 5.8, bold, 0);
+    color: #707070;
+  }
 }

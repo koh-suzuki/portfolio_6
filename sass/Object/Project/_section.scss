@@ -1,3 +1,6 @@
-.section__title {
-  margin-bottom: 35px;
+/* --------------------------------------
+レスポンシブ max-width: 1920px; 
+----------------------------------------*/
+@include mq-up($breakpoint: lg) {
+
 }

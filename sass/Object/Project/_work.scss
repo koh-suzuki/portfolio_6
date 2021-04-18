@@ -1,0 +1,72 @@
+.l-work__wrapper {
+  padding: 108px 0 135px;
+  background-color: #F7FBFE;
+}
+.work__inner {
+  padding-bottom: 130px;
+  width: 1440px;
+  margin: 0 auto;
+}
+.work__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 75px 0;
+}
+.work__img {
+  max-width: 300px;
+  height: auto;
+}
+.work__text {
+  margin-top: 78.5px;
+}
+.work__point {
+  position: absolute;
+  top: 35px;
+  left: 25%;
+}
+.balloon1{
+  position: relative;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #FFE669;
+}
+.balloon1::before{
+  content: '';
+  position: absolute;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 35%;
+  bottom: -45px;
+  border-right: 40px solid #FFE669;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  transform: rotate(-90deg);
+}
+.work__point__text {
+  display: block;
+}
+.work__content {
+  width: 837px;
+}
+
+.teacher__wrapper {
+  background-color: #ffffff;
+}
+.balloon1 {
+  @include f_around(3.6, 4, bold, 0);
+  color: #707070;
+}
+.work__title {
+  @include f_around(5.2, 6.2, bold, 0);
+  color: #4DADED;
+}
+.work__text {
+  @include f_around(3.2, 6.0, false, 0);
+  color: #707070;
+}
