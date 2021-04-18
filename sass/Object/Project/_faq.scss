@@ -1,0 +1,5 @@
+.q__text,
+.a__text {
+  @include f_around(3.2, 3.8, bold, 0);
+  color: #707070;
+}

@@ -1,5 +1,5 @@
 .l-work__wrapper {
-  padding: 108px 0 135px;
+  padding: 108px 0 0;
   background-color: #F7FBFE;
 }
 .work__inner {
@@ -57,7 +57,96 @@
 
 .teacher__wrapper {
   background-color: #ffffff;
+  box-shadow: 0 3px 20px #00000016;
+  padding-top: 90px;
 }
+.teacher__text {
+  text-align: center;
+  padding: 50px 0;
+}
+.teacher__img {
+  width: 290px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.teacher__container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 50px;
+  justify-content: center;
+}
+.teacher__card {
+  background-color: #F7FBFE;
+  box-shadow: 0 0 12px #00000016;
+  height: 570px;
+}
+.teacher__name {
+  margin-top: 30px;
+  text-align: center;
+}
+.teacher__content {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.experience__inner {
+  position: relative;
+  background-color: #4DADED;
+  padding: 85px 0 125px;
+}
+.experience__inner:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #4DADED transparent transparent transparent;
+  border-width: 60px 100px 0 100px;
+}
+.experience__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.experience__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+}
+.experience__check {
+  display: flex;
+  flex-direction: column;
+}
+.check__margin {
+  margin: 70px 0;
+}
+.experience__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experience__text {
+  text-align: center;
+}
+.btn__experience {
+  text-align: center;
+  width: 680px;
+  padding: 30px 0;
+  background-color: #FFE669;
+  border-radius: 50px;
+  > a {
+    display: block;
+  }
+}
+
+
+
+
 .balloon1 {
   @include f_around(3.6, 4, bold, 0);
   color: #707070;
@@ -68,5 +157,30 @@
 }
 .work__text {
   @include f_around(3.2, 6.0, false, 0);
+  color: #707070;
+}
+.teacher__text,
+.teacher__name {
+  @include f_around(3.2, 3.8, bold, 0);
+  color: #707070;
+}
+.teacher__content {
+  @include f_around(2.4, 2.9, bold, 0);
+  color: #707070;
+}
+.experience__title {
+  @include f_around(5.6, 6.7, bold, 0);
+  color: #ffffff;
+}
+.check__item {
+  @include f_around(4.8, 5.8, bold, 0);
+  color: #ffffff;
+}
+.experience__text {
+  @include f_around(4.0, 4.8, bold, 0);
+  color: #ffffff;
+}
+.btn__experience > a {
+  @include f_around(4.8, 5.8, bold, 0);
   color: #707070;
 }

@@ -60,7 +60,7 @@
   }
   .mv__text__catch,
   .section__title {
-    @include f_around(4.8, 5.8, bold, 0);
+    @include f_around(5.6, 5.8, bold, 0);
     color: #707070;
   }
 }

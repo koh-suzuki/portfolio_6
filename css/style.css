@@ -506,9 +506,9 @@ ul {
   }
   .mv__text__catch,
   .section__title {
-    font-size: 4.8rem;
+    font-size: 5.6rem;
     font-weight: bold;
-    line-height: 1.20833;
+    line-height: 1.03571;
     letter-spacing: 0em;
     color: #707070;
   }
@@ -610,6 +610,7 @@ ul {
   }
   .btn__course {
     text-align: center;
+    margin-top: 110px;
   }
   .btn__course > a {
     display: inline-block;
@@ -673,7 +674,7 @@ ul {
 レスポンシブ max-width: 1920px; 
 ----------------------------------------*/
 .l-work__wrapper {
-  padding: 108px 0 135px;
+  padding: 108px 0 0;
   background-color: #F7FBFE;
 }
 
@@ -740,6 +741,106 @@ ul {
 
 .teacher__wrapper {
   background-color: #ffffff;
+  box-shadow: 0 3px 20px #00000016;
+  padding-top: 90px;
+}
+
+.teacher__text {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.teacher__img {
+  width: 290px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.teacher__container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 50px;
+  justify-content: center;
+}
+
+.teacher__card {
+  background-color: #F7FBFE;
+  box-shadow: 0 0 12px #00000016;
+  height: 570px;
+}
+
+.teacher__name {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.teacher__content {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.experience__inner {
+  position: relative;
+  background-color: #4DADED;
+  padding: 85px 0 125px;
+}
+
+.experience__inner:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #4DADED transparent transparent transparent;
+  border-width: 60px 100px 0 100px;
+}
+
+.experience__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.experience__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+.experience__check {
+  display: flex;
+  flex-direction: column;
+}
+
+.check__margin {
+  margin: 70px 0;
+}
+
+.experience__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience__text {
+  text-align: center;
+}
+
+.btn__experience {
+  text-align: center;
+  width: 680px;
+  padding: 30px 0;
+  background-color: #FFE669;
+  border-radius: 50px;
+}
+
+.btn__experience > a {
+  display: block;
 }
 
 .balloon1 {
@@ -761,6 +862,64 @@ ul {
 .work__text {
   font-size: 3.2rem;
   line-height: 1.875;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.teacher__text,
+.teacher__name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.1875;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.teacher__content {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.20833;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.experience__title {
+  font-size: 5.6rem;
+  font-weight: bold;
+  line-height: 1.19643;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.check__item {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.20833;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.experience__text {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+
+.btn__experience > a {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.20833;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.q__text,
+.a__text {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.1875;
   letter-spacing: 0em;
   color: #707070;
 }
