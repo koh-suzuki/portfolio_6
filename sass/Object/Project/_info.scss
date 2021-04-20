@@ -42,3 +42,54 @@
 .info__topic {
   background-color: #0FE30060;
 }
+
+
+/* info ページ */
+.l-info__container {
+  max-width: 1525px;
+  margin: 0 auto;
+}
+.l-info-page__wrapper {
+  display: flex;
+  flex-direction: column;
+}    
+.c-info__news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 42px;
+  padding: 32px 120px 32px 54px;
+}
+.info__img {
+  width: 408px;
+  height: 215px;
+  object-fit: cover;
+}
+.news__content {
+  width: 840px;
+}
+.news__date,
+.news__bage {
+  margin-bottom: 13px;
+}
+.news__title {
+  margin-bottom: 12px;
+  // text-align: justify;
+}
+.news__text {
+  width: 840px;
+  text-align: justify;
+}
+
+
+.news__date,
+.news__bage {
+  @include f_around(2.4, 4.8, bold, 0);
+}
+.news__title {
+  @include f_around(4.8, 7.2, bold, 0);
+}
+.news__text {
+  @include f_around(2.8, 5.2, bold, 0);
+}
