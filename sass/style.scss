@@ -9,7 +9,7 @@
 // Layout
 // ==========================================================================
 
-// @import "layout/_footer";
+@import "layout/_footer";
 @import "layout/_header";
 @import "layout/_main";
 // @import "layout/_sidebar";
@@ -35,7 +35,8 @@
 @import "object/project/_section";
 @import "object/project/_work";
 @import "object/project/_faq";
-// @import "object/project/_profile";
+@import "object/project/_contact";
+@import "object/project/_info";
 
 // -----------------------------------------------------------------
 // Utility

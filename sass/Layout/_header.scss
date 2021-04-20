@@ -11,6 +11,7 @@
   .header__logo {
     margin-left: 9vw;
     padding-left: 1vw;
+    color: #0A3355;
   }
   .header__nav {
     padding-right: 2.3vw;
@@ -24,6 +25,9 @@
   .header__item {
     margin-left: 36px;
     padding-bottom: 10px;
+    > a {
+      color: #707070;
+    }
   }
   .header__logo {
     @include f_around(2.4, 3, bold, 0);

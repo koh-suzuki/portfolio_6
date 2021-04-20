@@ -1,0 +1,19 @@
+.footer {
+  position: relative;
+}
+.copyright {
+  padding: 36px 0;
+  text-align: center;
+}
+.footer__logo {
+  display: inline-block;
+  position: absolute;
+  top: 43%;
+  left: 10%;
+  @include f_around(2.4, 3, bold, 0);
+  color: #0A3355
+}
+.copyright {
+  @include f_around(2.4, 2.9, false, 0);
+  color: #707070;
+}

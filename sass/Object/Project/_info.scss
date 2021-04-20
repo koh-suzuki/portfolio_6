@@ -1,0 +1,44 @@
+.l-info__wrapper {
+  padding: 45px 0 85px;
+}
+.info__list {
+  max-width: 1210px;
+  margin: 50px auto 0;
+}
+.info__item {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: dashed 2px #707070;
+}
+.info__day {
+  display: inline-block;
+
+}
+.info {
+  display: inline-block;
+  padding: 0 35px;
+  margin: 0 4vw 0 7vw;
+  border-radius: 50px;
+}
+.info__content {
+  display: inline-block
+}
+
+
+.info__item {
+  @include f_around(3.2, 6.0, bold, 0);
+  color: #707070;
+  > .info {
+    color: #707070;
+  }
+}
+.info__notice {
+  background-color: #00A2FF60;
+}
+.info__event {
+  background-color: #FFD70060;
+}
+.info__topic {
+  background-color: #0FE30060;
+}

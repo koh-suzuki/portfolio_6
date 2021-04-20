@@ -1,0 +1,33 @@
+.contact__bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/img/contact.jpg) no-repeat bottom / cover;
+  object-fit: cover;
+  height: 980px;
+  position: relative;
+}
+.main__title {
+  padding: 80px 0;
+  background-color: #4DADED;
+  color: #ffffff;
+}
+.main__title::before,
+.main__title::after {
+  border-top: 4px solid #ffffff;
+  content: "";
+  width: 90px; 
+}
+.main__title::before {
+  margin-right: 60px
+}
+.main__title::after {
+  margin-left: 60px
+}
+.contact__text {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 170px 0 105px;
+  text-align: center;
+}
+.contact__text {
+  @include f_around(4.8, 8, bold, 0);
+  color: #ffffff;
+}
