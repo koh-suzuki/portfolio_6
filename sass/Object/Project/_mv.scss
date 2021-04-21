@@ -42,6 +42,12 @@
 .main__mv__text {
   color: #707070;
 }
+/* --------------------------------------
+レスポンシブ max-width: 600px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  
+}
 .mv__text__school {
   @include f_around(6, 9, bold, 0);
   color: #707070;

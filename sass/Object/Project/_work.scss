@@ -1,3 +1,4 @@
+
 .l-work__wrapper {
   padding: 108px 0 0;
   background-color: #F7FBFE;
@@ -146,8 +147,12 @@
   }
 }
 
-
-
+/* --------------------------------------
+レスポンシブ max-width: 600px; 
+----------------------------------------*/
+@include mq-down($breakpoint: md) {
+  
+}
 
 .balloon1 {
   @include f_around(3.6, 4, bold, 0);
