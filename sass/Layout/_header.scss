@@ -2,6 +2,12 @@
 レスポンシブ max-width: 1920px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: lg) {
+  .header__wrapper {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 1;
+  }
   .header__inner {
     display: flex;
     align-items: center;
