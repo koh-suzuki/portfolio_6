@@ -9,11 +9,24 @@
   display: flex;
   align-items: center;
   padding: 30px 0;
-  border-bottom: dashed 2px #707070;
+}
+.info__border {
+  height: 1px;
+  position: relative;
+}
+.info__border::before {
+  content: "";
+  background-image: linear-gradient(to right, #707070, #707070 20px, transparent 20px, transparent 25px);
+  background-size: 25px 1px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .info__day {
   display: inline-block;
-
 }
 .info {
   display: inline-block;
@@ -22,7 +35,7 @@
   border-radius: 50px;
 }
 .info__content {
-  display: inline-block
+  display: inline-block;
 }
 
 

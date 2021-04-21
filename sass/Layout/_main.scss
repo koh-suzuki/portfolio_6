@@ -5,61 +5,13 @@
   .l-section__wrapper {
     padding: 150px 0;
   }
-  .l-mv-wrapper {
-    width: 66.5%;
-    height: 980px;
-    background: url(/img/mv.jpg);
-    background-size: cover;
-    background-position: 100% 0%;
-    margin-left: auto;
-  }
-  .mv__bg {
-    position: relative;
-    background-color: #0A3355;
-    padding-top: 96px;
-  }
-  .main__mv__text {
-    background-color: #ffffff;
-    display: inline-block;
-  }
-  .mv__text__catch {
-    position: absolute;
-    top: 18%;
-    left: 5%;
-    padding: 7px 15px;
-  }
-  .mv__text__school {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    padding: 5px 20px;
-  }
-  .mv__text__logo {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    padding: 15px 28px;
-  }
   .section__title{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center
+    text-align: center;
   }
 
-  .main__mv__text,
-  .service__catch {
-    color: #707070;
-  }
-  .mv__text__school {
-    @include f_around(6, 10, bold, 0);
-    color: #707070;
-  }
-  .mv__text__logo {
-    @include f_around(6, 7, bold, 0);
-    color: #707070;
-  }
-  .mv__text__catch,
   .section__title {
     @include f_around(5.6, 5.8, bold, 0);
     color: #707070;

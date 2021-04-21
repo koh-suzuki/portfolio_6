@@ -36,9 +36,9 @@
       <p class="main__mv__text mv__text__catch">あなたに、未来を切り開く力を。</p>
       <p class="main__mv__text mv__text__school">オンラインプログラミングスクール</p>
       <p class="main__mv__text mv__text__logo">AOSHIRO TECH</p>
-      <p class="btn btn-warning btn__mv">
+      <div class="btn btn__mv">
         <a href="#" target="_blank" rel="noopener noreferrer">無料体験に申し込む</a>
-      </p>
+      </div>
       <div class="l-mv-wrapper">
       </div>
     </section>
@@ -54,7 +54,7 @@
           充実した学習コースをご用意しております
         </p>
       </section>
-      <section class="service__wrapper">
+      <section class="service__wrapper service__relative">
         <section class="service__inner">
           <section class="service__course">
             <div class="service__title__wrapper">
@@ -69,19 +69,19 @@
           </section>    
           <div class="service__line"></div>      
           <figure class="servie__img">
-            <!-- <img src="/img/service1.jpg" alt="Web制作マスターコースの画像"> -->
+            <img src="/img/service1.jpg" alt="Web制作マスターコースの画像">
           </figure>
         </section>
       </section>
-      <section class="service__wrapper">
+      <section class="service__wrapper service__relative">
         <section class="service__inner reverse">   
           <section class="service__course reverse">       
-            <div class="service__title__wrapper">
+            <div class="service__title__wrapper reverse">
               <p class="service__num">02</p>
               <h3 class="service__title">Webデザインマスターコース</h3>
             </div>
-            <p class="service__sub__title">デザインスキルを学びたいあなたに</p>
-            <p class="service__text">
+            <p class="service__sub__title reverse__text">デザインスキルを学びたいあなたに</p>
+            <p class="service__text reverse__text">
               Webサイトのデザインを作成するのに必要なツールの<br>
               使い方から発展的なデザイン手法まで身につけられます
             </p>
@@ -90,12 +90,12 @@
             </p>
           </section>
           <div class="service__line__reverse"></div>      
-          <figure class="servie__img">
-            <!-- <img src="/img/service1.jpg" alt="Webデザインマスターコースの画像"> -->
+          <figure class="servie__img absolute__reverse">
+            <img src="/img/service2.jpg" alt="Webデザインマスターコースの画像">
           </figure>
         </section>
       </section>
-      <section class="service__wrapper">
+      <section class="service__wrapper service__relative">
         <section class="service__inner">
           <section class="service__course">
             <div class="service__title__wrapper">
@@ -113,7 +113,7 @@
           </section>
           <div class="service__line"></div>      
           <figure class="servie__img">
-            <!-- <img src="/img/service1.jpg" alt="エンジニア転職支援コースの画像"> -->
+            <img src="/img/service3.jpg" alt="エンジニア転職支援コースの画像">
           </figure>
         </section>
       </section>
@@ -342,24 +342,33 @@
         お知らせ
       </h2>
       <ul class="info__list">
-        <li class="info__item">
-          <span class="info__day">2021.04.05</span>
-          <a class="info info__notice" href="#">
-            お知らせ
-          </a>
-          <p class="info__content">
-            新しく転職支援コースを設立しました！
-          </p>
-        </li>
-        <li class="info__item">
-          <span class="info__day">2021.04.04</span>
-          <a class="info info__event" href="#">
-            イベント
-          </a>
-          <p class="info__content">
-            ○○県でお試し無料講義イベントを開催
-          </p>
-        </li>
+        <div class="info__item__wrapper">
+          <li class="info__item">
+            <span class="info__day">2021.04.05</span>
+            <a class="info info__notice" href="#">
+              お知らせ
+            </a>
+            <p class="info__content">
+              新しく転職支援コースを設立しました！
+            </p>
+          </li>
+          <div class="info__border"></div>
+        </div>
+        <div class="info__item__wrapper">
+          <li class="info__item">
+            <span class="info__day">2021.04.04</span>
+            <a class="info info__event" href="#">
+              イベント
+            </a>
+            <p class="info__content">
+              ○○県でお試し無料講義イベントを開催
+            </p>
+          </li>
+          <div class="info__border"></div>
+        </div>
+        <div class="info__item__wrapper">
+
+        </div>
         <li class="info__item">
           <span class="info__day">2021.04.03</span>
           <a class="info info__topic" href="#">
@@ -369,24 +378,31 @@
             人気プログラミングスクールランキング
           </p>
         </li>
-        <li class="info__item">
-          <span class="info__day">2021.04.02</span>
-          <a class="info info__topic" href="#">
-            トピック
-          </a>
-          <p class="info__content">
-            テレビ番組○○で紹介されました！
-          </p>
-        </li>
-        <li class="info__item">
-          <span class="info__day">2021.04.01</span>
-          <a class="info info__notice" href="#">
-            お知らせ
-          </a>
-          <p class="info__content">
-            新しく2名の講師を迎えました！
-          </p>
-        </li>
+        <div class="info__border"></div>
+        <div class="info__item__wrapper">
+          <li class="info__item">
+            <span class="info__day">2021.04.02</span>
+            <a class="info info__topic" href="#">
+              トピック
+            </a>
+            <p class="info__content">
+              テレビ番組○○で紹介されました！
+            </p>
+          </li>
+          <div class="info__border"></div>
+        </div>
+        <div class="info__item__wrapper">
+          <li class="info__item">
+            <span class="info__day">2021.04.01</span>
+            <a class="info info__notice" href="#">
+              お知らせ
+            </a>
+            <p class="info__content">
+              新しく2名の講師を迎えました！
+            </p>
+          </li>
+          <div class="info__border"></div>
+        </div>
       </ul>
     </section>
     <!-- INFO end -->

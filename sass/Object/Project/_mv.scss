@@ -1,0 +1,58 @@
+.l-mv-wrapper {
+  width: 66.5%;
+  height: 980px;
+  background: url(/img/mv.jpg);
+  background-size: cover;
+  background-position: 100% 0%;
+  margin-left: auto;
+}
+.mv__bg {
+  position: relative;
+  background-color: #0A3355;
+  padding-top: 96px;
+}
+.main__mv__text {
+  background-color: #ffffff;
+  display: inline-block;
+}
+.mv__text__catch {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  padding: 7px 15px;
+}
+.mv__text__school {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  padding: 5px 20px;
+}
+.mv__text__logo {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  padding: 15px 28px;
+}
+.btn__mv > a{
+  background-color: #FFE669;
+  color: #707070;
+  padding: 38px 31px;
+  border-radius: 100px;
+}
+.main__mv__text {
+  color: #707070;
+}
+.mv__text__school {
+  @include f_around(6, 9, bold, 0);
+  color: #707070;
+}
+.mv__text__logo {
+  @include f_around(7.7, 8, bold, 0);
+  color: #707070;
+}
+.mv__text__catch {
+  @include f_around(4.8, 7.2, bold, 0);
+}
+.btn__mv > a{
+  @include f_around(4.2, 6.3, bold, 0);
+}
