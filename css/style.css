@@ -527,10 +527,58 @@ ul {
 /* --------------------------------------
 レスポンシブ max-width: 1920px; 
 ----------------------------------------*/
+#page_top {
+  display: none;
+  width: 82px;
+  height: 82px;
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  bottom: 0;
+  text-decoration: none;
+  color: #707070;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 5rem;
+  color: #707070;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#page_top a::after {
+  content: 'TOP';
+  font-size: 1.8rem;
+  color: #707070;
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
 .l-mv-wrapper {
   width: 66.5%;
   height: 980px;
   background: url(/img/mv.jpg);
+  z-index: 1;
   background-size: cover;
   background-position: 100% 0%;
   margin-left: auto;
@@ -551,12 +599,14 @@ ul {
   top: 18%;
   left: 5%;
   padding: 7px 15px;
+  z-index: 1;
 }
 
 .mv__text__school {
   position: absolute;
   top: 35%;
   left: 5%;
+  z-index: 1;
   padding: 5px 20px;
 }
 
@@ -564,6 +614,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 5%;
+  z-index: 1;
   padding: 15px 28px;
 }
 

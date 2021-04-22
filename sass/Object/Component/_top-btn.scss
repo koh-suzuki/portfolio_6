@@ -1,0 +1,43 @@
+#page_top{
+  display: none;
+  width: 82px;
+  height: 82px;
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  background: #fff;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  bottom: 0;
+  text-decoration: none;
+  color: #707070;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 5rem;
+  color: #707070;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'TOP';
+  font-size: 1.8rem;
+  color: #707070;
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
