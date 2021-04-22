@@ -134,7 +134,7 @@
 /* service ページ */
 .l-service__wrapper {
   background-color: #F7FBFE;
-  padding-bottom: 30px;
+  padding-bottom: 96px 0 30px;
 }
 .l-service__inner {
   background-color: #ffffff;
@@ -143,7 +143,6 @@
 }
 .l-service__content {
   display: flex;
-  // justify-content: space-around;
   align-items: center;
 }
 .l-service__sub-content {

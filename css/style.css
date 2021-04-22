@@ -402,6 +402,10 @@ ul {
   margin: 0 auto;
 }
 
+.btn:hover {
+  opacity: .5;
+}
+
 .footer {
   position: relative;
 }
@@ -431,10 +435,15 @@ ul {
 }
 
 .header__wrapper {
-  position: fixed;
   background-color: #ffffff;
   width: 100%;
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+}
+
+.header__wrapper.sticky {
+  position: fixed;
+  top: 0;
 }
 
 .header__inner {
@@ -530,7 +539,6 @@ ul {
 .mv__bg {
   position: relative;
   background-color: #0A3355;
-  padding-top: 96px;
 }
 
 .main__mv__text {
@@ -759,7 +767,7 @@ ul {
 /* service ページ */
 .l-service__wrapper {
   background-color: #F7FBFE;
-  padding-bottom: 30px;
+  padding-bottom: 96px 0 30px;
 }
 
 .l-service__inner {
