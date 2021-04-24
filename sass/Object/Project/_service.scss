@@ -72,7 +72,7 @@
   > a{
     display: block;
     text-align: center;
-    width: 60vw;
+    width: 200px;
     padding: 2vw 0;
     border-radius: 50px;
     background-color: #FFE669;
@@ -206,6 +206,76 @@
 
 
 
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@include mq-up($breakpoint: sm) {
+  .service__catch {
+    width: 550px;
+  }
+  .service__inner {
+    padding: 40px 0 50px;
+  }
+  .service__course {
+    max-width: 80%;
+    margin: 0 0 auto;
+    padding: 15px 6vw 0 3vw;
+  }
+  .service__title__wrapper {
+    width: 80%;
+    padding: 11% 0 0 11%;
+  }
+  .service__img {
+    position: absolute;
+    right: -25%;
+    bottom: -25%;
+    z-index: 0;
+    width: 250px;
+    height: 350px;
+  }
+  .reverse {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .reverse__text {
+    width: 80%;
+  }
+  .absolute__reverse {
+    position: absolute;
+    left: -18%;
+    bottom: -25%;
+    margin: auto 0 0;
+    z-index: 0;
+  }
+  .service__line {
+    max-width: 50%;
+    height: 45px;
+    margin-top: 35px;
+  }
+  .btn__reverse {
+    > a{
+      margin: 0 0 0 auto;
+    }
+  }
+  .btn__course > a {
+    width: 450px;
+    padding: 10px 0;
+    @include f_around(2.2, 3, bold, 0);
+  } 
+  .service__catch {
+    @include f_around(1.8, 4, false, 30);
+  }
+  .service__num {
+    @include f_around(5.2, 12.4, bold, 0);
+  }
+  .service__title {
+    @include f_around(2.6, 4.7, bold, 0);
+  }
+  .service__sub__title {
+    @include f_around(2, 3, bold, 0);
+  }
+}
 
 /* --------------------------------------
 レスポンシブ min-width: 1024px; 
@@ -379,10 +449,7 @@
     padding: 75px 5% 53px;
     border: 1px solid #4DADED;
   }
-  .reverse {
-    margin-left: auto;
-    margin-right: 0;
-  }
+  
   .service__course {
     max-width: 1320px;
     // height: 620px;

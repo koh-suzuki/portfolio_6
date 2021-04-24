@@ -15,32 +15,26 @@
 .main__mv__text {
   background-color: #ffffff;
   display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  left: 2vw;
+  z-index: 1;
 }
 .mv__text__catch {
   position: absolute;
   top: 25%;
-  left: 2vw;
-  padding: 5px 10px;
-  z-index: 1;
 }
 .mv__text__school {
   position: absolute;
   top: 36%;
-  left: 2vw;
-  z-index: 1;
-  padding: 5px 10px;
 }
 .mv__text__logo {
   position: absolute;
   top: 45%;
-  left: 2vw;
-  z-index: 1;
-  padding: 5px 10px;
 }
 .btn__mv {
   position: absolute;
   bottom: 35%;
-  left: 2vw;
   border-radius: 60px;
   z-index: 1;
 }
@@ -71,29 +65,24 @@
 ----------------------------------------*/
 @include mq-up($breakpoint: sm) {  
   .l-mv-wrapper {
-    height: 70vh
+    width: 66.5%;
+    height: 623px
   }
   .mv__text__catch {
     position: absolute;
-    top: 18%;
-    left: 5%;
-    z-index: 1;
+    top: 25%;
   }
   .mv__text__school {
     position: absolute;
-    top: 30%;
-    left: 5%;
-    z-index: 1;
+    top: 43%;
   }
   .mv__text__logo {
     position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: 1;
+    top: 56%;
   }
   .btn__mv {
     position: absolute;
-    bottom: 40%;
+    bottom: 15%;
     background-color: #FFE669;
     color: #707070;
     border-radius: 100px;

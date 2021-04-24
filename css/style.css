@@ -643,6 +643,15 @@ ul {
 }
 
 /* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .header__inner {
+    padding: 10px 0;
+  }
+}
+
+/* --------------------------------------
 レスポンシブ max-width: 1024px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -787,36 +796,30 @@ ul {
 .main__mv__text {
   background-color: #ffffff;
   display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  left: 2vw;
+  z-index: 1;
 }
 
 .mv__text__catch {
   position: absolute;
   top: 25%;
-  left: 2vw;
-  padding: 5px 10px;
-  z-index: 1;
 }
 
 .mv__text__school {
   position: absolute;
   top: 36%;
-  left: 2vw;
-  z-index: 1;
-  padding: 5px 10px;
 }
 
 .mv__text__logo {
   position: absolute;
   top: 45%;
-  left: 2vw;
-  z-index: 1;
-  padding: 5px 10px;
 }
 
 .btn__mv {
   position: absolute;
   bottom: 35%;
-  left: 2vw;
   border-radius: 60px;
   z-index: 1;
 }
@@ -865,29 +868,24 @@ ul {
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
   .l-mv-wrapper {
-    height: 70vh;
+    width: 66.5%;
+    height: 623px;
   }
   .mv__text__catch {
     position: absolute;
-    top: 18%;
-    left: 5%;
-    z-index: 1;
+    top: 25%;
   }
   .mv__text__school {
     position: absolute;
-    top: 30%;
-    left: 5%;
-    z-index: 1;
+    top: 43%;
   }
   .mv__text__logo {
     position: absolute;
-    top: 40%;
-    left: 5%;
-    z-index: 1;
+    top: 56%;
   }
   .btn__mv {
     position: absolute;
-    bottom: 40%;
+    bottom: 15%;
     background-color: #FFE669;
     color: #707070;
     border-radius: 100px;
@@ -1151,7 +1149,7 @@ ul {
 .btn__section > a {
   display: block;
   text-align: center;
-  width: 60vw;
+  width: 200px;
   padding: 2vw 0;
   border-radius: 50px;
   background-color: #FFE669;
@@ -1326,6 +1324,88 @@ ul {
   line-height: 1.20833;
   letter-spacing: 0em;
   color: #707070;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .service__catch {
+    width: 550px;
+  }
+  .service__inner {
+    padding: 40px 0 50px;
+  }
+  .service__course {
+    max-width: 80%;
+    margin: 0 0 auto;
+    padding: 15px 6vw 0 3vw;
+  }
+  .service__title__wrapper {
+    width: 80%;
+    padding: 11% 0 0 11%;
+  }
+  .service__img {
+    position: absolute;
+    right: -25%;
+    bottom: -25%;
+    z-index: 0;
+    width: 250px;
+    height: 350px;
+  }
+  .reverse {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .reverse__text {
+    width: 80%;
+  }
+  .absolute__reverse {
+    position: absolute;
+    left: -18%;
+    bottom: -25%;
+    margin: auto 0 0;
+    z-index: 0;
+  }
+  .service__line {
+    max-width: 50%;
+    height: 45px;
+    margin-top: 35px;
+  }
+  .btn__reverse > a {
+    margin: 0 0 0 auto;
+  }
+  .btn__course > a {
+    width: 450px;
+    padding: 10px 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.36364;
+    letter-spacing: 0em;
+  }
+  .service__catch {
+    font-size: 1.8rem;
+    line-height: 2.22222;
+    letter-spacing: 0.03em;
+  }
+  .service__num {
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 2.38462;
+    letter-spacing: 0em;
+  }
+  .service__title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.80769;
+    letter-spacing: 0em;
+  }
+  .service__sub__title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
 }
 
 /* --------------------------------------
@@ -1528,10 +1608,6 @@ ul {
     max-width: 1320px;
     padding: 75px 5% 53px;
     border: 1px solid #4DADED;
-  }
-  .reverse {
-    margin-left: auto;
-    margin-right: 0;
   }
   .service__course {
     max-width: 1320px;
