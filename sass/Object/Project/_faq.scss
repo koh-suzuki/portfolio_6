@@ -62,21 +62,7 @@
 .qa__flag {
   text-align: center;
 }
-.contact__main__btn {
-  > a {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    background-color: #FFE669;
-    padding: 20px 0;
-    max-width: 270px;
-    border-radius: 100px;
-    color: #707070;
-    position: relative;
-    z-index: 1;
-    @include f_around(1.8, 2, bold, 0);
-  }
-}
+
 
 .q__text,
 .a__text,

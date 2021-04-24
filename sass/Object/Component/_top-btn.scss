@@ -4,7 +4,7 @@
   height: 82px;
   position: fixed;
   right: 5%;
-  bottom: 15%;
+  bottom: 5%;
   background: #fff;
   border-radius: 50%;
 }
@@ -40,4 +40,15 @@
   left: 0;
   margin: auto;
   text-align: center;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 1024px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {
+  #page_top{
+    position: fixed;
+    right: 5%;
+    bottom: 15%; 
+  }
 }

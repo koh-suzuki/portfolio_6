@@ -1,11 +1,12 @@
 .contact__bg {
+  // height: 980px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/img/contact.jpg) no-repeat bottom / cover;
   object-fit: cover;
-  height: 980px;
+  height: 300px;
   position: relative;
 }
 .main__title {
-  padding: 80px 0;
+  padding: 20px 0;
   background-color: #4DADED;
   color: #ffffff;
 }
@@ -13,27 +14,45 @@
 .main__title::after {
   border-top: 4px solid #ffffff;
   content: "";
-  width: 90px; 
+  width: 30px; 
 }
 .main__title::before {
-  margin-right: 60px
+  margin-right: 30px
 }
 .main__title::after {
-  margin-left: 60px
+  margin-left: 30px
 }
 .contact__text {
-  max-width: 1300px;
+  // max-width: 1300px;
+  // padding: 170px 0 105px;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 170px 0 105px;
+  padding: 40px 0 35px;
   text-align: center;
 }
 .contact__text {
-  @include f_around(4.8, 8, bold, 0);
+  // @include f_around(4.8, 8, bold, 0);
+  @include f_around(1.4, 2.8, bold, 0);
   color: #ffffff;
 }
 .contact__main__btn {
   @include f_around(4.8, 5.8, bold, 0);
   color: #707070;
+}
+.contact__main__btn {
+  > a {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: #FFE669;
+    padding: 20px 0;
+    max-width: 270px;
+    border-radius: 100px;
+    color: #707070;
+    position: relative;
+    z-index: 0;
+    @include f_around(1.8, 2, bold, 0);
+  }
 }
 
 /* --------------------------------------

@@ -1,20 +1,19 @@
 .footer {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
 }
 .copyright {
-  padding: 36px 0;
+  padding: 15px 0;
   text-align: center;
 }
 .footer__logo {
   display: inline-block;
-  position: absolute;
-  top: 43%;
-  left: 10%;
-  @include f_around(2.4, 3, bold, 0);
+  @include f_around(1.4, 2, bold, 0);
   color: #0A3355
 }
 .copyright {
-  @include f_around(2.4, 2.9, false, 0);
+  @include f_around(1.2, 1.8, false, 0);
   color: #707070;
 }
 
@@ -22,6 +21,17 @@
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: md) {
+  .footer {
+    position: relative;
+  }
+  .footer__logo {
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    @include f_around(2.4, 3, bold, 0);
+    color: #0A3355
+  }
   .copyright {
     @include f_around(2.2, 2.4, false, 0);
   }
