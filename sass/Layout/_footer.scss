@@ -17,3 +17,20 @@
   @include f_around(2.4, 2.9, false, 0);
   color: #707070;
 }
+
+/* --------------------------------------
+レスポンシブ min-width: 1024px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {
+  .copyright {
+    @include f_around(2.2, 2.4, false, 0);
+  }
+  .copyright {
+    padding: 26px 0;
+    text-align: center;
+  }
+  .footer__logo {
+    position: absolute;
+    left: 6%;
+  }
+}

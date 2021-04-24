@@ -1,10 +1,11 @@
 .l-mv-wrapper {
-  width: 66.5%;
-  height: 980px;
+  width: 100%;
+  height: 560px;
   background: url(/img/mv.jpg);
   z-index: 1;
   background-size: cover;
-  background-position: 100% 0%;
+  background-position: 50% 0%;
+  object-fit: cover;
   margin-left: auto;
 }
 .mv__bg {
@@ -17,51 +18,219 @@
 }
 .mv__text__catch {
   position: absolute;
-  top: 18%;
-  left: 5%;
-  padding: 7px 15px;
+  top: 25%;
+  left: 2vw;
+  padding: 5px 10px;
   z-index: 1;
 }
 .mv__text__school {
   position: absolute;
-  top: 35%;
-  left: 5%;
+  top: 36%;
+  left: 2vw;
   z-index: 1;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 .mv__text__logo {
   position: absolute;
-  top: 50%;
-  left: 5%;
+  top: 45%;
+  left: 2vw;
   z-index: 1;
-  padding: 15px 28px;
+  padding: 5px 10px;
+}
+.btn__mv {
+  position: absolute;
+  bottom: 35%;
+  left: 2vw;
+  border-radius: 60px;
+  z-index: 1;
 }
 .btn__mv > a{
   background-color: #FFE669;
   color: #707070;
-  padding: 38px 31px;
+  padding: 15px 31px;
   border-radius: 100px;
 }
 .main__mv__text {
   color: #707070;
 }
+.mv__text__logo {
+  @include f_around(1.8, 2, bold, 0);
+}
+.mv__text__school {
+  @include f_around(1.8, 2.4, bold, 0);
+}
+.mv__text__catch {
+  @include f_around(1.8, 1.8, bold, 0);
+}
+.btn__mv > a{
+  @include f_around(1.8, 2, bold, 0);
+}
+
 /* --------------------------------------
 レスポンシブ max-width: 600px; 
 ----------------------------------------*/
-@include mq-down($breakpoint: md) {
+@include mq-up($breakpoint: sm) {  
+  .l-mv-wrapper {
+    height: 70vh
+  }
+  .mv__text__catch {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    z-index: 1;
+  }
+  .mv__text__school {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 1;
+  }
+  .mv__text__logo {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 1;
+  }
+  .btn__mv {
+    position: absolute;
+    bottom: 40%;
+    background-color: #FFE669;
+    color: #707070;
+    border-radius: 100px;
+  }
+  .mv__text__school {
+    @include f_around(3.4, 4.2, bold, 0);
+  }
+  .mv__text__catch {
+    @include f_around(3.6, 5 bold, 0);
+  }
+  .mv__text__logo {
+    @include f_around(3.8, 6, bold, 0);
+  }
+  .btn__mv > a{
+    @include f_around(3.2, 5.3, bold, 0);
+  }
   
 }
-.mv__text__school {
-  @include f_around(6, 9, bold, 0);
-  color: #707070;
+/* --------------------------------------
+レスポンシブ max-width: 1024px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {  
+  .l-mv-wrapper {
+    width: 66.5%;
+  }
+  .mv__text__catch {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: 1;
+  }
+  .mv__text__school {
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    z-index: 1;
+  }
+  .mv__text__logo {
+    position: absolute;
+    top: 58%;
+    left: 5%;
+    z-index: 1;
+  }
+  .btn__mv {
+    position: absolute;
+    bottom: 15%;
+    background-color: #FFE669;
+    color: #707070;
+    border-radius: 100px;
+  }
+
+  .mv__text__logo {
+    @include f_around(3.8, 5.2, bold, 0);
+  }
+  .mv__text__school {
+    @include f_around(3.8, 5.2, bold, 0);
+  }
+  .mv__text__catch {
+    @include f_around(2.8, 4.2, bold, 0);
+  }
+  .btn__mv > a{
+    @include f_around(2.2, 4.3, bold, 0);
+  }
 }
-.mv__text__logo {
-  @include f_around(7.7, 8, bold, 0);
-  color: #707070;
+
+/* --------------------------------------
+レスポンシブ max-width: 1920px; 
+----------------------------------------*/
+@include mq-up($breakpoint: xl) {  
+  .l-mv-wrapper {
+    width: 66.5%;
+    height: 980px;
+    background: url(/img/mv.jpg);
+    z-index: 1;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin-left: auto;
+  }
+  .mv__bg {
+    position: relative;
+    background-color: #0A3355;
+  }
+  .main__mv__text {
+    background-color: #ffffff;
+    display: inline-block;
+  }
+  .mv__text__catch {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    padding: 7px 15px;
+    z-index: 1;
+  }
+  .mv__text__school {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+    padding: 5px 20px;
+  }
+  .mv__text__logo {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 1;
+    padding: 15px 28px;
+  }
+  .btn__mv {
+    position: absolute;
+    bottom: 17%;
+    left: 5%;
+    padding: 40px 30px;
+    border-radius: 60px;
+    z-index: 1;
+  }
+  .btn__mv > a{
+    background-color: #FFE669;
+    color: #707070;
+    padding: 38px 31px;
+    border-radius: 100px;
+  }
+  .main__mv__text {
+    color: #707070;
+  }
+  .mv__text__school {
+    @include f_around(6, 9, bold, 0);
+    color: #707070;
+  }
+  .mv__text__logo {
+    @include f_around(7.7, 8, bold, 0);
+    color: #707070;
+  }
+  .mv__text__catch {
+    @include f_around(4.8, 7.2, bold, 0);
+  }
+  .btn__mv > a{
+    @include f_around(4.2, 6.3, bold, 0);
+  }
 }
-.mv__text__catch {
-  @include f_around(4.8, 7.2, bold, 0);
-}
-.btn__mv > a{
-  @include f_around(4.2, 6.3, bold, 0);
-}
+

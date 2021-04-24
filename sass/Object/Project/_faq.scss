@@ -1,5 +1,5 @@
 .faq__wrapper {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 70px auto 0; 
 }
 .q__text {
@@ -76,7 +76,31 @@
   @include f_around(3.2, 3.8, bold, 0);
   color: #707070;
 }
-.contact__main__btn {
-  @include f_around(4.8, 5.8, bold, 0);
-  color: #707070;
+
+/* --------------------------------------
+レスポンシブ min-width: 1024px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {
+  .faq__wrapper {
+    max-width: 750px;
+  }
+  .q__text,
+  .a__text,
+  .faq__text {
+    @include f_around(2.4, 3.8, bold, 0);
+  }
+  .contact__main__btn {
+    @include f_around(4, 5, bold, 0);
+  }
+  .faq__contact {
+    margin-top: 100px;
+  }
+  .faq__text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .contact__main__btn > a {
+    padding: 40px 0;
+    max-width: 650px;
+  }
 }

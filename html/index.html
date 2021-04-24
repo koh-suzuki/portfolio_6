@@ -9,16 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
+<body id="header">
   <header class="header__wrapper">
     <div class="header__inner">
       <h1 class="header__logo">AOSHIRO TECH</h1>
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#">トップ</a></li>
-          <li class="header__item"><a href="#">学習コース</a></li>
-          <li class="header__item"><a href="#">お知らせ</a></li>
-          <li class="header__item"><a href="#">お問い合せ</a></li>
+          <li class="header__item"><a href="/html/index.html">トップ</a></li>
+          <li class="header__item"><a href="/html/service.html">学習コース</a></li>
+          <li class="header__item"><a href="/html/info.html">お知らせ</a></li>
+          <li class="header__item"><a href="/html/contact.html">お問い合せ</a></li>
         </ul>
       </nav>
       <button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav" aria-expanded="false">
@@ -37,7 +37,7 @@
       <p class="main__mv__text mv__text__school">オンラインプログラミングスクール</p>
       <p class="main__mv__text mv__text__logo">AOSHIRO TECH</p>
       <div class="btn btn__mv">
-        <a href="#" target="_blank" rel="noopener noreferrer">無料体験に申し込む</a>
+        <a href="#" target="_blank">無料体験に申し込む</a>
       </div>
       <div class="l-mv-wrapper">
       </div>
@@ -49,14 +49,14 @@
           学習コース
         </h2>
         <p class="service__catch">
-          完全オンラインプログラミングスクール "MITO TECH" では<br>
+          完全オンラインプログラミングスクール"AOSHIRO TECH" では<br>
           お客様一人一人のご要望にお応えできるよう<br>
           充実した学習コースをご用意しております
         </p>
       </section>
-      <section class="service__wrapper service__relative">
+      <section class="service__wrapper">
         <section class="service__inner">
-          <section class="service__course">
+          <section class="service__course service__relative">
             <div class="service__title__wrapper">
               <p class="service__num">01</p>
               <h3 class="service__title">Web制作マスターコース</h3>
@@ -64,18 +64,18 @@
             <p class="service__sub__title">プログラミングを身につけたいあなたに</p>
             <p class="service__text">Webサイトの制作に必要なプログラミングスキルを<br>基礎から応用まで体系的に学ぶことができます</p>
             <p class="btn btn__section">
-              <a href="#" target="_blank" rel="noopener noreferrer">もっと詳しく →</a>
+              <a href="#" target="_blank">もっと詳しく →</a>
             </p>
+            <figure class="service__img">
+              <img src="/img/service1.jpg" alt="Web制作マスターコースの画像">
+            </figure>
           </section>    
           <div class="service__line"></div>      
-          <figure class="servie__img">
-            <img src="/img/service1.jpg" alt="Web制作マスターコースの画像">
-          </figure>
         </section>
       </section>
       <section class="service__wrapper service__relative">
         <section class="service__inner reverse">   
-          <section class="service__course reverse">       
+          <section class="service__course service__relative reverse">       
             <div class="service__title__wrapper reverse">
               <p class="service__num">02</p>
               <h3 class="service__title">Webデザインマスターコース</h3>
@@ -88,16 +88,16 @@
             <p class="btn btn__section">
               <a href="#" target="_blank" rel="noopener noreferrer">もっと詳しく →</a>
             </p>
+            <figure class="service__img absolute__reverse">
+              <img src="/img/service2.jpg" alt="Webデザインマスターコースの画像">
+            </figure>
           </section>
-          <div class="service__line__reverse"></div>      
-          <figure class="servie__img absolute__reverse">
-            <img src="/img/service2.jpg" alt="Webデザインマスターコースの画像">
-          </figure>
+          <div class="service__line line__reverse"></div>      
         </section>
       </section>
-      <section class="service__wrapper service__relative">
+      <section class="service__wrapper">
         <section class="service__inner">
-          <section class="service__course">
+          <section class="service__course service__relative">
             <div class="service__title__wrapper">
               <p class="service__num">03</p>
               <h3 class="service__title">エンジニア転職支援コース</h3>
@@ -110,11 +110,11 @@
             <p class="btn btn__section">
               <a href="#" target="_blank" rel="noopener noreferrer">もっと詳しく →</a>
             </p>
+            <figure class="service__img">
+              <img src="/img/service3.jpg" alt="エンジニア転職支援コースの画像">
+            </figure>
           </section>
           <div class="service__line"></div>      
-          <figure class="servie__img">
-            <img src="/img/service3.jpg" alt="エンジニア転職支援コースの画像">
-          </figure>
         </section>
       </section>
       <p class="btn__course btn">
@@ -127,7 +127,7 @@
     <!-- work -->
     <section class="l-work__wrapper" id="work">
       <section class="work__inner">
-        <h2 class="section__title">
+        <h2 class="section__title work__catch">
           なぜ"AOSHIRO TECH"が選ばれるのか
         </h2>
         <section class="work__item">
@@ -145,7 +145,7 @@
               日本全国どこからでも利用可能
             </p>
             <p class="work__text">
-              "MITO TECH"は完全オンラインだから<br>
+              "AODHIRO TECH"は完全オンラインだから<br>
               日本全国どこからでも利用可能<br>
               パソコン1台で始められます！
             </p>
@@ -206,55 +206,67 @@
             <div class="teacher__img">
               <img src="/img/teacher 1.jpg" alt="講師の画像">
             </div>
-            <p class="teacher__name">山田弘毅</p>
-            <p class="teacher__name">(やまだ こうき)</p>
-            <p class="teacher__content">Web制作マスターコース<br>
-              プロジェクトリーダー</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">山田弘毅</p>
+              <p class="teacher__name">(やまだ こうき)</p>
+              <p class="teacher__content">Web制作マスターコース<br>
+                プロジェクトリーダー</p>
+            </div>
           </div>
           <div class="teacher__card">
             <div class="teacher__img">
               <img src="/img/teacher 2.jpg" alt="講師の画像">
             </div>
-            <p class="teacher__name">松下絵美</p>
-            <p class="teacher__name">(まつした えみ)</p>
-            <p class="teacher__content">Webデザインマスターコース<br>
-              プロジェクトリーダー</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">松下絵美</p>
+              <p class="teacher__name">(まつした えみ)</p>
+              <p class="teacher__content">Webデザインマスターコース<br>
+                プロジェクトリーダー</p>
+            </div>
           </div>
           <div class="teacher__card">
             <div class="teacher__img">
               <img src="/img/teacher 3.jpg" alt="講師の画像">
             </div>
-            <p class="teacher__name">佐藤奏</p>
-            <p class="teacher__name">(さとうかなで)</p>
-            <p class="teacher__content">エンジニア転職支援コース<br>
-              プロジェクトリーダー</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">佐藤奏</p>
+              <p class="teacher__name">(さとうかなで)</p>
+              <p class="teacher__content">エンジニア転職支援コース<br>
+                プロジェクトリーダー</p>
+            </div>
           </div>
           <div class="teacher__card">
             <div class="teacher__img">
               <img src="/img/teacher 4.jpg" alt="講師の画像">
             </div>
-            <p class="teacher__name">栗原鳴海</p>
-            <p class="teacher__name">(くりはら なるみ)</p>
-            <p class="teacher__content">Web制作マスターコース<br>
-              プロジェクト補佐</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">栗原鳴海</p>
+              <p class="teacher__name">(くりはら なるみ)</p>
+              <p class="teacher__content">Web制作マスターコース<br>
+                プロジェクト補佐</p>
+            </div>
           </div>
           <div class="teacher__card">
             <div class="teacher__img">
               <img src="/img/teacher 5.jpg" alt="講師の画像">
             </div>
-            <p class="teacher__name">柳美香</p>
-            <p class="teacher__name">(やなぎ みか)</p>
-            <p class="teacher__content">Webデザインマスターコース<br>
-              プロジェクト補佐</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">柳美香</p>
+              <p class="teacher__name">(やなぎ みか)</p>
+              <p class="teacher__content">Webデザインマスターコース<br>
+                プロジェクト補佐</p>
+            </div>
           </div>
           <div class="teacher__card">
             <div class="teacher__img">
               <img src="/img/teacher6.png" alt="講師の画像">
             </div>
-            <p class="teacher__name">佐々木尚人</p>
-            <p class="teacher__name">(ささき なおと)</p>
-            <p class="teacher__content">エンジニア転職支援コース<br>
-              プロジェクト補佐</p>
+            <div class="teacher__prof">
+              <p class="teacher__name">佐々木尚人</p>
+              <p class="teacher__name">(ささき なおと)</p>
+              <p class="teacher__content">エンジニア転職支援コース<br>
+                プロジェクト補佐</p>
+            </div>
           </div>
         </section>
       </section>
@@ -263,9 +275,39 @@
           <h3 class="experience__title">無料体験実施中!!</h3>
           <div class="experience__content">
             <div class="experience__check">
-              <p class="check__item">実際の授業内容を知りたい</p>
-              <p class="check__item check__margin">カリキュラムの相談がしたい</p>
-              <p class="check__item">プログラミングに触れてみたい</p>
+              <p class="check__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70" class="pattern">
+                  <defs>
+                    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 48 48">
+                      <image width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEaUlEQVRoQ+2ZS4xURRSGvwM+MfhA1KCgAooCG1m5cElImBjjA1F5CahrE8JStsYYSZywUjSAAj5iNGA0hocJC0I0MRFQkEEBAWfABwIRGQZHL/k7p5Licnv6dnd6qidSm150377ff85fVedUGUN82BDnZ8gIyLLsCuBW4Eqgx8z+UfAty7LhwGhgJHBVm2REcMeAv82EWIGfADwKXA98BPwgEfr2XqADmOQihiUU8R9wRnDA58ARBRkYD8wFngauAT4BVgNdEvAS8BRwu6cnla0EfxrYDqwDvlIGgLuBOS5goguSsA+AdyRgF3Cff3EYqHgrwegHfhSUi1Am7gKeAeYDgpeVNPTbn4DXJeCce/834DXg1wTweuW/wHFgp9sowM8D7ongg4D9QGdlhjjwQWAWoM9UQ9lXdAUvvyvyRfBifB9YHwtQSjrMTJ9Jhq+I8nyA1wITbBMiH+DfU7DbRkAEPxt4FqgNb9bfFgIcXrbRarjAl/SBI28mq1U2sjAHklgogg+R135UCj65AIe/EwjwWs5LwycV4PDjHH6h20Z1ThiyyMUT1m0TrzBJLBTBPwkIXpGvG77uDPiLb/SCqtvMzte73vp/jAUEv6gZ+LoE+IvHADM93aoId9UjIoLXhin4+xuNfAhcKQtF8CpnnwNuAbYAb5QV0Qg8oBVyBHDWzFRqXDJqCsjBvwBMBdRD/O4lb00R/h93AE8Ai4HJtSLv8Lf5b782MxV3DQm4FpgBqOyeFr1Y5W8Q8SawG+hTAxK/JYJ/3LNXBH8IUGlQKQ8cXnZVn6JGptPMCovMMhkIApYBD+QiF4tYBXwL9AYRDq8+Q5GX9Yrgf/baXj3AAUD/qcjrGVWiqv2Xmll3oxmQXRSNx4Dn3ULxkhdEbALWAN94OazOTvAh8lNy4uVpwX8IrFV9b2b9WZZdDTwEvAzoma3Aiw0LkOpoHgwk4g/gS++mJEKT7xGPvOZNLFrwiqzg31UjI3h/lzIu66wARgFfNC2gDhF/AjuAzcANXpwVRf6oN+bqvroCfEsFlBShCazVQp2VTjhCnx3sq8j/koO/qIXNsqw1GQgEJexUbXMWvCbix36isC+c7eRWrdYKKJmJvAjB9/hxiFaryplOkdKWZ6CBTAheh1QbgLeBvdXgWz4H8hErYSctsZoPgn8L2DMQ/KALqGEnwWv33AisBL6vBZ9EQBUR2nFPAp86/Hdlq9ZBmwM17KTmfK97fndZ+GQZKJjYDwI6OdMmVVfTkywDORHX+dF4YQ1fbaNInoGBwMp+lzwDZUGr/e6ygJSHu//7OdAO9wNKgu7ApgPLgZvKNDTtckMT5rXORtUEqX2VmM+AJWamavaSkb8jU5vX1+xK0uTzumTUPqJmSJd8qmBfNTO1rIUC2uWWMoZTZ3fWL/JeAbaZWW81AbqDethvRHTZnfKeODCGHkIXfjooOJE/bwo/lIXkuZv9wDY+OWjSCU09HjJwCvjLzFSaF45Ul9pNqYsfHvICLgDju9NczUzGpAAAAABJRU5ErkJggg=="/>
+                    </pattern>
+                  </defs>
+                  <rect id="シンプルなチェックマークのアイコン_3" data-name="シンプルなチェックマークのアイコン 3" width="70" height="70" fill="url(#pattern)"/>
+                </svg>
+                実際の授業内容を知りたい
+              </p>
+              <p class="check__item check__margin">                
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70" class="pattern">
+                  <defs>
+                    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 48 48">
+                      <image width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEaUlEQVRoQ+2ZS4xURRSGvwM+MfhA1KCgAooCG1m5cElImBjjA1F5CahrE8JStsYYSZywUjSAAj5iNGA0hocJC0I0MRFQkEEBAWfABwIRGQZHL/k7p5Licnv6dnd6qidSm150377ff85fVedUGUN82BDnZ8gIyLLsCuBW4Eqgx8z+UfAty7LhwGhgJHBVm2REcMeAv82EWIGfADwKXA98BPwgEfr2XqADmOQihiUU8R9wRnDA58ARBRkYD8wFngauAT4BVgNdEvAS8BRwu6cnla0EfxrYDqwDvlIGgLuBOS5goguSsA+AdyRgF3Cff3EYqHgrwegHfhSUi1Am7gKeAeYDgpeVNPTbn4DXJeCce/834DXg1wTweuW/wHFgp9sowM8D7ongg4D9QGdlhjjwQWAWoM9UQ9lXdAUvvyvyRfBifB9YHwtQSjrMTJ9Jhq+I8nyA1wITbBMiH+DfU7DbRkAEPxt4FqgNb9bfFgIcXrbRarjAl/SBI28mq1U2sjAHklgogg+R135UCj65AIe/EwjwWs5LwycV4PDjHH6h20Z1ThiyyMUT1m0TrzBJLBTBPwkIXpGvG77uDPiLb/SCqtvMzte73vp/jAUEv6gZ+LoE+IvHADM93aoId9UjIoLXhin4+xuNfAhcKQtF8CpnnwNuAbYAb5QV0Qg8oBVyBHDWzFRqXDJqCsjBvwBMBdRD/O4lb00R/h93AE8Ai4HJtSLv8Lf5b782MxV3DQm4FpgBqOyeFr1Y5W8Q8SawG+hTAxK/JYJ/3LNXBH8IUGlQKQ8cXnZVn6JGptPMCovMMhkIApYBD+QiF4tYBXwL9AYRDq8+Q5GX9Yrgf/baXj3AAUD/qcjrGVWiqv2Xmll3oxmQXRSNx4Dn3ULxkhdEbALWAN94OazOTvAh8lNy4uVpwX8IrFV9b2b9WZZdDTwEvAzoma3Aiw0LkOpoHgwk4g/gS++mJEKT7xGPvOZNLFrwiqzg31UjI3h/lzIu66wARgFfNC2gDhF/AjuAzcANXpwVRf6oN+bqvroCfEsFlBShCazVQp2VTjhCnx3sq8j/koO/qIXNsqw1GQgEJexUbXMWvCbix36isC+c7eRWrdYKKJmJvAjB9/hxiFaryplOkdKWZ6CBTAheh1QbgLeBvdXgWz4H8hErYSctsZoPgn8L2DMQ/KALqGEnwWv33AisBL6vBZ9EQBUR2nFPAp86/Hdlq9ZBmwM17KTmfK97fndZ+GQZKJjYDwI6OdMmVVfTkywDORHX+dF4YQ1fbaNInoGBwMp+lzwDZUGr/e6ygJSHu//7OdAO9wNKgu7ApgPLgZvKNDTtckMT5rXORtUEqX2VmM+AJWamavaSkb8jU5vX1+xK0uTzumTUPqJmSJd8qmBfNTO1rIUC2uWWMoZTZ3fWL/JeAbaZWW81AbqDethvRHTZnfKeODCGHkIXfjooOJE/bwo/lIXkuZv9wDY+OWjSCU09HjJwCvjLzFSaF45Ul9pNqYsfHvICLgDju9NczUzGpAAAAABJRU5ErkJggg=="/>
+                    </pattern>
+                  </defs>
+                  <rect id="シンプルなチェックマークのアイコン_3" data-name="シンプルなチェックマークのアイコン 3" width="70" height="70" fill="url(#pattern)"/>
+                </svg>
+                カリキュラムの相談がしたい
+              </p>
+              <p class="check__item">                
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 70" class="pattern">
+                  <defs>
+                    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 48 48">
+                      <image width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEaUlEQVRoQ+2ZS4xURRSGvwM+MfhA1KCgAooCG1m5cElImBjjA1F5CahrE8JStsYYSZywUjSAAj5iNGA0hocJC0I0MRFQkEEBAWfABwIRGQZHL/k7p5Licnv6dnd6qidSm150377ff85fVedUGUN82BDnZ8gIyLLsCuBW4Eqgx8z+UfAty7LhwGhgJHBVm2REcMeAv82EWIGfADwKXA98BPwgEfr2XqADmOQihiUU8R9wRnDA58ARBRkYD8wFngauAT4BVgNdEvAS8BRwu6cnla0EfxrYDqwDvlIGgLuBOS5goguSsA+AdyRgF3Cff3EYqHgrwegHfhSUi1Am7gKeAeYDgpeVNPTbn4DXJeCce/834DXg1wTweuW/wHFgp9sowM8D7ongg4D9QGdlhjjwQWAWoM9UQ9lXdAUvvyvyRfBifB9YHwtQSjrMTJ9Jhq+I8nyA1wITbBMiH+DfU7DbRkAEPxt4FqgNb9bfFgIcXrbRarjAl/SBI28mq1U2sjAHklgogg+R135UCj65AIe/EwjwWs5LwycV4PDjHH6h20Z1ThiyyMUT1m0TrzBJLBTBPwkIXpGvG77uDPiLb/SCqtvMzte73vp/jAUEv6gZ+LoE+IvHADM93aoId9UjIoLXhin4+xuNfAhcKQtF8CpnnwNuAbYAb5QV0Qg8oBVyBHDWzFRqXDJqCsjBvwBMBdRD/O4lb00R/h93AE8Ai4HJtSLv8Lf5b782MxV3DQm4FpgBqOyeFr1Y5W8Q8SawG+hTAxK/JYJ/3LNXBH8IUGlQKQ8cXnZVn6JGptPMCovMMhkIApYBD+QiF4tYBXwL9AYRDq8+Q5GX9Yrgf/baXj3AAUD/qcjrGVWiqv2Xmll3oxmQXRSNx4Dn3ULxkhdEbALWAN94OazOTvAh8lNy4uVpwX8IrFV9b2b9WZZdDTwEvAzoma3Aiw0LkOpoHgwk4g/gS++mJEKT7xGPvOZNLFrwiqzg31UjI3h/lzIu66wARgFfNC2gDhF/AjuAzcANXpwVRf6oN+bqvroCfEsFlBShCazVQp2VTjhCnx3sq8j/koO/qIXNsqw1GQgEJexUbXMWvCbix36isC+c7eRWrdYKKJmJvAjB9/hxiFaryplOkdKWZ6CBTAheh1QbgLeBvdXgWz4H8hErYSctsZoPgn8L2DMQ/KALqGEnwWv33AisBL6vBZ9EQBUR2nFPAp86/Hdlq9ZBmwM17KTmfK97fndZ+GQZKJjYDwI6OdMmVVfTkywDORHX+dF4YQ1fbaNInoGBwMp+lzwDZUGr/e6ygJSHu//7OdAO9wNKgu7ApgPLgZvKNDTtckMT5rXORtUEqX2VmM+AJWamavaSkb8jU5vX1+xK0uTzumTUPqJmSJd8qmBfNTO1rIUC2uWWMoZTZ3fWL/JeAbaZWW81AbqDethvRHTZnfKeODCGHkIXfjooOJE/bwo/lIXkuZv9wDY+OWjSCU09HjJwCvjLzFSaF45Ul9pNqYsfHvICLgDju9NczUzGpAAAAABJRU5ErkJggg=="/>
+                    </pattern>
+                  </defs>
+                  <rect id="シンプルなチェックマークのアイコン_3" data-name="シンプルなチェックマークのアイコン 3" width="70" height="70" fill="url(#pattern)"/>
+                </svg>
+                プログラミングに触れてみたい
+              </p>
             </div>
             <div class="experience__btn">
               <p class="experience__text">＼ まずは無料で！ ／</p>
@@ -307,7 +349,7 @@
             </dt>
             <dd class="a__text">
               <div class="a__wrapper">
-                <p class="a__anthor__text">AOSHIRO TECHではお客様のライフスタイルに合った<br>学習カリキュラムを組むことが可能です</p>
+                <p class="a__anthor__text">AOSHIRO TECHではお客様のライフスタイルに合った学習カリキュラムを組むことが可能です</p>
               </div>
             </dd>
           </dl>
@@ -325,10 +367,10 @@
         </div>
         <div class="faq__contact">
           <p class="faq__text">
-            ご不明な点はご相談ください
+            ご不明な点はお気軽にご相談ください
           </p>
           <div class="btn contact__main__btn">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="/html/contact.html" target="_blank" rel="noopener noreferrer">
               お問い合わせはこちら
             </a>
           </div>
@@ -342,8 +384,8 @@
         お知らせ
       </h2>
       <ul class="info__list">
-        <div class="info__item__wrapper">
-          <li class="info__item">
+        <li class="info__item__wrapper">
+          <div class="info__item">
             <span class="info__day">2021.04.05</span>
             <a class="info info__notice" href="#">
               お知らせ
@@ -351,11 +393,11 @@
             <p class="info__content">
               新しく転職支援コースを設立しました！
             </p>
-          </li>
+          </div>
           <div class="info__border"></div>
-        </div>
-        <div class="info__item__wrapper">
-          <li class="info__item">
+        </li>
+        <li class="info__item__wrapper">
+          <div class="info__item">
             <span class="info__day">2021.04.04</span>
             <a class="info info__event" href="#">
               イベント
@@ -363,24 +405,23 @@
             <p class="info__content">
               ○○県でお試し無料講義イベントを開催
             </p>
-          </li>
+          </div>
           <div class="info__border"></div>
-        </div>
-        <div class="info__item__wrapper">
-
-        </div>
-        <li class="info__item">
-          <span class="info__day">2021.04.03</span>
-          <a class="info info__topic" href="#">
-            トピック
-          </a>
-          <p class="info__content">
-            人気プログラミングスクールランキング
-          </p>
         </li>
-        <div class="info__border"></div>
-        <div class="info__item__wrapper">
-          <li class="info__item">
+        <li class="info__item__wrapper">
+          <div class="info__item">
+            <span class="info__day">2021.04.03</span>
+            <a class="info info__topic" href="#">
+              トピック
+            </a>
+            <p class="info__content">
+              人気プログラミングスクールランキング
+            </p>
+          </div>
+          <div class="info__border"></div>
+        </li>
+        <li class="info__item__wrapper">
+          <div class="info__item">
             <span class="info__day">2021.04.02</span>
             <a class="info info__topic" href="#">
               トピック
@@ -388,11 +429,11 @@
             <p class="info__content">
               テレビ番組○○で紹介されました！
             </p>
-          </li>
+          </div>
           <div class="info__border"></div>
-        </div>
-        <div class="info__item__wrapper">
-          <li class="info__item">
+        </li>
+        <li class="info__item__wrapper">
+          <div class="info__item">
             <span class="info__day">2021.04.01</span>
             <a class="info info__notice" href="#">
               お知らせ
@@ -400,9 +441,9 @@
             <p class="info__content">
               新しく2名の講師を迎えました！
             </p>
-          </li>
+          </div>
           <div class="info__border"></div>
-        </div>
+        </li>
       </ul>
     </section>
     <!-- INFO end -->
@@ -423,7 +464,7 @@
       </section>
     </section>
     <!-- CONTACT end -->
-    <div id="page_top"><a href="#"></a></div>
+    <div id="page_top"><a href="#header"></a></div>
   </main>
   <footer class="footer">
     <p class="footer__logo">AOSHIRO TECH</p>

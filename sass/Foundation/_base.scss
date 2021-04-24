@@ -1,16 +1,16 @@
 // 変数の定義
 // min-width
 $breakpoint-up: (
-  'sm': 'screen and (min-width: 400px)',
-  'md': 'screen and (min-width: 600px)',
-  'lg': 'screen and (min-width: 1919px)',
-  'xl': 'screen and (min-width: 1200px)',
+  'sm': 'screen and (min-width: 600px)',
+  'md': 'screen and (min-width: 1024px)',
+  'lg': 'screen and (min-width: 1440px)',
+  'xl': 'screen and (min-width: 1920px)',
 ) !default;
 // max-width
 $breakpoint-down: (
   'sm': 'screen and (max-width: 399px)',
-  'md': 'screen and (max-width: 767px)',
-  'lg': 'screen and (max-width: 999px)',
+  'md': 'screen and (max-width: 599px)',
+  'lg': 'screen and (max-width: 1439px)',
   'xl': 'screen and (max-width: 1199px)',
 ) !default;
 // @mixinの定義

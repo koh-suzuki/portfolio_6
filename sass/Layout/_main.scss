@@ -1,5 +1,5 @@
 .l-section__wrapper {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 .section__title{
   display: flex;
@@ -9,11 +9,28 @@
 }
 
 .section__title {
-  @include f_around(5.6, 5.8, bold, 0);
+  @include f_around(2.4, 4.8, bold, 0);
   color: #707070;
 }
 /* --------------------------------------
-レスポンシブ max-width: 1920px; 
+レスポンシブ min-width: 1020px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {
+  .l-section__wrapper {
+    padding: 120px 0;
+  }
+  .section__title {
+    @include f_around(4.2, 4.8, bold, 0);
+  }
+}
+
+
+/* --------------------------------------
+レスポンシブ min-width: 1440px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: lg) {
+  .section__title {
+    @include f_around(5.6, 5.8, bold, 0);
+    color: #707070;
+  }
 }

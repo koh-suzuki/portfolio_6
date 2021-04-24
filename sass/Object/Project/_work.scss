@@ -4,9 +4,7 @@
   background-color: #F7FBFE;
 }
 .work__inner {
-  padding-bottom: 130px;
-  width: 1440px;
-  margin: 0 auto;
+  margin-bottom: 130px;
 }
 .work__item {
   position: relative;
@@ -37,8 +35,6 @@
 .balloon1::before{
   content: '';
   position: absolute;
-  content: '';
-  position: absolute;
   display: block;
   width: 0;
   height: 0;
@@ -53,13 +49,16 @@
   display: block;
 }
 .work__content {
-  width: 837px;
+  width: 63%;
+}
+.work__catch {
+  margin-bottom: 100px;
 }
 
 .teacher__wrapper {
   background-color: #ffffff;
   box-shadow: 0 3px 20px #00000016;
-  padding-top: 90px;
+  padding: 80px 0 120px;
   margin-bottom: 135px;
 }
 .teacher__text {
@@ -67,21 +66,30 @@
   padding: 50px 0;
 }
 .teacher__img {
+  position: absolute;
+  top: -30px;
+  left: 20px;
   width: 290px;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
+.teacher__prof {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
 .teacher__container {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
-  gap: 50px;
+  grid-template-columns: repeat(3, 25%);
+  gap: 70px 50px;
   justify-content: center;
 }
 .teacher__card {
+  position: relative;
   background-color: #F7FBFE;
   box-shadow: 0 0 12px #00000016;
-  height: 570px;
+  height: 470px;
 }
 .teacher__name {
   margin-top: 30px;
@@ -118,7 +126,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10vw;
+  padding: 0 9vw;
 }
 .experience__check {
   display: flex;
@@ -139,55 +147,236 @@
 .btn__experience {
   text-align: center;
   width: 680px;
-  padding: 30px 0;
   background-color: #FFE669;
   border-radius: 50px;
   > a {
+    padding: 30px 0;
     display: block;
   }
 }
-
-/* --------------------------------------
-レスポンシブ max-width: 600px; 
-----------------------------------------*/
-@include mq-down($breakpoint: md) {
+.pattern {
+  margin-right: 2vw
+}  
   
-}
+  .balloon1 {
+    @include f_around(3.6, 4, bold, 0);
+    color: #707070;
+  }
+  .work__title {
+    @include f_around(5.2, 6.2, bold, 0);
+    color: #4DADED;
+  }
+  .work__text {
+    @include f_around(3.2, 6.0, false, 0);
+    color: #707070;
+  }
+  .teacher__text,
+  .teacher__name {
+    @include f_around(3.2, 3.8, bold, 0);
+    color: #707070;
+  }
+  .teacher__content {
+    @include f_around(2.4, 2.9, bold, 0);
+    color: #707070;
+  }
+  .experience__title {
+    @include f_around(5.6, 6.7, bold, 0);
+    color: #ffffff;
+  }
+  .check__item {
+    @include f_around(4.8, 5.8, bold, 0);
+    color: #ffffff;
+  }
+  .experience__text {
+    @include f_around(4.0, 4.8, bold, 0);
+    color: #ffffff;
+  }
+  .btn__experience > a {
+    @include f_around(4.8, 5.8, bold, 0);
+    color: #707070;
+  }
 
-.balloon1 {
-  @include f_around(3.6, 4, bold, 0);
-  color: #707070;
-}
-.work__title {
-  @include f_around(5.2, 6.2, bold, 0);
-  color: #4DADED;
-}
-.work__text {
-  @include f_around(3.2, 6.0, false, 0);
-  color: #707070;
-}
-.teacher__text,
-.teacher__name {
-  @include f_around(3.2, 3.8, bold, 0);
-  color: #707070;
-}
-.teacher__content {
-  @include f_around(2.4, 2.9, bold, 0);
-  color: #707070;
-}
-.experience__title {
-  @include f_around(5.6, 6.7, bold, 0);
-  color: #ffffff;
-}
-.check__item {
-  @include f_around(4.8, 5.8, bold, 0);
-  color: #ffffff;
-}
-.experience__text {
-  @include f_around(4.0, 4.8, bold, 0);
-  color: #ffffff;
-}
-.btn__experience > a {
-  @include f_around(4.8, 5.8, bold, 0);
-  color: #707070;
-}
+  /* --------------------------------------
+  レスポンシブ min-width: 600px; 
+  ----------------------------------------*/
+  // @include mq-down($breakpoint: md) {
+    
+  // }
+
+  /* --------------------------------------
+  レスポンシブ min-width: 1020px; 
+  ----------------------------------------*/
+  @include mq-up($breakpoint: md) {
+    .work__inner {
+      max-width: 950px;
+      margin: 0 auto 130px;
+    }
+    .work__text  {
+      margin-top: 45px
+    }
+    .work__content {
+      width: 55%;
+    }
+    .work__item {
+      padding: 35px 0;
+    }
+    .balloon1::before {
+      position: absolute;
+      display: block;
+      left: 33%;
+      bottom: -34px;
+      border-right: 30px solid #FFE669;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+    .work__point {
+      position: absolute;
+      top: 2%;
+      left: 31%;
+    }
+    .balloon1 {
+      padding: 20px 15px 5px;
+    }
+    .work__img {
+      max-width: 250px;
+    }
+    .teacher__container {
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      gap: 70px 30px;
+      justify-content: center;
+    }
+    .teacher__card {
+      height: 410px;
+    }
+    .teacher__img {
+      position: absolute;
+      top: -5%;
+      left: 10%;
+      width: 80%;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+    .teacher__name {
+      margin-top: 15px;
+    }
+    .teacher__prof {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+    }
+    .work__catch {
+      @include f_around(3.2, 3.8, bold, 0);
+    }
+    .work__title,
+    .experience__title {
+      @include f_around(3.2, 4.8, bold, 0);
+    }
+    .work__text  {
+      @include f_around(2.2, 4.8, bold, 0);
+    }
+    .balloon1 {
+      @include f_around(2, 3, bold, 0);
+    }
+    .teacher__name {
+      @include f_around(2.2, 2.2, bold, 0);
+    }
+    .teacher__content {
+      @include f_around(1.6, 2.6, bold, 0);
+    }
+    .teacher__text {
+      @include f_around(2.4, 3.2, bold, 0);
+    }
+
+    .experience__inner {
+      padding: 45px 0 95px;
+    }
+    .pattern {
+      width: 35px;
+      height: 35px;
+    }
+    .btn__experience {
+      width: 380px;
+    }
+    .btn__experience > a {
+      padding: 15px 0;
+    }
+    .check__margin {
+      margin: 25px 0;
+    }
+    .experience__content {
+      padding: 0 4vw;
+    }
+
+    .btn__experience > a {
+      @include f_around(2.8, 3.2, bold, 0);
+    }
+    .check__item {
+    @include f_around(2.8, 3.8, bold, 0);
+    }
+    .experience__text {
+      @include f_around(2.4, 2.8, bold, 0);
+    }
+  }
+  
+  /* --------------------------------------
+  レスポンシブ min-width: 1440px; 
+  ----------------------------------------*/
+  @include mq-up($breakpoint: lg) {
+    .work__inner {
+      max-width: 1200px;
+      margin: 0 auto 130px;
+    }
+    .balloon1{
+      padding: 26px 15px 14px;
+    }
+    .balloon1::before{
+      position: absolute;
+      left: 32%;
+      bottom: -40px;
+    }
+    .work__point {
+      position: absolute;
+      top: 8%;
+      left: 26%;
+    }
+    .check__item {
+      display: flex;
+    }
+    .check__margin {
+      margin: 30px 0;
+    }
+    .pattern {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+    }
+    .experience__btn {
+      margin-bottom: 50px;
+    }
+    .btn__experience {
+      width: 480px;
+      >a {
+        padding: 15px 0;
+      }
+    }
+    
+    .work__title,
+    .experience__title {
+      @include f_around(4.2, 5.6, bold, 0);
+    }
+    .work__text{
+      @include f_around(3.2, 5.6, false, 0);
+    }
+    .balloon1,
+    .experience__text {
+      @include f_around(2.8, 4, bold, 0);
+    }
+    .check__item {
+      @include f_around(3.6, 5.6, false, 0);
+    }
+    .btn__experience > a {
+      @include f_around(3.6, 5.8, bold, 0);
+    }
+  }

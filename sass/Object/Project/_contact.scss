@@ -31,3 +31,33 @@
   @include f_around(4.8, 8, bold, 0);
   color: #ffffff;
 }
+.contact__main__btn {
+  @include f_around(4.8, 5.8, bold, 0);
+  color: #707070;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 1024px; 
+----------------------------------------*/
+@include mq-up($breakpoint: md) {
+  .contact__bg {
+    height: 80vh;
+  }
+  .main__title {
+    padding: 40px 0;
+  }
+  .contact__text {
+    max-width: 750px;
+    padding: 7% 0 5%;
+  }
+  .contact__main__btn > a {
+    padding: 30px 0;
+    max-width: 600px;
+  }
+  .contact__text {
+    @include f_around(2.7, 6, bold, 0);
+  }
+  .contact__main__btn {
+    @include f_around(3.6, 4.6, bold, 0);
+  }
+}
