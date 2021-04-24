@@ -2144,8 +2144,8 @@ ul {
 }
 
 .faq__wrapper {
-  max-width: 1200px;
-  margin: 70px auto 0;
+  max-width: 310px;
+  margin: 30px auto 0;
 }
 
 .q__text {
@@ -2153,11 +2153,11 @@ ul {
   justify-content: space-between;
   background-color: #EEFAFA;
   position: relative;
-  padding: 54px 40px 54px 115px;
+  padding: 14px 20px 14px 55px;
 }
 
 .q__text ::before {
-  font-size: 4.8rem;
+  font-size: 2.4rem;
   line-height: 1;
   position: absolute;
   top: 33%;
@@ -2178,12 +2178,12 @@ ul {
 .a__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 54px 40px 54px 115px;
+  padding: 14px 20px 14px 55px;
   position: relative;
 }
 
 .a__wrapper ::before {
-  font-size: 4.8rem;
+  font-size: 2.4rem;
   line-height: 1;
   position: absolute;
   top: 33%;
@@ -2199,12 +2199,12 @@ ul {
 }
 
 .faq__contact {
-  margin-top: 125px;
+  margin-top: 35px;
 }
 
 .faq__text {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .qa__flag {
@@ -2216,22 +2216,83 @@ ul {
   display: block;
   text-align: center;
   background-color: #FFE669;
-  padding: 50px 0;
-  max-width: 970px;
+  padding: 20px 0;
+  max-width: 270px;
   border-radius: 100px;
   color: #707070;
   position: relative;
   z-index: 1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.11111;
+  letter-spacing: 0em;
 }
 
 .q__text,
 .a__text,
 .faq__text {
-  font-size: 3.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.1875;
+  line-height: 1.42857;
   letter-spacing: 0em;
   color: #707070;
+}
+
+.info__list {
+  width: 300px;
+  margin: 30px auto;
+}
+
+.info__item__wrapper {
+  margin-bottom: 20px;
+}
+
+.info__content {
+  margin-top: 15px;
+  padding-bottom: 2%;
+}
+
+.info__item__wrapper {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.info {
+  padding: 0 3vw;
+  border-radius: 60px;
+  color: #707070;
+}
+
+.info__notice {
+  background-color: #00A2FF70;
+}
+
+.info__event {
+  background-color: #FFD70070;
+}
+
+.info__topic {
+  background-color: #0FE30070;
+}
+
+.info__border {
+  height: 1px;
+  position: relative;
+}
+
+.info__border::before {
+  content: "";
+  background-image: linear-gradient(to right, #707070, #707070 15px, transparent 15px, transparent 20px);
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* --------------------------------------
