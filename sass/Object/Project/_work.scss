@@ -68,15 +68,6 @@
   text-align: center;
   padding: 50px 0;
 }
-// .teacher__img {
-//   position: absolute;
-//   top: -30px;
-//   left: 20px;
-//   width: 290px;
-//   height: auto;
-//   object-fit: cover;
-//   margin: 0 auto;
-// }
 .teacher__img {
   position: absolute;
   top: -30px;
@@ -88,16 +79,11 @@
 }
 .teacher__prof {
   position: absolute;
-  // bottom: 5%;
   bottom: 15%;
   left: 10%;
   text-align: center;
 }
 .teacher__container {
-  // display: grid;
-  // grid-template-columns: repeat(3, 25%);
-  // gap: 70px 50px;
-  // justify-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -289,8 +275,12 @@
       border-top: 30px solid transparent;
       border-bottom: 30px solid transparent;
     }
-    .work__title,
-    .experience__title {
+    .pattern {
+      width: 28px;
+      height: 28px;
+    }
+
+    .work__title {
       @include f_around(2.2, 4.8, bold, 0);
     }
     .work__text  {
@@ -299,20 +289,76 @@
     .balloon1 {
       @include f_around(2, 3, bold, 0);
     }
-    .teacher__content {
-      @include f_around(2.4, 2.9, bold, 0);
+    
+
+    .teacher__wrapper {
+      width: 580px;
+      margin: 0 auto 70px;
     }
-    .experience__title {
-      @include f_around(5.6, 6.7, bold, 0);
+    .teacher__container {
+      display: grid;
+      grid-template-columns: repeat(3, 28%);
+      gap: 40px 20px;
+      justify-content: center;
+    }
+    .teacher__card {
+      width: 100%;
+      height: 350px;
+      margin: 40px 0 0;
+    }
+    .teacher__img {
+      position: absolute;
+      top: -5%;
+      left: 4%;
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+    .teacher__name {
+      margin-top: 5px;
+    }
+    .teacher__text {
+      padding: 20px 15vw 10px;
+    }
+    .teacher__prof {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+    }
+
+    .teacher__name {
+      @include f_around(1.6, 2, bold, 0);
+    }
+    .teacher__content {
+      @include f_around(1.4, 2, bold, 0);
     }
     .check__item {
-      @include f_around(4.8, 5.8, bold, 0);
+      @include f_around(2, 3, bold, 0);
+    }
+    .experience__title {
+      @include f_around(2.8, 3.8, bold, 0);
     }
     .experience__text {
-      @include f_around(4.0, 4.8, bold, 0);
+      @include f_around(1.6, 2, bold, 0);
+      margin-bottom: 5px;
     }
-    .btn__experience > a {
-      @include f_around(4.8, 5.8, bold, 0);
+    .btn__experience {
+      margin-bottom: 45px;
+      > a {
+        @include f_around(2.2, 3.2, bold, 0);
+        padding: 7px 0;
+      }
+    }
+      
+    .check__item {
+      display: flex;
+      align-items: center;
+    }
+    .experience__content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
     }
   }
 

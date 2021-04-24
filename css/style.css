@@ -2048,8 +2048,11 @@ ul {
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
   }
-  .work__title,
-  .experience__title {
+  .pattern {
+    width: 28px;
+    height: 28px;
+  }
+  .work__title {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 2.18182;
@@ -2067,35 +2070,90 @@ ul {
     line-height: 1.5;
     letter-spacing: 0em;
   }
-  .teacher__content {
-    font-size: 2.4rem;
+  .teacher__wrapper {
+    width: 580px;
+    margin: 0 auto 70px;
+  }
+  .teacher__container {
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    gap: 40px 20px;
+    justify-content: center;
+  }
+  .teacher__card {
+    width: 100%;
+    height: 350px;
+    margin: 40px 0 0;
+  }
+  .teacher__img {
+    position: absolute;
+    top: -5%;
+    left: 4%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .teacher__name {
+    margin-top: 5px;
+  }
+  .teacher__text {
+    padding: 20px 15vw 10px;
+  }
+  .teacher__prof {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  }
+  .teacher__name {
+    font-size: 1.6rem;
     font-weight: bold;
-    line-height: 1.20833;
+    line-height: 1.25;
     letter-spacing: 0em;
   }
-  .experience__title {
-    font-size: 5.6rem;
+  .teacher__content {
+    font-size: 1.4rem;
     font-weight: bold;
-    line-height: 1.19643;
+    line-height: 1.42857;
     letter-spacing: 0em;
   }
   .check__item {
-    font-size: 4.8rem;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 1.20833;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .experience__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.35714;
     letter-spacing: 0em;
   }
   .experience__text {
-    font-size: 4rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: 0em;
+    margin-bottom: 5px;
+  }
+  .btn__experience {
+    margin-bottom: 45px;
   }
   .btn__experience > a {
-    font-size: 4.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    line-height: 1.20833;
+    line-height: 1.45455;
     letter-spacing: 0em;
+    padding: 7px 0;
+  }
+  .check__item {
+    display: flex;
+    align-items: center;
+  }
+  .experience__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 
