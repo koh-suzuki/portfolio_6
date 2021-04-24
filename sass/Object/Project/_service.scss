@@ -92,7 +92,6 @@
 }
 .btn__course {
   text-align: center;
-  margin-top: 110px;
   > a {
     display: inline-block;
     width: 260px;
@@ -167,7 +166,7 @@
   color: #707070;
 }
 .btn {
-  @include f_around(4.2, 5, false, 0);
+  @include f_around(1.8, 3, false, 0);
   .btn > a {
     color: #707070;
   }

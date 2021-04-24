@@ -1149,13 +1149,12 @@ ul {
 
 .btn__course {
   text-align: center;
-  margin-top: 110px;
 }
 
 .btn__course > a {
   display: inline-block;
   width: 260px;
-  padding: 35px 0;
+  padding: 20px 0;
   border: 1px solid #707070;
   border-radius: 60px;
   color: #707070;
@@ -1241,8 +1240,8 @@ ul {
 }
 
 .btn {
-  font-size: 4.2rem;
-  line-height: 1.19048;
+  font-size: 1.8rem;
+  line-height: 1.66667;
   letter-spacing: 0em;
 }
 
@@ -1303,13 +1302,6 @@ ul {
   line-height: 1.20833;
   letter-spacing: 0em;
   color: #707070;
-}
-
-.btn__service > a {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 0em;
 }
 
 /* --------------------------------------
@@ -1635,35 +1627,42 @@ ul {
 }
 
 .l-work__wrapper {
-  padding: 108px 0 0;
+  padding: 50px 0 0;
   background-color: #F7FBFE;
 }
 
-.work__inner {
-  margin-bottom: 130px;
+.work__catch {
+  padding: 0 2vw;
+  margin-bottom: 30px;
 }
 
 .work__item {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-end;
-  padding: 75px 0;
+  padding: 150px 0 70px;
+}
+
+.work__content {
+  width: 310px;
+  margin: 20px auto 0;
 }
 
 .work__img {
   max-width: 300px;
   height: auto;
+  margin: 0 auto;
 }
 
 .work__text {
-  margin-top: 78.5px;
+  margin-top: 10px;
 }
 
 .work__point {
   position: absolute;
-  top: 35px;
-  left: 25%;
+  top: 1%;
+  left: 30%;
 }
 
 .balloon1 {
@@ -1692,19 +1691,11 @@ ul {
   display: block;
 }
 
-.work__content {
-  width: 63%;
-}
-
-.work__catch {
-  margin-bottom: 100px;
-}
-
 .teacher__wrapper {
   background-color: #ffffff;
   box-shadow: 0 3px 20px #00000016;
-  padding: 80px 0 120px;
-  margin-bottom: 135px;
+  padding: 50px 0 50px;
+  margin-bottom: 45px;
 }
 
 .teacher__text {
@@ -1715,8 +1706,8 @@ ul {
 .teacher__img {
   position: absolute;
   top: -30px;
-  left: 20px;
-  width: 290px;
+  left: 10px;
+  width: 270px;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
@@ -1724,26 +1715,27 @@ ul {
 
 .teacher__prof {
   position: absolute;
-  bottom: 5%;
+  bottom: 15%;
   left: 10%;
+  text-align: center;
 }
 
 .teacher__container {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  gap: 70px 50px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .teacher__card {
   position: relative;
   background-color: #F7FBFE;
   box-shadow: 0 0 12px #00000016;
+  width: 290px;
+  margin: 40px auto 30px;
   height: 470px;
 }
 
 .teacher__name {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -1755,14 +1747,14 @@ ul {
 .experience__inner {
   position: relative;
   background-color: #4DADED;
-  padding: 85px 0 125px;
+  padding: 25px 0 45px;
 }
 
 .experience__inner:after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -45px;
+  bottom: -30px;
   left: 0;
   width: 0px;
   height: 0px;
@@ -1774,12 +1766,12 @@ ul {
 
 .experience__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .experience__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 0 9vw;
 }
@@ -1787,10 +1779,11 @@ ul {
 .experience__check {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .check__margin {
-  margin: 70px 0;
+  margin: 10px 0;
 }
 
 .experience__btn {
@@ -1806,17 +1799,19 @@ ul {
 
 .btn__experience {
   text-align: center;
-  width: 680px;
+  width: 270px;
   background-color: #FFE669;
   border-radius: 50px;
 }
 
 .btn__experience > a {
-  padding: 30px 0;
+  padding: 15px 0;
   display: block;
 }
 
 .pattern {
+  width: 20px;
+  height: 20px;
   margin-right: 2vw;
 }
 
@@ -1828,66 +1823,73 @@ ul {
   color: #707070;
 }
 
-.work__title {
-  font-size: 5.2rem;
+.work__catch {
+  font-size: 2.4rem;
   font-weight: bold;
-  line-height: 1.19231;
+  line-height: 1.5;
+  letter-spacing: 0em;
+}
+
+.work__title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.05263;
   letter-spacing: 0em;
   color: #4DADED;
 }
 
 .work__text {
-  font-size: 3.2rem;
-  line-height: 1.875;
+  font-size: 1.6rem;
+  line-height: 1.5;
   letter-spacing: 0em;
   color: #707070;
 }
 
 .teacher__text,
 .teacher__name {
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.1875;
+  line-height: 1.55556;
   letter-spacing: 0em;
   color: #707070;
 }
 
 .teacher__content {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.20833;
+  line-height: 1.11111;
   letter-spacing: 0em;
   color: #707070;
 }
 
 .experience__title {
-  font-size: 5.6rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  line-height: 1.19643;
+  line-height: 1.80769;
   letter-spacing: 0em;
   color: #ffffff;
 }
 
 .check__item {
-  font-size: 4.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.20833;
+  line-height: 1.5;
   letter-spacing: 0em;
   color: #ffffff;
 }
 
 .experience__text {
-  font-size: 4rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0em;
   color: #ffffff;
 }
 
 .btn__experience > a {
-  font-size: 4.8rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.20833;
+  line-height: 1.55556;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -1900,6 +1902,7 @@ ul {
   ----------------------------------------*/
 @media screen and (min-width: 1024px) {
   .work__inner {
+    margin-bottom: 130px;
     max-width: 950px;
     margin: 0 auto 130px;
   }
@@ -1910,7 +1913,18 @@ ul {
     width: 55%;
   }
   .work__item {
-    padding: 35px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 75px 0;
+  }
+  .work__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 75px 0;
   }
   .balloon1::before {
     position: absolute;
@@ -1931,6 +1945,12 @@ ul {
   }
   .work__img {
     max-width: 250px;
+  }
+  .work__content {
+    width: 63%;
+  }
+  .work__text {
+    margin-top: 78.5px;
   }
   .teacher__container {
     display: grid;
@@ -2027,9 +2047,9 @@ ul {
     letter-spacing: 0em;
   }
   .check__item {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 1.35714;
+    line-height: 1.55556;
     letter-spacing: 0em;
   }
   .experience__text {
@@ -2044,6 +2064,9 @@ ul {
   レスポンシブ min-width: 1440px; 
   ----------------------------------------*/
 @media screen and (min-width: 1440px) {
+  .work__catch {
+    margin-bottom: 100px;
+  }
   .work__inner {
     max-width: 1200px;
     margin: 0 auto 130px;
@@ -2060,6 +2083,13 @@ ul {
     position: absolute;
     top: 8%;
     left: 26%;
+  }
+  .work__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 75px 0;
   }
   .check__item {
     display: flex;

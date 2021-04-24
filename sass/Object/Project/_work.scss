@@ -1,29 +1,41 @@
 
 .l-work__wrapper {
-  padding: 108px 0 0;
+  padding: 50px 0 0;
   background-color: #F7FBFE;
 }
-.work__inner {
-  margin-bottom: 130px;
+.work__catch {
+  padding: 0 2vw;
+  margin-bottom: 30px;
 }
 .work__item {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-end;
-  padding: 75px 0;
+  // padding: 75px 0;
+  padding: 150px 0 70px;
+}
+.work__content {
+  width: 310px;
+  margin: 20px auto 0;
 }
 .work__img {
   max-width: 300px;
   height: auto;
+  margin: 0 auto;
 }
 .work__text {
-  margin-top: 78.5px;
+  // margin-top: 20px;
+  margin-top: 10px;
 }
 .work__point {
+  // position: absolute;
+  // top: 35px;
+  // left: 25%;
+
   position: absolute;
-  top: 35px;
-  left: 25%;
+  top: 1%;
+  left: 30%;
 }
 .balloon1{
   position: relative;
@@ -48,68 +60,93 @@
 .work__point__text {
   display: block;
 }
-.work__content {
-  width: 63%;
-}
-.work__catch {
-  margin-bottom: 100px;
-}
+
 
 .teacher__wrapper {
   background-color: #ffffff;
   box-shadow: 0 3px 20px #00000016;
-  padding: 80px 0 120px;
-  margin-bottom: 135px;
+  padding: 50px 0 50px;
+  // padding: 80px 0 120px;
+  // margin-bottom: 135px;
+  margin-bottom: 45px;
 }
 .teacher__text {
   text-align: center;
   padding: 50px 0;
 }
+// .teacher__img {
+//   position: absolute;
+//   top: -30px;
+//   left: 20px;
+//   width: 290px;
+//   height: auto;
+//   object-fit: cover;
+//   margin: 0 auto;
+// }
 .teacher__img {
   position: absolute;
   top: -30px;
-  left: 20px;
-  width: 290px;
+  left: 10px;
+  width: 270px;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
 .teacher__prof {
   position: absolute;
-  bottom: 5%;
+  // bottom: 5%;
+  bottom: 15%;
   left: 10%;
+  text-align: center;
 }
 .teacher__container {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  gap: 70px 50px;
-  justify-content: center;
+  // display: grid;
+  // grid-template-columns: repeat(3, 25%);
+  // gap: 70px 50px;
+  // justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .teacher__card {
   position: relative;
   background-color: #F7FBFE;
   box-shadow: 0 0 12px #00000016;
+  width: 290px;
+  margin: 40px auto 30px;
   height: 470px;
 }
+// .teacher__card {
+//   position: relative;
+//   background-color: #F7FBFE;
+//   box-shadow: 0 0 12px #00000016;
+//   height: 470px;
+// }
 .teacher__name {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
 }
+// .teacher__name {
+//   margin-top: 30px;
+//   text-align: center;
+// }
 .teacher__content {
   text-align: center;
   padding: 25px 0;
 }
 
+
 .experience__inner {
   position: relative;
   background-color: #4DADED;
-  padding: 85px 0 125px;
+  // padding: 85px 0 125px;
+  padding: 25px 0 45px;
 }
 .experience__inner:after{
   content: "";
   position: absolute;
   right: 0;
-  bottom: -45px;
+  // bottom: -45px;
+  bottom: -30px;
   left: 0;
   width: 0px;
   height: 0px;
@@ -120,20 +157,24 @@
 }
 .experience__title {
   text-align: center;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .experience__content {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 0 9vw;
 }
 .experience__check {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px
 }
 .check__margin {
-  margin: 70px 0;
+  // margin: 70px 0;
+  margin: 10px 0;
 }
 .experience__btn {
   display: flex;
@@ -146,15 +187,19 @@
 }
 .btn__experience {
   text-align: center;
-  width: 680px;
+  // width: 680px;
+  width: 270px;
   background-color: #FFE669;
   border-radius: 50px;
   > a {
-    padding: 30px 0;
+    // padding: 30px 0;
+    padding: 15px 0;
     display: block;
   }
 }
 .pattern {
+  width: 20px;
+  height: 20px;
   margin-right: 2vw
 }  
   
@@ -162,37 +207,51 @@
     @include f_around(3.6, 4, bold, 0);
     color: #707070;
   }
+  .work__catch {
+    @include f_around(2.4, 3.6, bold, 0);
+  }
   .work__title {
-    @include f_around(5.2, 6.2, bold, 0);
+    @include f_around(1.9, 2.0, bold, 0);
     color: #4DADED;
   }
   .work__text {
-    @include f_around(3.2, 6.0, false, 0);
+    @include f_around(1.6, 2.4, false, 0);
     color: #707070;
   }
   .teacher__text,
   .teacher__name {
-    @include f_around(3.2, 3.8, bold, 0);
+    @include f_around(1.8, 2.8, bold, 0);
     color: #707070;
   }
+  // .teacher__text,
+  // .teacher__name {
+  //   @include f_around(3.2, 3.8, bold, 0);
+  //   color: #707070;
+  // }
+
   .teacher__content {
-    @include f_around(2.4, 2.9, bold, 0);
+    // @include f_around(2.4, 2.9, bold, 0);
+    @include f_around(1.8, 2, bold, 0);
     color: #707070;
   }
   .experience__title {
-    @include f_around(5.6, 6.7, bold, 0);
+    // @include f_around(5.6, 6.7, bold, 0);
+    @include f_around(2.6, 4.7, bold, 0);
     color: #ffffff;
   }
   .check__item {
-    @include f_around(4.8, 5.8, bold, 0);
+    // @include f_around(4.8, 5.8, bold, 0);
+    @include f_around(1.6, 2.4, bold, 0);
     color: #ffffff;
   }
   .experience__text {
-    @include f_around(4.0, 4.8, bold, 0);
+    // @include f_around(4.0, 4.8, bold, 0);
+    @include f_around(1.4, 1.4, bold, 0);
     color: #ffffff;
   }
   .btn__experience > a {
-    @include f_around(4.8, 5.8, bold, 0);
+    // @include f_around(4.8, 5.8, bold, 0);
+    @include f_around(1.8, 2.8, bold, 0);
     color: #707070;
   }
 
@@ -208,6 +267,7 @@
   ----------------------------------------*/
   @include mq-up($breakpoint: md) {
     .work__inner {
+      margin-bottom: 130px;    
       max-width: 950px;
       margin: 0 auto 130px;
     }
@@ -218,7 +278,18 @@
       width: 55%;
     }
     .work__item {
-      padding: 35px 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 75px 0;
+    }
+    .work__item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 75px 0;
     }
     .balloon1::before {
       position: absolute;
@@ -240,6 +311,14 @@
     .work__img {
       max-width: 250px;
     }
+    .work__content {
+      width: 63%;
+    }
+    .work__text {
+      margin-top: 78.5px;
+    }
+
+
     .teacher__container {
       display: grid;
       grid-template-columns: repeat(3, 260px);
@@ -313,7 +392,8 @@
       @include f_around(2.8, 3.2, bold, 0);
     }
     .check__item {
-    @include f_around(2.8, 3.8, bold, 0);
+    // @include f_around(2.8, 3.8, bold, 0);
+    @include f_around(1.8, 2.8, bold, 0);
     }
     .experience__text {
       @include f_around(2.4, 2.8, bold, 0);
@@ -324,6 +404,9 @@
   レスポンシブ min-width: 1440px; 
   ----------------------------------------*/
   @include mq-up($breakpoint: lg) {
+    .work__catch {
+      margin-bottom: 100px;
+    }
     .work__inner {
       max-width: 1200px;
       margin: 0 auto 130px;
@@ -341,6 +424,15 @@
       top: 8%;
       left: 26%;
     }
+    .work__item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 75px 0;
+    }
+
+
     .check__item {
       display: flex;
     }
