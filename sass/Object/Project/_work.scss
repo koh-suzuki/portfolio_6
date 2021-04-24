@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  // padding: 75px 0;
   padding: 150px 0 70px;
 }
 .work__content {
@@ -25,14 +24,9 @@
   margin: 0 auto;
 }
 .work__text {
-  // margin-top: 20px;
   margin-top: 10px;
 }
 .work__point {
-  // position: absolute;
-  // top: 35px;
-  // left: 25%;
-
   position: absolute;
   top: 1%;
   left: 30%;
@@ -230,37 +224,97 @@
   // }
 
   .teacher__content {
-    // @include f_around(2.4, 2.9, bold, 0);
     @include f_around(1.8, 2, bold, 0);
     color: #707070;
   }
   .experience__title {
-    // @include f_around(5.6, 6.7, bold, 0);
     @include f_around(2.6, 4.7, bold, 0);
     color: #ffffff;
   }
   .check__item {
-    // @include f_around(4.8, 5.8, bold, 0);
     @include f_around(1.6, 2.4, bold, 0);
     color: #ffffff;
   }
   .experience__text {
-    // @include f_around(4.0, 4.8, bold, 0);
     @include f_around(1.4, 1.4, bold, 0);
     color: #ffffff;
   }
   .btn__experience > a {
-    // @include f_around(4.8, 5.8, bold, 0);
     @include f_around(1.8, 2.8, bold, 0);
     color: #707070;
   }
-
+  
   /* --------------------------------------
   レスポンシブ min-width: 600px; 
   ----------------------------------------*/
-  // @include mq-down($breakpoint: md) {
-    
-  // }
+  @include mq-up($breakpoint: sm) {
+    .work__inner {
+      padding-bottom: 65px;
+    }
+    .work__item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-end;
+      padding: 35px 0;
+    }
+    .work__img {
+      max-width: 200px;
+    }
+    .work__content {
+      width: 360px;
+    }
+    .work__text {
+      margin-top: 20px;
+    }
+    .work__point {
+      position: absolute;
+      top: 20%;
+      left: 34%;
+    }
+    .balloon1 {
+      padding: 10px;
+      position: relative;
+    }
+    .balloon1::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      left: 30%;
+      bottom: -30px;
+      border-right: 30px solid #FFE669;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+    .work__title,
+    .experience__title {
+      @include f_around(2.2, 4.8, bold, 0);
+    }
+    .work__text  {
+      @include f_around(1.8, 3.8, bold, 0);
+    }
+    .balloon1 {
+      @include f_around(2, 3, bold, 0);
+    }
+    .teacher__content {
+      @include f_around(2.4, 2.9, bold, 0);
+    }
+    .experience__title {
+      @include f_around(5.6, 6.7, bold, 0);
+    }
+    .check__item {
+      @include f_around(4.8, 5.8, bold, 0);
+    }
+    .experience__text {
+      @include f_around(4.0, 4.8, bold, 0);
+    }
+    .btn__experience > a {
+      @include f_around(4.8, 5.8, bold, 0);
+    }
+  }
 
   /* --------------------------------------
   レスポンシブ min-width: 1020px; 

@@ -692,6 +692,15 @@ ul {
 }
 
 /* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .l-section__wrapper {
+    padding: 80px 0;
+  }
+}
+
+/* --------------------------------------
 レスポンシブ min-width: 1020px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -1334,7 +1343,7 @@ ul {
     width: 550px;
   }
   .service__inner {
-    padding: 40px 0 50px;
+    padding: 40px 0 70px;
   }
   .service__course {
     max-width: 80%;
@@ -1997,6 +2006,99 @@ ul {
 /* --------------------------------------
   レスポンシブ min-width: 600px; 
   ----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .work__inner {
+    padding-bottom: 65px;
+  }
+  .work__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 35px 0;
+  }
+  .work__img {
+    max-width: 200px;
+  }
+  .work__content {
+    width: 360px;
+  }
+  .work__text {
+    margin-top: 20px;
+  }
+  .work__point {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+  }
+  .balloon1 {
+    padding: 10px;
+    position: relative;
+  }
+  .balloon1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 30%;
+    bottom: -30px;
+    border-right: 30px solid #FFE669;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+  .work__title,
+  .experience__title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.18182;
+    letter-spacing: 0em;
+  }
+  .work__text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.11111;
+    letter-spacing: 0em;
+  }
+  .balloon1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
+  .teacher__content {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.20833;
+    letter-spacing: 0em;
+  }
+  .experience__title {
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 1.19643;
+    letter-spacing: 0em;
+  }
+  .check__item {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 1.20833;
+    letter-spacing: 0em;
+  }
+  .experience__text {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0em;
+  }
+  .btn__experience > a {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 1.20833;
+    letter-spacing: 0em;
+  }
+}
+
 /* --------------------------------------
   レスポンシブ min-width: 1020px; 
   ----------------------------------------*/
