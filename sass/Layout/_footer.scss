@@ -9,6 +9,9 @@
 }
 .footer__logo {
   display: inline-block;
+  padding-top: 15px;
+}
+.footer__logo {
   @include f_around(1.4, 2, bold, 0);
   color: #0A3355
 }
@@ -35,12 +38,14 @@
 @include mq-up($breakpoint: md) {
   .footer {
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   .footer__logo {
     display: inline-block;
     position: absolute;
-    top: 43%;
-    left: 10%;
+    left: 2%;
+    top: 15%;
     @include f_around(2.4, 3, bold, 0);
     color: #0A3355
   }

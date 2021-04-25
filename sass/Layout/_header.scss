@@ -173,13 +173,16 @@ background-color: #f9d8ae;
 ----------------------------------------*/
 @include mq-up($breakpoint: sm) {
   .header__inner {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
 /* --------------------------------------
 レスポンシブ max-width: 1024px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: md) {
+  .header__inner {
+    padding: 24px 0;
+  }
   .header__nav {
     display: block;
   }

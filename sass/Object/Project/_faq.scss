@@ -2,8 +2,8 @@
   margin-top: 30px;
 }
 .qa-list {
-  max-width: 310px;
-  margin: 0 auto; 
+  max-width: 1210px;
+  margin: 0 3vw 0; 
 }
 .q__text {
   display: flex;
@@ -74,51 +74,6 @@
   color: #707070;
 }
 
-.info__list {
-  width: 300px;
-  margin: 30px auto;
-}
-.info__item__wrapper {
-  margin-bottom: 20px
-}
-.info__content {
-  margin-top: 15px;
-  padding-bottom: 2%;
-}
-
-.info__item__wrapper {
-  @include f_around(1.4, 1.4, bold, 0);
-  color: #707070;
-}
-.info {
-  padding: 0 3vw;
-  border-radius: 60px;
-  color: #707070;
-}
-.info__notice {
-  background-color: #00A2FF70;
-}
-.info__event {
-  background-color: #FFD70070;
-}
-.info__topic {
-  background-color: #0FE30070;
-}
-.info__border{
-  height: 1px;
-  position: relative;
-}
-.info__border::before {
-  content: "";
-  background-image: linear-gradient(to right, #707070, #707070 15px, transparent 15px, transparent 20px);
-  background-size: 20px 2px;
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
 /* --------------------------------------
 レスポンシブ min-width: 600px; 
@@ -128,8 +83,7 @@
     margin-top: 50px;
   }
   .qa-list {
-    max-width: 590px;
-    margin: 0 auto; 
+    margin: 0 5vw 0; 
     padding: 0 2vw;
   }
   .q__text {
@@ -171,9 +125,6 @@
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: md) {
-  .faq__wrapper {
-    max-width: 750px;
-  }
   .q__text,
   .a__text,
   .faq__text {
@@ -181,6 +132,10 @@
   }
   .contact__main__btn {
     @include f_around(4, 5, bold, 0);
+  }
+  .qa-list {
+    margin: 0 10vw 0; 
+    padding: 0 2vw;
   }
   .faq__contact {
     margin-top: 100px;
@@ -192,5 +147,25 @@
   .contact__main__btn > a {
     padding: 40px 0;
     max-width: 650px;
+  }
+  .q__text,
+  .a__wrapper {
+    padding: 30px 20px 30px 100px;
+    ::before {
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      font-size: 3.4rem;
+    }
+  }
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 1440px; 
+----------------------------------------*/
+@include mq-up($breakpoint: lg) {
+  .qa-list {
+    margin: 0 15vw 0; 
+    padding: 0 2vw;
   }
 }

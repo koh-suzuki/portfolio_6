@@ -419,6 +419,10 @@ ul {
 
 .footer__logo {
   display: inline-block;
+  padding-top: 15px;
+}
+
+.footer__logo {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.42857;
@@ -451,12 +455,14 @@ ul {
 @media screen and (min-width: 1024px) {
   .footer {
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   .footer__logo {
     display: inline-block;
     position: absolute;
-    top: 43%;
-    left: 10%;
+    left: 2%;
+    top: 15%;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.25;
@@ -659,7 +665,7 @@ ul {
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
   .header__inner {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 }
 
@@ -667,6 +673,9 @@ ul {
 レスポンシブ max-width: 1024px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
+  .header__inner {
+    padding: 24px 0;
+  }
   .header__nav {
     display: block;
   }
@@ -969,9 +978,8 @@ ul {
   }
   .btn__mv {
     position: absolute;
+    left: 5%;
     bottom: 15%;
-    background-color: #FFE669;
-    color: #707070;
     border-radius: 100px;
   }
   .mv__text__logo {
@@ -1092,15 +1100,15 @@ ul {
 }
 
 .service__catch {
-  width: 310px;
   margin: 0 auto;
+  padding: 0 4vw;
   text-align: center;
   margin-top: 15px;
   color: #707070;
 }
 
 .service__img {
-  width: 270px;
+  max-width: 950px;
   box-shadow: 18px 24px 6px #00000016;
 }
 
@@ -1129,9 +1137,8 @@ ul {
 }
 
 .service__course {
-  max-width: 310px;
-  margin: 0 auto;
-  padding: 30px 5% 30px;
+  margin: 0 3vw;
+  padding: 30px 10vw 30px;
   border: 1px solid #4DADED;
 }
 
@@ -1159,7 +1166,6 @@ ul {
 }
 
 .service__sub__title {
-  width: 90%;
   margin-top: 3%;
   padding-left: 2vw;
 }
@@ -1176,12 +1182,12 @@ ul {
 .btn__section > a {
   display: block;
   text-align: center;
-  width: 200px;
+  max-width: 500px;
   padding: 2vw 0;
   border-radius: 50px;
   background-color: #FFE669;
   box-shadow: 6px 8px 6px #00000017;
-  margin: 0 15% 0 auto;
+  margin: 0 auto;
 }
 
 .service__line {
@@ -1234,11 +1240,6 @@ ul {
   margin: 32px 0 32px 25px;
 }
 
-.service__item {
-  max-width: 640px;
-  margin-left: 60px;
-}
-
 .service__content__title,
 .service__content__sub-title {
   display: inline-block;
@@ -1248,13 +1249,6 @@ ul {
 .service__content__title {
   border-bottom: 4px solid #4DADED;
   margin-bottom: 48px;
-}
-
-.service__img {
-  width: 270px;
-  height: 175px;
-  object-fit: cover;
-  margin: 0 5% 0 auto;
 }
 
 .service__content__sub-title {
@@ -1322,26 +1316,26 @@ ul {
 }
 
 .service__title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 2.22222;
   letter-spacing: 0em;
   color: #4DADED;
 }
 
 .service__sub__title,
 .service__content__sub-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.55556;
+  line-height: 1.75;
   letter-spacing: 0em;
   color: #707070;
 }
 
 .service__text,
 .service__content__text {
-  font-size: 1.6rem;
-  line-height: 1.5625;
+  font-size: 1.4rem;
+  line-height: 1.78571;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -1357,50 +1351,16 @@ ul {
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
-  .service__catch {
-    width: 550px;
-  }
   .service__inner {
     padding: 40px 0 70px;
   }
-  .service__course {
-    max-width: 80%;
-    margin: 0 0 auto;
-    padding: 15px 6vw 0 3vw;
-  }
   .service__title__wrapper {
-    width: 80%;
-    padding: 11% 0 0 11%;
-  }
-  .service__img {
-    position: absolute;
-    right: -25%;
-    bottom: -25%;
-    z-index: 0;
-    width: 250px;
-    height: 350px;
-  }
-  .reverse {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .reverse__text {
-    width: 80%;
-  }
-  .absolute__reverse {
-    position: absolute;
-    left: -18%;
-    bottom: -25%;
-    margin: auto 0 0;
-    z-index: 0;
+    padding: 65px 0 0 65px;
   }
   .service__line {
     max-width: 50%;
     height: 45px;
     margin-top: 35px;
-  }
-  .btn__reverse > a {
-    margin: 0 0 0 auto;
   }
   .btn__course > a {
     width: 450px;
@@ -1416,21 +1376,26 @@ ul {
     letter-spacing: 0.03em;
   }
   .service__num {
-    font-size: 5.2rem;
+    font-size: 6.2rem;
     font-weight: bold;
-    line-height: 2.38462;
+    line-height: 2;
     letter-spacing: 0em;
   }
   .service__title {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    line-height: 1.80769;
+    line-height: 1.67857;
     letter-spacing: 0em;
   }
   .service__sub__title {
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0em;
+  }
+  .service__text {
+    font-size: 1.7rem;
+    line-height: 1.64706;
     letter-spacing: 0em;
   }
 }
@@ -1444,10 +1409,13 @@ ul {
   }
   .service__course {
     max-width: 80%;
+    margin: 0 3vw;
+    padding: 30px 5vw 30px;
+    border: 1px solid #4DADED;
   }
   .service__title__wrapper {
     width: 80%;
-    padding: 10% 0 0 12%;
+    padding: 75px 0 0 83px;
   }
   .service__img {
     position: absolute;
@@ -1460,6 +1428,9 @@ ul {
   }
   .reverse__text {
     width: 80%;
+  }
+  .reverse {
+    margin-left: auto;
   }
   .absolute__reverse {
     position: absolute;
@@ -1489,9 +1460,9 @@ ul {
     letter-spacing: 0em;
   }
   .service__title {
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 1.58333;
+    line-height: 1.56667;
     letter-spacing: 0em;
   }
   .service__sub__title,
@@ -1519,12 +1490,15 @@ ul {
     margin-top: 25px;
   }
   .btn__section > a {
+    width: 40%;
     padding: 1vw 1.5vw;
-    margin: 0 auto;
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.81818;
     letter-spacing: 0em;
+  }
+  .btn__reverse > a {
+    margin: 0 0 0 auto;
   }
 }
 
@@ -1605,14 +1579,16 @@ ul {
 レスポンシブ min-width: 1920px; 
 ----------------------------------------*/
 @media screen and (min-width: 1920px) {
+  .l-section__wrapper {
+    padding: 150px 0;
+  }
   .service__relative {
     position: relative;
   }
   .service__catch {
-    width: 310px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
     color: #707070;
   }
   .section__title::before,
@@ -1636,11 +1612,6 @@ ul {
     padding: 75px 5% 53px;
     border: 1px solid #4DADED;
   }
-  .service__course {
-    max-width: 1320px;
-    padding: 75px 5% 53px;
-    border: 1px solid #4DADED;
-  }
   .service__num {
     font-size: 11.2rem;
     font-weight: bold;
@@ -1654,7 +1625,7 @@ ul {
     display: flex;
     align-items: flex-end;
     width: 90%;
-    padding: 5% 0 0 11%;
+    padding: 7% 0 10px 11%;
     border-bottom: 1px solid #707070;
   }
   .service__sub__title {
@@ -1673,25 +1644,20 @@ ul {
   .service__img {
     position: absolute;
     right: -30%;
-    bottom: -30%;
+    bottom: -25%;
     z-index: 0;
     width: 40%;
+    height: 627px;
     box-shadow: 18px 24px 6px #00000016;
   }
   .service__img > img {
     object-fit: cover;
     object-position: 50%;
   }
-  .service__img {
-    width: 800px;
-    height: 475px;
-    object-fit: cover;
-    margin: 0 5% 0 auto;
-  }
   .absolute__reverse {
     position: absolute;
     left: -30%;
-    bottom: -30%;
+    bottom: -25%;
     z-index: 0;
   }
   .btn__section {
@@ -1728,6 +1694,11 @@ ul {
     border: 1px solid #707070;
     border-radius: 60px;
     color: #707070;
+  }
+  .service__catch {
+    font-size: 3.8rem;
+    line-height: 1.44737;
+    letter-spacing: 0.03em;
   }
   .service__sub__title,
   .service__content__sub-title {
@@ -1769,11 +1740,12 @@ ul {
   flex-direction: column;
   align-items: flex-end;
   padding: 150px 0 70px;
+  margin: 0 3vw;
 }
 
 .work__content {
-  width: 310px;
-  margin: 20px auto 0;
+  margin: 30px 0 0;
+  text-align: center;
 }
 
 .work__img {
@@ -1794,7 +1766,7 @@ ul {
 
 .balloon1 {
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 10px;
   border-radius: 50%;
   text-align: center;
   background-color: #FFE669;
@@ -1806,11 +1778,11 @@ ul {
   display: block;
   width: 0;
   height: 0;
-  left: 35%;
-  bottom: -45px;
+  left: 47px;
+  bottom: -40px;
   border-right: 40px solid #FFE669;
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
   transform: rotate(-90deg);
 }
 
@@ -1836,17 +1808,25 @@ ul {
 }
 
 .teacher__img {
-  position: absolute;
-  top: -30px;
-  left: 10px;
+  position: relative;
   width: 270px;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
 
+.teacher__img > img {
+  position: absolute;
+  width: 265px;
+  height: 270px;
+  object-fit: cover;
+  top: -25px;
+  left: 0;
+  z-index: 1;
+}
+
 .teacher__prof {
-  margin-top: 85%;
+  margin-top: 95%;
   text-align: center;
 }
 
@@ -1856,7 +1836,6 @@ ul {
 }
 
 .teacher__card {
-  position: relative;
   background-color: #F7FBFE;
   box-shadow: 0 0 12px #00000016;
   width: 290px;
@@ -1961,9 +1940,9 @@ ul {
 }
 
 .work__title {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.05263;
+  line-height: 1.11111;
   letter-spacing: 0em;
   color: #4DADED;
 }
@@ -2031,31 +2010,17 @@ ul {
   .work__inner {
     padding-bottom: 65px;
   }
-  .work__item {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 35px 0;
-  }
-  .work__img {
-    max-width: 200px;
-  }
   .work__content {
-    width: 360px;
+    margin: 20px 10vw;
   }
   .work__text {
     margin-top: 20px;
   }
   .work__point {
     position: absolute;
-    top: 20%;
-    left: 34%;
-  }
-  .balloon1 {
-    padding: 10px;
-    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .balloon1::before {
     content: '';
@@ -2063,11 +2028,12 @@ ul {
     display: block;
     width: 0;
     height: 0;
-    left: 30%;
-    bottom: -30px;
-    border-right: 30px solid #FFE669;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
+    left: 27px;
+    bottom: -40px;
+    border-right: 40px solid #FFE669;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    transform: rotate(-90deg);
   }
   .pattern {
     width: 28px;
@@ -2098,7 +2064,7 @@ ul {
     letter-spacing: 0em;
   }
   .teacher__wrapper {
-    width: 580px;
+    max-width: 580px;
     margin: 0 auto 70px;
   }
   .teacher__container {
@@ -2113,13 +2079,17 @@ ul {
     margin: 40px 0 0;
   }
   .teacher__img {
-    position: absolute;
-    top: -5%;
-    left: 4%;
-    width: 150px;
-    height: auto;
-    object-fit: cover;
+    position: relative;
     margin: 0 auto;
+  }
+  .teacher__img > img {
+    position: absolute;
+    width: 145px;
+    height: 150px;
+    object-fit: cover;
+    top: -10px;
+    left: 3%;
+    z-index: 1;
   }
   .teacher__name {
     margin-top: 5px;
@@ -2180,30 +2150,28 @@ ul {
 }
 
 /* --------------------------------------
-  レスポンシブ min-width: 1020px; 
+  レスポンシブ min-width: 1024px; 
   ----------------------------------------*/
 @media screen and (min-width: 1024px) {
-  .work__inner {
-    margin-bottom: 130px;
-    max-width: 950px;
-    margin: 0 auto 130px;
+  .l-work__wrapper {
+    padding: 100px 0 0;
   }
-  .work__text {
-    margin-top: 45px;
+  .teacher__wrapper {
+    max-width: 950px;
+    margin: 0 auto 110px;
   }
   .work__content {
-    width: 55%;
+    width: 460px;
+    margin: 0 auto;
+  }
+  .work__text {
+    margin-top: 35px;
+    width: 85%;
   }
   .work__item {
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 75px 0;
-  }
-  .work__item {
-    position: relative;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     padding: 75px 0;
@@ -2211,7 +2179,7 @@ ul {
   .balloon1::before {
     position: absolute;
     display: block;
-    left: 33%;
+    left: 39px;
     bottom: -34px;
     border-right: 30px solid #FFE669;
     border-top: 30px solid transparent;
@@ -2219,8 +2187,8 @@ ul {
   }
   .work__point {
     position: absolute;
-    top: 2%;
-    left: 31%;
+    top: 28%;
+    left: 37.5%;
   }
   .balloon1 {
     padding: 20px 15px 5px;
@@ -2228,37 +2196,27 @@ ul {
   .work__img {
     max-width: 250px;
   }
-  .work__content {
-    width: 63%;
-  }
-  .work__text {
-    margin-top: 78.5px;
-  }
   .teacher__container {
     display: grid;
     grid-template-columns: repeat(3, 260px);
-    gap: 70px 30px;
+    gap: 30px 30px;
     justify-content: center;
   }
   .teacher__card {
-    height: 410px;
+    height: 95%;
   }
-  .teacher__img {
+  .teacher__img > img {
     position: absolute;
-    top: -5%;
-    left: 10%;
-    width: 80%;
-    height: auto;
+    width: 205px;
+    height: 220px;
     object-fit: cover;
-    margin: 0 auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 0;
   }
   .teacher__name {
     margin-top: 15px;
-  }
-  .teacher__prof {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
   }
   .work__catch {
     font-size: 3.2rem;
@@ -2268,15 +2226,15 @@ ul {
   }
   .work__title,
   .experience__title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.71429;
     letter-spacing: 0em;
   }
   .work__text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 2.18182;
+    line-height: 2.11111;
     letter-spacing: 0em;
   }
   .balloon1 {
@@ -2303,8 +2261,8 @@ ul {
     line-height: 1.33333;
     letter-spacing: 0em;
   }
-  .experience__inner {
-    padding: 45px 0 95px;
+  .experience__title {
+    margin-bottom: 30px;
   }
   .pattern {
     width: 35px;
@@ -2329,9 +2287,9 @@ ul {
     letter-spacing: 0em;
   }
   .check__item {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: bold;
-    line-height: 1.55556;
+    line-height: 1.35714;
     letter-spacing: 0em;
   }
   .experience__text {
@@ -2346,25 +2304,21 @@ ul {
   レスポンシブ min-width: 1440px; 
   ----------------------------------------*/
 @media screen and (min-width: 1440px) {
+  .teacher__wrapper {
+    padding: 80px 0 120px;
+  }
   .work__catch {
     margin-bottom: 100px;
+    padding: 0;
   }
   .work__inner {
     max-width: 1200px;
     margin: 0 auto 130px;
   }
-  .balloon1 {
-    padding: 26px 15px 14px;
-  }
-  .balloon1::before {
-    position: absolute;
-    left: 32%;
-    bottom: -40px;
-  }
-  .work__point {
-    position: absolute;
-    top: 8%;
-    left: 26%;
+  .work__content {
+    text-align: left;
+    width: 680px;
+    margin: 0;
   }
   .work__item {
     position: relative;
@@ -2372,6 +2326,14 @@ ul {
     justify-content: space-between;
     align-items: flex-end;
     padding: 75px 0;
+    margin: 0;
+  }
+  .work__img {
+    max-width: 300px;
+    margin-left: 6vw;
+  }
+  .teacher__text {
+    padding: 40px 0 20px;
   }
   .check__item {
     display: flex;
@@ -2383,6 +2345,9 @@ ul {
     display: inline-block;
     width: 48px;
     height: 48px;
+  }
+  .experience__inner {
+    padding: 45px 0 95px;
   }
   .experience__btn {
     margin-bottom: 50px;
@@ -2405,6 +2370,12 @@ ul {
     line-height: 1.75;
     letter-spacing: 0em;
   }
+  .work__catch {
+    font-size: 4.6rem;
+    font-weight: bold;
+    line-height: 1.04348;
+    letter-spacing: 0em;
+  }
   .balloon1,
   .experience__text {
     font-size: 2.8rem;
@@ -2425,13 +2396,50 @@ ul {
   }
 }
 
+/* --------------------------------------
+  レスポンシブ min-width: 1920px; 
+  ----------------------------------------*/
+@media screen and (min-width: 1920px) {
+  .teacher__wrapper {
+    max-width: 1440px;
+    margin: 0 auto 110px;
+  }
+  .work__img {
+    width: 280px;
+    height: 230px;
+    margin: 0;
+  }
+  .work__point {
+    position: absolute;
+    top: 8%;
+    left: 34%;
+  }
+  .teacher__container {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px 30px;
+    justify-content: center;
+  }
+  .teacher__prof {
+    margin-top: 63%;
+  }
+  .experience__content {
+    margin: 0 15vw;
+  }
+  .teacher__text {
+    font-size: 3.2rem;
+    line-height: 1.75;
+    letter-spacing: 0em;
+  }
+}
+
 .faq__wrapper {
   margin-top: 30px;
 }
 
 .qa-list {
-  max-width: 310px;
-  margin: 0 auto;
+  max-width: 1210px;
+  margin: 0 3vw 0;
 }
 
 .q__text {
@@ -2507,63 +2515,6 @@ ul {
   color: #707070;
 }
 
-.info__list {
-  width: 300px;
-  margin: 30px auto;
-}
-
-.info__item__wrapper {
-  margin-bottom: 20px;
-}
-
-.info__content {
-  margin-top: 15px;
-  padding-bottom: 2%;
-}
-
-.info__item__wrapper {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 0em;
-  color: #707070;
-}
-
-.info {
-  padding: 0 3vw;
-  border-radius: 60px;
-  color: #707070;
-}
-
-.info__notice {
-  background-color: #00A2FF70;
-}
-
-.info__event {
-  background-color: #FFD70070;
-}
-
-.info__topic {
-  background-color: #0FE30070;
-}
-
-.info__border {
-  height: 1px;
-  position: relative;
-}
-
-.info__border::before {
-  content: "";
-  background-image: linear-gradient(to right, #707070, #707070 15px, transparent 15px, transparent 20px);
-  background-size: 20px 2px;
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 /* --------------------------------------
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
@@ -2572,8 +2523,7 @@ ul {
     margin-top: 50px;
   }
   .qa-list {
-    max-width: 590px;
-    margin: 0 auto;
+    margin: 0 5vw 0;
     padding: 0 2vw;
   }
   .q__text {
@@ -2615,9 +2565,6 @@ ul {
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
-  .faq__wrapper {
-    max-width: 750px;
-  }
   .q__text,
   .a__text,
   .faq__text {
@@ -2632,6 +2579,10 @@ ul {
     line-height: 1.25;
     letter-spacing: 0em;
   }
+  .qa-list {
+    margin: 0 10vw 0;
+    padding: 0 2vw;
+  }
   .faq__contact {
     margin-top: 100px;
   }
@@ -2642,6 +2593,27 @@ ul {
   .contact__main__btn > a {
     padding: 40px 0;
     max-width: 650px;
+  }
+  .q__text,
+  .a__wrapper {
+    padding: 30px 20px 30px 100px;
+  }
+  .q__text ::before,
+  .a__wrapper ::before {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 3.4rem;
+  }
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 1440px; 
+----------------------------------------*/
+@media screen and (min-width: 1440px) {
+  .qa-list {
+    margin: 0 15vw 0;
+    padding: 0 2vw;
   }
 }
 
@@ -2711,9 +2683,9 @@ ul {
   color: #707070;
   position: relative;
   z-index: 0;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.14286;
+  line-height: 1.6;
   letter-spacing: 0em;
 }
 
@@ -2722,14 +2694,20 @@ ul {
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
   .contact__bg {
-    height: 500px;
-    padding-top: 10%;
+    height: 700px;
+    padding-top: 20%;
   }
   .contact__text {
     max-width: 590px;
     font-size: 2.3rem;
     font-weight: bold;
     line-height: 1.3913;
+    letter-spacing: 0em;
+  }
+  .contact__main__btn > a {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.4375;
     letter-spacing: 0em;
   }
 }
@@ -2739,29 +2717,29 @@ ul {
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
   .contact__bg {
-    height: 80vh;
+    padding-top: 10%;
   }
   .main__title {
     padding: 40px 0;
   }
   .contact__text {
-    max-width: 750px;
+    max-width: 950px;
     padding: 7% 0 5%;
   }
   .contact__main__btn > a {
-    padding: 30px 0;
+    padding: 35px 0;
     max-width: 600px;
   }
   .contact__text {
-    font-size: 2.7rem;
+    font-size: 3.8rem;
     font-weight: bold;
-    line-height: 2.22222;
+    line-height: 1.57895;
     letter-spacing: 0em;
   }
-  .contact__main__btn {
-    font-size: 3.6rem;
+  .contact__main__btn > a {
+    font-size: 4.2rem;
     font-weight: bold;
-    line-height: 1.27778;
+    line-height: 1.09524;
     letter-spacing: 0em;
   }
 }
@@ -2773,14 +2751,11 @@ ul {
 .info__list {
   max-width: 1210px;
   margin-top: 50px;
+  padding: 0 3vw;
 }
 
 .info__item__wrapper {
   margin: 0 auto 20px;
-}
-
-.info__item {
-  align-items: center;
 }
 
 .info__border {
@@ -2931,14 +2906,21 @@ ul {
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
+  .l-info__wrapper {
+    padding: 0 0 45px;
+  }
   .info {
     padding: 0 15px;
     margin: 0 35px 0 35px;
   }
   .info__list {
-    width: 600px;
-    margin: 30px auto 0;
+    margin: 30px 5vw 0;
     padding: 0 3vw;
+  }
+  .info__item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px;
   }
 }
 
@@ -2947,11 +2929,7 @@ ul {
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
   .info__list {
-    max-width: 750px;
-    margin: 50px auto 0;
-  }
-  .info__item {
-    padding: 20px 0;
+    margin: 50px 10vw 0;
   }
   .info {
     padding: 0 2vw;
@@ -2988,6 +2966,12 @@ ul {
 レスポンシブ min-width: 1440px; 
 ----------------------------------------*/
 @media screen and (min-width: 1440px) {
+  .info__list {
+    margin: 50px 15vw 0;
+  }
+  .info {
+    padding: 0 2vw;
+  }
   /* info ページ */
   .l-info-page__wrapper {
     display: flex;

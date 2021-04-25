@@ -13,10 +13,11 @@
   flex-direction: column;
   align-items: flex-end;
   padding: 150px 0 70px;
+  margin: 0 3vw;
 }
 .work__content {
-  width: 310px;
-  margin: 20px auto 0;
+  margin: 30px 0 0;
+  text-align: center;
 }
 .work__img {
   max-width: 300px;
@@ -33,7 +34,7 @@
 }
 .balloon1{
   position: relative;
-  padding: 20px;
+  padding: 20px 20px 10px;
   border-radius: 50%;
   text-align: center;
   background-color: #FFE669;
@@ -44,11 +45,11 @@
   display: block;
   width: 0;
   height: 0;
-  left: 35%;
-  bottom: -45px;
+  left: 47px;
+  bottom: -40px;
   border-right: 40px solid #FFE669;
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
   transform: rotate(-90deg);
 }
 .work__point__text {
@@ -72,16 +73,23 @@
   padding: 50px 0;
 }
 .teacher__img {
-  position: absolute;
-  top: -30px;
-  left: 10px;
+  position: relative;
   width: 270px;
   height: auto;
   object-fit: cover;
   margin: 0 auto;
+  > img {
+    position: absolute;
+    width: 265px;
+    height: 270px;
+    object-fit: cover;
+    top: -25px;
+    left: 0;
+    z-index: 1;
+  }
 }
 .teacher__prof {
-  margin-top: 85%;
+  margin-top: 95%;
   text-align: center;
 }
 .teacher__container {
@@ -89,27 +97,16 @@
   flex-direction: column;
 }
 .teacher__card {
-  position: relative;
   background-color: #F7FBFE;
   box-shadow: 0 0 12px #00000016;
   width: 290px;
   margin: 40px auto 30px;
   height: 470px;
 }
-// .teacher__card {
-//   position: relative;
-//   background-color: #F7FBFE;
-//   box-shadow: 0 0 12px #00000016;
-//   height: 470px;
-// }
 .teacher__name {
   margin-top: 10px;
   text-align: center;
 }
-// .teacher__name {
-//   margin-top: 30px;
-//   text-align: center;
-// }
 .teacher__content {
   text-align: center;
   padding: 25px 0;
@@ -192,7 +189,7 @@
     @include f_around(2.4, 3.6, bold, 0);
   }
   .work__title {
-    @include f_around(1.9, 2.0, bold, 0);
+    @include f_around(1.8, 2.0, bold, 0);
     color: #4DADED;
   }
   .work__text {
@@ -204,11 +201,6 @@
     @include f_around(1.8, 2.8, bold, 0);
     color: #707070;
   }
-  // .teacher__text,
-  // .teacher__name {
-  //   @include f_around(3.2, 3.8, bold, 0);
-  //   color: #707070;
-  // }
 
   .teacher__content {
     @include f_around(1.8, 2, bold, 0);
@@ -238,31 +230,17 @@
     .work__inner {
       padding-bottom: 65px;
     }
-    .work__item {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: flex-end;
-      padding: 35px 0;
-    }
-    .work__img {
-      max-width: 200px;
-    }
     .work__content {
-      width: 360px;
+      margin: 20px 10vw;
     }
     .work__text {
       margin-top: 20px;
     }
     .work__point {
       position: absolute;
-      top: 20%;
-      left: 34%;
-    }
-    .balloon1 {
-      padding: 10px;
-      position: relative;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .balloon1::before {
       content: '';
@@ -270,11 +248,12 @@
       display: block;
       width: 0;
       height: 0;
-      left: 30%;
-      bottom: -30px;
-      border-right: 30px solid #FFE669;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
+      left: 27px;
+      bottom: -40px;
+      border-right: 40px solid #FFE669;
+      border-top: 35px solid transparent;
+      border-bottom: 35px solid transparent;
+      transform: rotate(-90deg);
     }
     .pattern {
       width: 28px;
@@ -296,7 +275,7 @@
     
 
     .teacher__wrapper {
-      width: 580px;
+      max-width: 580px;
       margin: 0 auto 70px;
     }
     .teacher__container {
@@ -311,13 +290,17 @@
       margin: 40px 0 0;
     }
     .teacher__img {
-      position: absolute;
-      top: -5%;
-      left: 4%;
-      width: 150px;
-      height: auto;
-      object-fit: cover;
+      position: relative;
       margin: 0 auto;
+      > img {
+        position: absolute;
+        width: 145px;
+        height: 150px;
+        object-fit: cover;
+        top: -10px;
+        left: 3%;
+        z-index: 1;
+      }
     }
     .teacher__name {
       margin-top: 5px;
@@ -360,30 +343,28 @@
   }
 
   /* --------------------------------------
-  レスポンシブ min-width: 1020px; 
+  レスポンシブ min-width: 1024px; 
   ----------------------------------------*/
   @include mq-up($breakpoint: md) {
-    .work__inner {
-      margin-bottom: 130px;    
-      max-width: 950px;
-      margin: 0 auto 130px;
+    .l-work__wrapper {
+      padding: 100px 0 0;
     }
-    .work__text  {
-      margin-top: 45px
+    .teacher__wrapper {
+      max-width: 950px;
+      margin: 0 auto 110px;
     }
     .work__content {
-      width: 55%;
+      width: 460px;
+      margin: 0 auto; 
+    }
+    .work__text {
+      margin-top: 35px;
+      width: 85%;
     }
     .work__item {
       position: relative;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      padding: 75px 0;
-    }
-    .work__item {
-      position: relative;
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
       padding: 75px 0;
@@ -391,7 +372,7 @@
     .balloon1::before {
       position: absolute;
       display: block;
-      left: 33%;
+      left: 39px;
       bottom: -34px;
       border-right: 30px solid #FFE669;
       border-top: 30px solid transparent;
@@ -399,8 +380,8 @@
     }
     .work__point {
       position: absolute;
-      top: 2%;
-      left: 31%;
+      top: 28%;
+      left: 37.5%;
     }
     .balloon1 {
       padding: 20px 15px 5px;
@@ -408,49 +389,45 @@
     .work__img {
       max-width: 250px;
     }
-    .work__content {
-      width: 63%;
-    }
-    .work__text {
-      margin-top: 78.5px;
-    }
-
 
     .teacher__container {
       display: grid;
       grid-template-columns: repeat(3, 260px);
-      gap: 70px 30px;
+      gap: 30px 30px;
       justify-content: center;
     }
     .teacher__card {
-      height: 410px;
+      height: 95%;
     }
     .teacher__img {
-      position: absolute;
-      top: -5%;
-      left: 10%;
-      width: 80%;
-      height: auto;
-      object-fit: cover;
-      margin: 0 auto;
+      > img {
+        position: absolute;
+        width: 205px;
+        height: 220px;
+        object-fit: cover;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        z-index: 0;
+      }
     }
     .teacher__name {
       margin-top: 15px;
     }
-    .teacher__prof {
-      position: absolute;
-      bottom: 10%;
-      left: 10%;
-    }
+    // .teacher__prof {
+    //   position: absolute;
+    //   bottom: 10%;
+    //   left: 10%;
+    // }
     .work__catch {
       @include f_around(3.2, 3.8, bold, 0);
     }
     .work__title,
     .experience__title {
-      @include f_around(3.2, 4.8, bold, 0);
+      @include f_around(2.8, 4.8, bold, 0);
     }
     .work__text  {
-      @include f_around(2.2, 4.8, bold, 0);
+      @include f_around(1.8, 3.8, bold, 0);
     }
     .balloon1 {
       @include f_around(2, 3, bold, 0);
@@ -465,8 +442,8 @@
       @include f_around(2.4, 3.2, bold, 0);
     }
 
-    .experience__inner {
-      padding: 45px 0 95px;
+    .experience__title {
+      margin-bottom: 30px;
     }
     .pattern {
       width: 35px;
@@ -489,8 +466,7 @@
       @include f_around(2.8, 3.2, bold, 0);
     }
     .check__item {
-    // @include f_around(2.8, 3.8, bold, 0);
-    @include f_around(1.8, 2.8, bold, 0);
+    @include f_around(2.8, 3.8, bold, 0);
     }
     .experience__text {
       @include f_around(2.4, 2.8, bold, 0);
@@ -501,25 +477,21 @@
   レスポンシブ min-width: 1440px; 
   ----------------------------------------*/
   @include mq-up($breakpoint: lg) {
+    .teacher__wrapper {
+      padding: 80px 0 120px;
+    }
     .work__catch {
       margin-bottom: 100px;
+      padding: 0;
     }
     .work__inner {
       max-width: 1200px;
       margin: 0 auto 130px;
     }
-    .balloon1{
-      padding: 26px 15px 14px;
-    }
-    .balloon1::before{
-      position: absolute;
-      left: 32%;
-      bottom: -40px;
-    }
-    .work__point {
-      position: absolute;
-      top: 8%;
-      left: 26%;
+    .work__content {
+      text-align: left;
+      width: 680px;
+      margin: 0; 
     }
     .work__item {
       position: relative;
@@ -527,9 +499,16 @@
       justify-content: space-between;
       align-items: flex-end;
       padding: 75px 0;
+      margin: 0;
     }
-
-
+    .work__img {
+      max-width: 300px;
+      margin-left: 6vw;
+    }
+    
+    .teacher__text {
+      padding: 40px 0 20px;
+    }
     .check__item {
       display: flex;
     }
@@ -540,6 +519,9 @@
       display: inline-block;
       width: 48px;
       height: 48px;
+    }
+    .experience__inner {
+      padding: 45px 0 95px;
     }
     .experience__btn {
       margin-bottom: 50px;
@@ -558,6 +540,9 @@
     .work__text{
       @include f_around(3.2, 5.6, false, 0);
     }
+    .work__catch {
+      @include f_around(4.6, 4.8, bold, 0);
+    }
     .balloon1,
     .experience__text {
       @include f_around(2.8, 4, bold, 0);
@@ -567,5 +552,41 @@
     }
     .btn__experience > a {
       @include f_around(3.6, 5.8, bold, 0);
+    }
+  }
+  
+  /* --------------------------------------
+  レスポンシブ min-width: 1920px; 
+  ----------------------------------------*/
+  @include mq-up($breakpoint: xl) {
+    .teacher__wrapper {
+      max-width: 1440px;
+      margin: 0 auto 110px;
+    }
+    .work__img {
+      width: 280px;
+      height: 230px;
+      margin: 0;
+    }
+    .work__point {
+      position: absolute;
+      top: 8%;
+      left: 34%;
+    }
+    .teacher__container {
+      display: grid;
+      grid-template-columns: repeat(3, 360px);
+      gap: 30px 30px;
+      justify-content: center;
+    }
+    .teacher__prof {
+      margin-top: 63%;
+    }
+    .experience__content {
+      margin: 0 15vw;
+    }
+    
+    .teacher__text {
+      @include f_around(3.2, 5.6, false, 0);
     }
   }

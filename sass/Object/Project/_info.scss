@@ -4,12 +4,10 @@
   .info__list {
     max-width: 1210px;
     margin-top: 50px;
+    padding: 0 3vw;
   }
   .info__item__wrapper {
     margin: 0 auto 20px;
-  }
-  .info__item {
-    align-items: center;
   }
   .info__border {
     height: 1px;
@@ -126,15 +124,23 @@
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: sm) {
+  .l-info__wrapper {
+    padding: 0 0 45px;
+  }
   .info {
     padding: 0 15px;
     margin: 0 35px 0 35px;
   }
   .info__list {
-    width: 600px;
-    margin: 30px auto 0;
+    margin: 30px 5vw 0;
     padding: 0 3vw;
   }
+  .info__item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px;
+  }
+
 }
 
 /* --------------------------------------
@@ -142,11 +148,7 @@
 ----------------------------------------*/
 @include mq-up($breakpoint: md) {
   .info__list {
-    max-width: 750px;
-    margin: 50px auto 0;
-  }
-  .info__item {
-    padding: 20px 0;
+    margin: 50px 10vw 0;
   }
   .info {
     padding: 0 2vw;
@@ -166,7 +168,6 @@
   .news__text {
     @include f_around(2.2, 5.2, bold, 0);
   }
-  
 }
 
 
@@ -174,6 +175,12 @@
 レスポンシブ min-width: 1440px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: lg) {
+  .info__list {
+    margin: 50px 15vw 0;
+  }
+  .info {
+    padding: 0 2vw;
+  }
 
   /* info ページ */
   .l-info-page__wrapper {

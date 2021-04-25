@@ -2,15 +2,14 @@
   position: relative;
 }
 .service__catch {
-  width: 310px;
   margin: 0 auto;
+  padding: 0 4vw;
   text-align: center;
   margin-top: 15px;
   color: #707070;
 }
 .service__img {
-  width: 270px;
-  // height: 627px;
+  max-width: 950px;
   box-shadow: 18px 24px 6px #00000016;
   > img {
     object-fit: cover;
@@ -33,9 +32,8 @@
   padding: 30px 0 50px;
 }
 .service__course {
-  max-width: 310px;
-  margin: 0 auto;
-  padding: 30px 5% 30px;
+  margin: 0 3vw;
+  padding: 30px 10vw 30px;
   border: 1px solid #4DADED;
 }
 
@@ -59,7 +57,6 @@
   align-items: flex-end
 }
 .service__sub__title {
-  width: 90%;
   margin-top: 3%;
   padding-left: 2vw;
 }
@@ -72,12 +69,12 @@
   > a{
     display: block;
     text-align: center;
-    width: 200px;
+    max-width: 500px;
     padding: 2vw 0;
     border-radius: 50px;
     background-color: #FFE669;
     box-shadow: 6px 8px 6px #00000017;
-    margin: 0 15% 0 auto;
+    margin: 0 auto;
   }
 }
 .service__line {
@@ -122,10 +119,6 @@
 .page__map {
   margin: 32px 0 32px 25px;
 }
-.service__item {
-  max-width: 640px;
-  margin-left: 60px;
-}
 .service__content__title,
 .service__content__sub-title {
   display: inline-block;
@@ -135,12 +128,6 @@
   border-bottom: 4px solid #4DADED;
   margin-bottom: 48px;
 }
-.service__img {
-  width: 270px;
-  height: 175px;
-  object-fit: cover;
-  margin: 0 5% 0 auto;
-}  
 .service__content__sub-title {
   border-bottom: 1px solid #4DADED;
   margin-bottom: 24px;
@@ -186,17 +173,17 @@
   opacity: 16%;
 }
 .service__title {
-  @include f_around(2, 4, bold, 0);
+  @include f_around(1.8, 4, bold, 0);
   color: #4DADED;
 }
 .service__sub__title,
 .service__content__sub-title {
-  @include f_around(1.8, 2.8, bold, 0);
+  @include f_around(1.6, 2.8, bold, 0);
   color: #707070;
 }
 .service__text,
 .service__content__text {
-  @include f_around(1.6, 2.5, false, 0);
+  @include f_around(1.4, 2.5, false, 0);
   color: #707070;
 }
 .service__content__title {
@@ -209,52 +196,16 @@
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: sm) {
-  .service__catch {
-    width: 550px;
-  }
   .service__inner {
     padding: 40px 0 70px;
   }
-  .service__course {
-    max-width: 80%;
-    margin: 0 0 auto;
-    padding: 15px 6vw 0 3vw;
-  }
   .service__title__wrapper {
-    width: 80%;
-    padding: 11% 0 0 11%;
-  }
-  .service__img {
-    position: absolute;
-    right: -25%;
-    bottom: -25%;
-    z-index: 0;
-    width: 250px;
-    height: 350px;
-  }
-  .reverse {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .reverse__text {
-    width: 80%;
-  }
-  .absolute__reverse {
-    position: absolute;
-    left: -18%;
-    bottom: -25%;
-    margin: auto 0 0;
-    z-index: 0;
+    padding: 65px 0 0 65px;
   }
   .service__line {
     max-width: 50%;
     height: 45px;
     margin-top: 35px;
-  }
-  .btn__reverse {
-    > a{
-      margin: 0 0 0 auto;
-    }
   }
   .btn__course > a {
     width: 450px;
@@ -265,13 +216,16 @@
     @include f_around(1.8, 4, false, 30);
   }
   .service__num {
-    @include f_around(5.2, 12.4, bold, 0);
+    @include f_around(6.2, 12.4, bold, 0);
   }
   .service__title {
-    @include f_around(2.6, 4.7, bold, 0);
+    @include f_around(2.8, 4.7, bold, 0);
   }
   .service__sub__title {
-    @include f_around(2, 3, bold, 0);
+    @include f_around(2, 3.2, bold, 0);
+  }
+  .service__text {
+    @include f_around(1.7, 2.8, false, 0);
   }
 }
 
@@ -284,10 +238,13 @@
   }
   .service__course {
     max-width: 80%;
+    margin: 0 3vw;
+    padding: 30px 5vw 30px;
+    border: 1px solid #4DADED;
   }
   .service__title__wrapper {
     width: 80%;
-    padding: 10% 0 0 12%;
+    padding: 75px 0 0 83px;
   }
   .service__img {
     position: absolute;
@@ -300,6 +257,9 @@
   }
   .reverse__text {
     width: 80%;
+  }
+  .reverse {
+    margin-left: auto;
   }
   .absolute__reverse {
     position: absolute;
@@ -325,7 +285,7 @@
     @include f_around(8.2, 13.4, bold, 0);
   }
   .service__title {
-    @include f_around(3.6, 5.7, bold, 0);
+    @include f_around(3, 4.7, bold, 0);
   }
   .service__sub__title,
   .service__content__sub-title {
@@ -344,10 +304,13 @@
   .btn__section {
     margin-top: 25px;
     > a{
+      width: 40%;
       padding: 1vw 1.5vw;
-      margin: 0 auto;
       @include f_around(2.2, 4.0, bold, 0);
     }
+  }
+  .btn__reverse >a {
+    margin: 0 0 0 auto;
   }
 }
 
@@ -415,14 +378,17 @@
 レスポンシブ min-width: 1920px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: xl) {
+  .l-section__wrapper {
+    padding: 150px 0;
+  }
   .service__relative {
     position: relative;
   }
   .service__catch {
-    width: 310px;
+    // width: 310px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 50px;
     color: #707070;
   }
   .section__title::before,
@@ -448,13 +414,6 @@
     border: 1px solid #4DADED;
   }
   
-  .service__course {
-    max-width: 1320px;
-    // height: 620px;
-    padding: 75px 5% 53px;
-    border: 1px solid #4DADED;
-  }
-  
   
   .service__num {
     @include f_around(11.2, 13.4, bold, 0);
@@ -466,7 +425,7 @@
     display: flex; 
     align-items: flex-end;
     width: 90%;
-    padding: 5% 0 0 11%;
+    padding: 7% 0 10px 11%;
     border-bottom: 1px solid #707070;
   }
   .service__sub__title {
@@ -485,26 +444,20 @@
   .service__img {
     position: absolute;
     right: -30%;
-    bottom: -30%;
+    bottom: -25%;
     z-index: 0;
     width: 40%;
-    // height: 627px;
+    height: 627px;
     box-shadow: 18px 24px 6px #00000016;
     > img {
       object-fit: cover;
       object-position: 50%;
     }
   }
-  .service__img {
-    width: 800px;
-    height: 475px;
-    object-fit: cover;
-    margin: 0 5% 0 auto;
-  }  
   .absolute__reverse{
     position: absolute;
     left: -30%;
-    bottom: -30%;
+    bottom: -25%;
     z-index: 0;
   }
   .btn__section {
@@ -543,7 +496,9 @@
     }
   }
   
-  
+  .service__catch {
+    @include f_around(3.8, 5.5, false, 30);
+  }  
   .service__sub__title,
   .service__content__sub-title {
     @include f_around(4.0, 4.8, bold, 0);
@@ -560,6 +515,7 @@
       color: #707070;
     }
   }  
+  
 }
 
   
