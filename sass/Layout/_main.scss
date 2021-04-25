@@ -7,12 +7,10 @@
   justify-content: center;
   text-align: center;
 }
-
 .section__title {
   @include f_around(2.4, 4.8, bold, 0);
   color: #707070;
 }
-
 
 /* --------------------------------------
 レスポンシブ min-width: 600px; 
