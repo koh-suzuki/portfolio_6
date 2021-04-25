@@ -21,6 +21,9 @@
   .l-section__wrapper {
     padding: 80px 0;
   }
+  .section__title {
+    @include f_around(2.8, 4.8, bold, 0);
+  }
 }
 /* --------------------------------------
 レスポンシブ min-width: 1020px; 

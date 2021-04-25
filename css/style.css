@@ -698,6 +698,12 @@ ul {
   .l-section__wrapper {
     padding: 80px 0;
   }
+  .section__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.71429;
+    letter-spacing: 0em;
+  }
 }
 
 /* --------------------------------------
@@ -1800,6 +1806,11 @@ ul {
   display: block;
 }
 
+.check__item {
+  display: flex;
+  align-items: center;
+}
+
 .teacher__wrapper {
   background-color: #ffffff;
   box-shadow: 0 3px 20px #00000016;
@@ -1823,9 +1834,7 @@ ul {
 }
 
 .teacher__prof {
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
+  margin-top: 85%;
   text-align: center;
 }
 
@@ -1882,7 +1891,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 9vw;
+  padding: 0 2vw;
 }
 
 .experience__check {
@@ -1908,7 +1917,7 @@ ul {
 
 .btn__experience {
   text-align: center;
-  width: 270px;
+  width: 300px;
   background-color: #FFE669;
   border-radius: 50px;
 }
@@ -1919,8 +1928,8 @@ ul {
 }
 
 .pattern {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-right: 2vw;
 }
 
@@ -1980,9 +1989,9 @@ ul {
 }
 
 .check__item {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.09091;
   letter-spacing: 0em;
   color: #ffffff;
 }
@@ -1996,9 +2005,9 @@ ul {
 }
 
 .btn__experience > a {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.55556;
+  line-height: 1.27273;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -2052,6 +2061,12 @@ ul {
     width: 28px;
     height: 28px;
   }
+  .work__catch {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.63636;
+    letter-spacing: 0em;
+  }
   .work__title {
     font-size: 2.2rem;
     font-weight: bold;
@@ -2082,7 +2097,7 @@ ul {
   }
   .teacher__card {
     width: 100%;
-    height: 350px;
+    height: 300px;
     margin: 40px 0 0;
   }
   .teacher__img {
@@ -2100,11 +2115,6 @@ ul {
   .teacher__text {
     padding: 20px 15vw 10px;
   }
-  .teacher__prof {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-  }
   .teacher__name {
     font-size: 1.6rem;
     font-weight: bold;
@@ -2112,15 +2122,15 @@ ul {
     letter-spacing: 0em;
   }
   .teacher__content {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    line-height: 1.42857;
+    line-height: 1.66667;
     letter-spacing: 0em;
   }
   .check__item {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.66667;
     letter-spacing: 0em;
   }
   .experience__title {
@@ -2145,10 +2155,6 @@ ul {
     line-height: 1.45455;
     letter-spacing: 0em;
     padding: 7px 0;
-  }
-  .check__item {
-    display: flex;
-    align-items: center;
   }
   .experience__content {
     display: flex;
@@ -2404,8 +2410,12 @@ ul {
 }
 
 .faq__wrapper {
+  margin-top: 30px;
+}
+
+.qa-list {
   max-width: 310px;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 
 .q__text {
@@ -2539,6 +2549,52 @@ ul {
 }
 
 /* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .faq__wrapper {
+    margin-top: 50px;
+  }
+  .qa-list {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+  .q__text {
+    padding: 20px 20px 20px 55px;
+  }
+  .q__text ::before {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-size: 3.4rem;
+  }
+  .a__text ::before {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 3.4rem;
+  }
+  .a__wrapper {
+    padding: 30px 54px 30px;
+  }
+  .faq__contact {
+    margin-top: 50px;
+  }
+  .info__item {
+    display: flex;
+    align-items: center;
+  }
+  .q__text,
+  .a__text,
+  .faq__text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.27273;
+    letter-spacing: 0em;
+  }
+}
+
+/* --------------------------------------
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -2623,20 +2679,24 @@ ul {
   color: #707070;
 }
 
+.contact__main__btn {
+  padding: 0 3vw;
+}
+
 .contact__main__btn > a {
   margin: 0 auto;
   display: block;
   text-align: center;
   background-color: #FFE669;
   padding: 20px 0;
-  max-width: 270px;
+  max-width: 460px;
   border-radius: 100px;
   color: #707070;
   position: relative;
   z-index: 0;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  line-height: 1.11111;
+  line-height: 1.14286;
   letter-spacing: 0em;
 }
 
@@ -2672,140 +2732,175 @@ ul {
   }
 }
 
+.l-info__wrapper {
+  padding: 0 0 85px;
+}
+
+.info__list {
+  max-width: 1210px;
+  margin-top: 50px;
+}
+
+.info__item__wrapper {
+  margin: 0 auto 20px;
+}
+
+.info__item {
+  align-items: center;
+}
+
+.info__border {
+  height: 1px;
+  position: relative;
+}
+
+.info__border::before {
+  content: "";
+  background-image: linear-gradient(to right, #707070, #707070 20px, transparent 20px, transparent 25px);
+  background-size: 25px 1px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.info__day {
+  display: inline-block;
+}
+
+.info {
+  display: inline-block;
+  padding: 0 3vw;
+  margin: 0 4vw 0 7vw;
+  border-radius: 50px;
+}
+
+.info__content {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.info__item {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0em;
+  color: #707070;
+}
+
+.info__item > .info {
+  color: #707070;
+}
+
+.info__notice {
+  background-color: #00A2FF60;
+}
+
+.info__event {
+  background-color: #FFD70060;
+}
+
+.info__topic {
+  background-color: #0FE30060;
+}
+
+/* info ページ */
+.l-info-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 78px;
+}
+
+.c-info__news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 42px;
+  width: 1525px;
+  margin: 0 auto;
+  padding: 32px 54px;
+}
+
+.info__img {
+  max-width: 408px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.news__content {
+  width: 65%;
+}
+
+.news__date,
+.news__bage {
+  margin-bottom: 13px;
+}
+
+.news__bage {
+  margin-left: 36px;
+}
+
+.news__title {
+  margin-bottom: 12px;
+}
+
+.news__text {
+  text-align: justify;
+}
+
+.pagination__wrapper {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.page__item {
+  display: inline-block;
+  padding: 14px 18px;
+  margin-left: 24px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+}
+
+.news__date,
+.news__bage {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0em;
+}
+
+.news__title {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0em;
+}
+
+.news__text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.85714;
+  letter-spacing: 0em;
+}
+
+.page__item {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0em;
+}
+
 /* --------------------------------------
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
-  .l-info__wrapper {
-    padding: 45px 0 85px;
-  }
   .info__list {
-    max-width: 1210px;
-    margin: 50px auto 0;
-  }
-  .info__item {
-    display: flex;
-    align-items: center;
-    padding: 30px 0;
-  }
-  .info__border {
-    height: 1px;
-    position: relative;
-  }
-  .info__border::before {
-    content: "";
-    background-image: linear-gradient(to right, #707070, #707070 20px, transparent 20px, transparent 25px);
-    background-size: 25px 1px;
-    background-repeat: repeat-x;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .info__day {
-    display: inline-block;
-  }
-  .info {
-    display: inline-block;
+    width: 600px;
+    margin: 30px auto 0;
     padding: 0 3vw;
-    margin: 0 4vw 0 7vw;
-    border-radius: 50px;
-  }
-  .info__content {
-    display: inline-block;
-  }
-  .info__item {
-    font-size: 3.2rem;
-    font-weight: bold;
-    line-height: 1.875;
-    letter-spacing: 0em;
-    color: #707070;
-  }
-  .info__item > .info {
-    color: #707070;
-  }
-  .info__notice {
-    background-color: #00A2FF60;
-  }
-  .info__event {
-    background-color: #FFD70060;
-  }
-  .info__topic {
-    background-color: #0FE30060;
-  }
-  /* info ページ */
-  .l-info-page__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 78px;
-  }
-  .c-info__news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    margin-bottom: 42px;
-    width: 1525px;
-    margin: 0 auto;
-    padding: 32px 54px;
-  }
-  .info__img {
-    max-width: 408px;
-    height: 215px;
-    object-fit: cover;
-  }
-  .news__content {
-    width: 65%;
-  }
-  .news__date,
-  .news__bage {
-    margin-bottom: 13px;
-  }
-  .news__bage {
-    margin-left: 36px;
-  }
-  .news__title {
-    margin-bottom: 12px;
-  }
-  .news__text {
-    text-align: justify;
-  }
-  .pagination__wrapper {
-    text-align: center;
-    margin-top: 22px;
-  }
-  .page__item {
-    display: inline-block;
-    padding: 14px 18px;
-    margin-left: 24px;
-    background-color: #ffffff;
-    border: 1px solid #707070;
-  }
-  .news__date,
-  .news__bage {
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2;
-    letter-spacing: 0em;
-  }
-  .news__title {
-    font-size: 4.8rem;
-    font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 0em;
-  }
-  .news__text {
-    font-size: 2.8rem;
-    font-weight: bold;
-    line-height: 1.85714;
-    letter-spacing: 0em;
-  }
-  .page__item {
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2;
-    letter-spacing: 0em;
   }
 }
 

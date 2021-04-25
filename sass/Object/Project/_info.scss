@@ -1,18 +1,15 @@
-/* --------------------------------------
-レスポンシブ min-width: 600px; 
-----------------------------------------*/
-@include mq-up($breakpoint: sm) {
   .l-info__wrapper {
-    padding: 45px 0 85px;
+    padding: 0 0 85px;
   }
   .info__list {
     max-width: 1210px;
-    margin: 50px auto 0;
+    margin-top: 50px;
+  }
+  .info__item__wrapper {
+    margin: 0 auto 20px;
   }
   .info__item {
-    display: flex;
     align-items: center;
-    padding: 30px 0;
   }
   .info__border {
     height: 1px;
@@ -39,12 +36,13 @@
     border-radius: 50px;
   }
   .info__content {
+    margin-top: 10px;
     display: inline-block;
   }
 
 
   .info__item {
-    @include f_around(3.2, 6.0, bold, 0);
+    @include f_around(1.6, 3.0, bold, 0);
     color: #707070;
     > .info {
       color: #707070;
@@ -122,6 +120,16 @@
   }
   .page__item {
     @include f_around(2.4, 4.8, bold, 0);
+  }
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@include mq-up($breakpoint: sm) {
+  .info__list {
+    width: 600px;
+    margin: 30px auto 0;
+    padding: 0 3vw;
   }
 }
 

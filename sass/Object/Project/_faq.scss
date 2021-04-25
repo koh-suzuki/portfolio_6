@@ -1,7 +1,9 @@
 .faq__wrapper {
+  margin-top: 30px;
+}
+.qa-list {
   max-width: 310px;
-  // margin: 70px auto 0; 
-  margin: 30px auto 0; 
+  margin: 0 auto; 
 }
 .q__text {
   display: flex;
@@ -116,6 +118,52 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@include mq-up($breakpoint: sm) {
+  .faq__wrapper {
+    margin-top: 50px;
+  }
+  .qa-list {
+    max-width: 590px;
+    margin: 0 auto; 
+  }
+  .q__text {
+    padding: 20px 20px 20px 55px;
+    ::before {
+      position: absolute;
+      top: 15%;
+      left: 2%;
+      font-size: 3.4rem;
+    }
+  }
+  .a__text {
+    ::before {
+      position: absolute;
+      top: 25%;
+      left: 2%;
+      font-size: 3.4rem;
+    }
+  }
+  .a__wrapper {
+    padding: 30px 54px 30px;
+  }
+  .faq__contact {
+    margin-top: 50px;
+  }
+  .info__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .q__text,
+  .a__text,
+  .faq__text {
+    @include f_around(2.2, 2.8, bold, 0);
+  }
 }
 
 /* --------------------------------------

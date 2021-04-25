@@ -54,7 +54,10 @@
 .work__point__text {
   display: block;
 }
-
+.check__item {
+  display: flex;
+  align-items: center;
+}
 
 .teacher__wrapper {
   background-color: #ffffff;
@@ -78,9 +81,7 @@
   margin: 0 auto;
 }
 .teacher__prof {
-  position: absolute;
-  bottom: 15%;
-  left: 10%;
+  margin-top: 85%;
   text-align: center;
 }
 .teacher__container {
@@ -145,7 +146,7 @@
   // justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 0 9vw;
+  padding: 0 2vw;
 }
 .experience__check {
   display: flex;
@@ -168,7 +169,7 @@
 .btn__experience {
   text-align: center;
   // width: 680px;
-  width: 270px;
+  width: 300px;
   background-color: #FFE669;
   border-radius: 50px;
   > a {
@@ -178,8 +179,8 @@
   }
 }
 .pattern {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-right: 2vw
 }  
   
@@ -218,7 +219,7 @@
     color: #ffffff;
   }
   .check__item {
-    @include f_around(1.6, 2.4, bold, 0);
+    @include f_around(2.2, 2.4, bold, 0);
     color: #ffffff;
   }
   .experience__text {
@@ -226,7 +227,7 @@
     color: #ffffff;
   }
   .btn__experience > a {
-    @include f_around(1.8, 2.8, bold, 0);
+    @include f_around(2.2, 2.8, bold, 0);
     color: #707070;
   }
   
@@ -280,6 +281,9 @@
       height: 28px;
     }
 
+    .work__catch {
+      @include f_around(2.2, 3.6, bold, 0);
+    }
     .work__title {
       @include f_around(2.2, 4.8, bold, 0);
     }
@@ -303,7 +307,7 @@
     }
     .teacher__card {
       width: 100%;
-      height: 350px;
+      height: 300px;
       margin: 40px 0 0;
     }
     .teacher__img {
@@ -321,20 +325,14 @@
     .teacher__text {
       padding: 20px 15vw 10px;
     }
-    .teacher__prof {
-      position: absolute;
-      bottom: 10%;
-      left: 10%;
-    }
-
     .teacher__name {
       @include f_around(1.6, 2, bold, 0);
     }
     .teacher__content {
-      @include f_around(1.4, 2, bold, 0);
+      @include f_around(1.2, 2, bold, 0);
     }
     .check__item {
-      @include f_around(2, 3, bold, 0);
+      @include f_around(1.8, 3, bold, 0);
     }
     .experience__title {
       @include f_around(2.8, 3.8, bold, 0);
@@ -349,11 +347,6 @@
         @include f_around(2.2, 3.2, bold, 0);
         padding: 7px 0;
       }
-    }
-      
-    .check__item {
-      display: flex;
-      align-items: center;
     }
     .experience__content {
       display: flex;

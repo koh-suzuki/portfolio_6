@@ -40,18 +40,19 @@
   color: #707070;
 }
 .contact__main__btn {
+  padding: 0 3vw;
   > a {
     margin: 0 auto;
     display: block;
     text-align: center;
     background-color: #FFE669;
     padding: 20px 0;
-    max-width: 270px;
+    max-width: 460px;
     border-radius: 100px;
     color: #707070;
     position: relative;
     z-index: 0;
-    @include f_around(1.8, 2, bold, 0);
+    @include f_around(2.8, 3.2, bold, 0);
   }
 }
 
