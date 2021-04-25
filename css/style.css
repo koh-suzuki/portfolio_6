@@ -2179,7 +2179,7 @@ ul {
   .balloon1::before {
     position: absolute;
     display: block;
-    left: 39px;
+    left: 32px;
     bottom: -34px;
     border-right: 30px solid #FFE669;
     border-top: 30px solid transparent;
@@ -2331,6 +2331,15 @@ ul {
   .work__img {
     max-width: 300px;
     margin-left: 6vw;
+  }
+  .balloon1::before {
+    position: absolute;
+    display: block;
+    left: 38px;
+    bottom: -34px;
+    border-right: 30px solid #FFE669;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
   }
   .teacher__text {
     padding: 40px 0 20px;

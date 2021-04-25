@@ -98,3 +98,11 @@
     @include f_around(4.2, 4.6, bold, 0);
   }
 }
+
+/* --------------------------------------
+レスポンシブ min-width: 1920px; 
+----------------------------------------*/
+@include mq-up($breakpoint: xl) {
+  .contact__bg {
+    padding-top: 0;
+  }

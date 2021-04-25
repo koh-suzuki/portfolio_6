@@ -150,9 +150,6 @@
   .info__list {
     margin: 50px 10vw 0;
   }
-  .info {
-    padding: 0 2vw;
-  }
   .info__item {
     @include f_around(2, 3, bold, 0);
   }
@@ -178,10 +175,7 @@
   .info__list {
     margin: 50px 15vw 0;
   }
-  .info {
-    padding: 0 2vw;
-  }
-
+  
   /* info ページ */
   .l-info-page__wrapper {
     display: flex;
@@ -283,8 +277,6 @@
   }
   .info {
     display: inline-block;
-    padding: 0 3vw;
-    margin: 0 4vw 0 7vw;
     border-radius: 50px;
   }
   .info__content {
