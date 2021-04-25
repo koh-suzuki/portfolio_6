@@ -409,7 +409,7 @@ ul {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 3vw;
+  margin: 0 3vw;
 }
 
 .copyright {
@@ -431,6 +431,18 @@ ul {
   line-height: 1.5;
   letter-spacing: 0em;
   color: #707070;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer__logo {
+    padding-top: 20px;
+  }
 }
 
 /* --------------------------------------
@@ -1917,7 +1929,7 @@ ul {
 
 .btn__experience {
   text-align: center;
-  width: 300px;
+  width: 270px;
   background-color: #FFE669;
   border-radius: 50px;
 }
@@ -1989,9 +2001,9 @@ ul {
 }
 
 .check__item {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.09091;
+  line-height: 1.33333;
   letter-spacing: 0em;
   color: #ffffff;
 }
@@ -2128,9 +2140,9 @@ ul {
     letter-spacing: 0em;
   }
   .check__item {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    line-height: 1.66667;
+    line-height: 1.36364;
     letter-spacing: 0em;
   }
   .experience__title {
@@ -2147,6 +2159,7 @@ ul {
     margin-bottom: 5px;
   }
   .btn__experience {
+    width: 300px;
     margin-bottom: 45px;
   }
   .btn__experience > a {
@@ -2154,12 +2167,15 @@ ul {
     font-weight: bold;
     line-height: 1.45455;
     letter-spacing: 0em;
-    padding: 7px 0;
+    padding: 10px 0;
   }
   .experience__content {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  }
+  .check__margin {
+    margin: 30px 0;
   }
 }
 
@@ -2558,9 +2574,10 @@ ul {
   .qa-list {
     max-width: 590px;
     margin: 0 auto;
+    padding: 0 2vw;
   }
   .q__text {
-    padding: 20px 20px 20px 55px;
+    padding: 30px 20px 30px 54px;
   }
   .q__text ::before {
     position: absolute;
@@ -2701,6 +2718,23 @@ ul {
 }
 
 /* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@media screen and (min-width: 600px) {
+  .contact__bg {
+    height: 500px;
+    padding-top: 10%;
+  }
+  .contact__text {
+    max-width: 590px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 1.3913;
+    letter-spacing: 0em;
+  }
+}
+
+/* --------------------------------------
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -2772,8 +2806,8 @@ ul {
 
 .info {
   display: inline-block;
-  padding: 0 3vw;
-  margin: 0 4vw 0 7vw;
+  padding: 0 15px;
+  margin: 0 25px 0 25px;
   border-radius: 50px;
 }
 
@@ -2897,6 +2931,10 @@ ul {
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
 @media screen and (min-width: 600px) {
+  .info {
+    padding: 0 15px;
+    margin: 0 35px 0 35px;
+  }
   .info__list {
     width: 600px;
     margin: 30px auto 0;

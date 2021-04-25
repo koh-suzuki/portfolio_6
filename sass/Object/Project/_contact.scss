@@ -57,6 +57,20 @@
 }
 
 /* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@include mq-up($breakpoint: sm) {
+  .contact__bg {
+    height: 500px;
+    padding-top: 10%;
+  }
+  .contact__text {
+    max-width: 590px;
+    @include f_around(2.3, 3.2, bold, 0);
+  }
+}
+
+/* --------------------------------------
 レスポンシブ min-width: 1024px; 
 ----------------------------------------*/
 @include mq-up($breakpoint: md) {

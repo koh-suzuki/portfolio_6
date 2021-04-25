@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 3vw;
+  margin: 0 3vw;
 }
 .copyright {
   padding: 15px 0;
@@ -15,6 +15,18 @@
 .copyright {
   @include f_around(1.2, 1.8, false, 0);
   color: #707070;
+}
+
+/* --------------------------------------
+レスポンシブ min-width: 600px; 
+----------------------------------------*/
+@include mq-up($breakpoint: sm) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer__logo {
+    padding-top: 20px;
+  }
 }
 
 /* --------------------------------------

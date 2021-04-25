@@ -169,7 +169,7 @@
 .btn__experience {
   text-align: center;
   // width: 680px;
-  width: 300px;
+  width: 270px;
   background-color: #FFE669;
   border-radius: 50px;
   > a {
@@ -219,7 +219,7 @@
     color: #ffffff;
   }
   .check__item {
-    @include f_around(2.2, 2.4, bold, 0);
+    @include f_around(1.8, 2.4, bold, 0);
     color: #ffffff;
   }
   .experience__text {
@@ -332,7 +332,7 @@
       @include f_around(1.2, 2, bold, 0);
     }
     .check__item {
-      @include f_around(1.8, 3, bold, 0);
+      @include f_around(2.2, 3, bold, 0);
     }
     .experience__title {
       @include f_around(2.8, 3.8, bold, 0);
@@ -342,16 +342,20 @@
       margin-bottom: 5px;
     }
     .btn__experience {
+      width: 300px;
       margin-bottom: 45px;
       > a {
         @include f_around(2.2, 3.2, bold, 0);
-        padding: 7px 0;
+        padding: 10px 0;
       }
     }
     .experience__content {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+    }
+    .check__margin {
+      margin: 30px 0;
     }
   }
 
