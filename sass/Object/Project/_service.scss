@@ -106,41 +106,46 @@
 }
 .l-service__inner {
   background-color: #ffffff;
-  margin-bottom: 100px;
-  padding: 50px 0;
+  margin: 0 3vw 100px;
+  padding: 50px 2vw;
 }
 .l-service__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.l-service__sub-content {
-  padding: 0 60px;
+.service__content__item {
+  display: flex;
+  flex-direction: column;
 }
+
 .page__map {
   margin: 32px 0 32px 25px;
 }
-.service__content__title,
+
 .service__content__sub-title {
-  display: inline-block;
-  padding-bottom: 10px;
+  width: 80px;
 }
 .service__content__title {
   border-bottom: 4px solid #4DADED;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 .service__content__sub-title {
   border-bottom: 1px solid #4DADED;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 .service__content__text {
-  margin-bottom: 52px;
+  margin-bottom: 30px;
   text-align: justify;
+}
+.l-service__sub-content {
+  margin-top: 20px;
 }
 .btn__service {
   text-align: center;
   > a {
     display: inline-block;
-    width: 35%;
+    width: 90%;
     padding: 10px 0;
     border-radius: 100px;
     color: #707070;
@@ -187,7 +192,7 @@
   color: #707070;
 }
 .service__content__title {
-  @include f_around(4.8, 5.8, false, 0);
+  @include f_around(2, 2.8, false, 0);
   color: #707070;
 }
 
@@ -227,6 +232,34 @@
   .service__text {
     @include f_around(1.7, 2.8, false, 0);
   }
+  
+  /* service ページ */
+  .service__content__sub-title {
+    width: 135px;
+    margin-bottom: 15px;
+  }
+  .l-service__sub-content {
+    margin-top: 50px;
+  }
+  .btn__service > a {
+    padding: 20px 0;
+    @include f_around(3, 3.8, bold, 0);
+  }
+  
+  .service__content__title {
+    @include f_around(3, 3.8, false, 0);
+  }
+  .service__sub__title,
+  .service__content__sub-title {
+    @include f_around(2.6, 2.8, bold, 0);
+    color: #707070;
+  }
+  .service__text,
+  .service__content__text {
+    @include f_around(2.2, 3.5, false, 0);
+    color: #707070;
+  }
+  
 }
 
 /* --------------------------------------
@@ -312,6 +345,38 @@
   .btn__reverse >a {
     margin: 0 0 0 auto;
   }
+  
+  
+  /* service ページ */
+  .l-service__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .l-service__inner {
+    padding: 50px 4vw;
+  }
+  .service__content__item,
+  .service__page__img {
+    max-width: calc((100% / 2) - 25px);
+  }
+  .service__page__img {
+    margin-top: 50px;
+  }
+  .l-service__sub-content {
+    margin-top: 0;
+  }
+  .btn__service > a {
+    max-width: 530px;
+  }
+  
+  .service__content__title {
+    @include f_around(3.2, 4.7, bold, 0);
+  }
+  .service__content__text {
+    @include f_around(2, 3, false, 0);
+  }
 }
 
 
@@ -372,6 +437,15 @@
       @include f_around(3.0, 5.0, bold, 0);
     }
   }
+
+  /* service ページ */
+  .service__content__title {
+    margin-bottom: 40px;
+  }
+  .service__content__sub-title {
+    width: 160px;
+    margin-bottom: 25px;
+  } 
 }
 
 /* --------------------------------------
@@ -516,6 +590,19 @@
     }
   }  
   
+  /* service ページ */
+  .service__content__sub-title {
+    width: 200px;
+  }
+  .service__content__text {
+    margin-bottom: 60px
+  }
+  .service__content__title {
+    @include f_around(4.8, 5.8, bold, 0);
+  } 
+  .btn__service > a {
+    @include f_around(3.6, 4.8, bold, 0);
+  }
 }
 
   

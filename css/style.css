@@ -1223,42 +1223,46 @@ ul {
 
 .l-service__inner {
   background-color: #ffffff;
-  margin-bottom: 100px;
-  padding: 50px 0;
+  margin: 0 3vw 100px;
+  padding: 50px 2vw;
 }
 
 .l-service__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.l-service__sub-content {
-  padding: 0 60px;
+.service__content__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .page__map {
   margin: 32px 0 32px 25px;
 }
 
-.service__content__title,
 .service__content__sub-title {
-  display: inline-block;
-  padding-bottom: 10px;
+  width: 80px;
 }
 
 .service__content__title {
   border-bottom: 4px solid #4DADED;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .service__content__sub-title {
   border-bottom: 1px solid #4DADED;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .service__content__text {
-  margin-bottom: 52px;
+  margin-bottom: 30px;
   text-align: justify;
+}
+
+.l-service__sub-content {
+  margin-top: 20px;
 }
 
 .btn__service {
@@ -1267,7 +1271,7 @@ ul {
 
 .btn__service > a {
   display: inline-block;
-  width: 35%;
+  width: 90%;
   padding: 10px 0;
   border-radius: 100px;
   color: #707070;
@@ -1341,8 +1345,8 @@ ul {
 }
 
 .service__content__title {
-  font-size: 4.8rem;
-  line-height: 1.20833;
+  font-size: 2rem;
+  line-height: 1.4;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -1397,6 +1401,41 @@ ul {
     font-size: 1.7rem;
     line-height: 1.64706;
     letter-spacing: 0em;
+  }
+  /* service ページ */
+  .service__content__sub-title {
+    width: 135px;
+    margin-bottom: 15px;
+  }
+  .l-service__sub-content {
+    margin-top: 50px;
+  }
+  .btn__service > a {
+    padding: 20px 0;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.26667;
+    letter-spacing: 0em;
+  }
+  .service__content__title {
+    font-size: 3rem;
+    line-height: 1.26667;
+    letter-spacing: 0em;
+  }
+  .service__sub__title,
+  .service__content__sub-title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 1.07692;
+    letter-spacing: 0em;
+    color: #707070;
+  }
+  .service__text,
+  .service__content__text {
+    font-size: 2.2rem;
+    line-height: 1.59091;
+    letter-spacing: 0em;
+    color: #707070;
   }
 }
 
@@ -1500,6 +1539,40 @@ ul {
   .btn__reverse > a {
     margin: 0 0 0 auto;
   }
+  /* service ページ */
+  .l-service__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .l-service__inner {
+    padding: 50px 4vw;
+  }
+  .service__content__item,
+  .service__page__img {
+    max-width: calc((100% / 2) - 25px);
+  }
+  .service__page__img {
+    margin-top: 50px;
+  }
+  .l-service__sub-content {
+    margin-top: 0;
+  }
+  .btn__service > a {
+    max-width: 530px;
+  }
+  .service__content__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.46875;
+    letter-spacing: 0em;
+  }
+  .service__content__text {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0em;
+  }
 }
 
 /* --------------------------------------
@@ -1572,6 +1645,14 @@ ul {
     font-weight: bold;
     line-height: 1.66667;
     letter-spacing: 0em;
+  }
+  /* service ページ */
+  .service__content__title {
+    margin-bottom: 40px;
+  }
+  .service__content__sub-title {
+    width: 160px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1721,6 +1802,25 @@ ul {
     line-height: 1.1875;
     letter-spacing: 0em;
     color: #707070;
+  }
+  /* service ページ */
+  .service__content__sub-title {
+    width: 200px;
+  }
+  .service__content__text {
+    margin-bottom: 60px;
+  }
+  .service__content__title {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 1.20833;
+    letter-spacing: 0em;
+  }
+  .btn__service > a {
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.33333;
+    letter-spacing: 0em;
   }
 }
 
