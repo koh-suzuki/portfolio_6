@@ -83,4 +83,19 @@ $(function () {
         $('body,html').animate({scrollTop:position}, '800', 'swing');
     }
   });
+
+  /* ===============================================*/
+  /* ハンバーガーボタン
+  /*=============================================== */
+  (function () {
+    $('#js-buttonHamburger').click(function () {
+      $('body').toggleClass('is-drawerActive');
+  
+      if ($(this).attr('aria-expanded') == 'false') {
+        $(this).attr('aria-expanded', true);
+      } else {
+        $(this).attr('aria-expanded', false);
+      }
+    });
+  }) ();
 });
