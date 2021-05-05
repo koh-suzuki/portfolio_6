@@ -19,20 +19,27 @@
         <section class="l-service__inner">
           <section class="l-service__content" id="web">
             <div class="service__content__item">
-              <h3 class="service__content__title">Web制作マスターコース</h3>
+              <!-- <h3 class="service__content__title">Web制作マスターコース</h3> -->
+              <h3 class="service__content__title">
+                <?php
+                //基本の出力方法
+                the_field('coursename');
+                ?>
+              </h3>
               <p class="service__content__sub-title">コース説明</p>
               <p class="service__content__text">
-                本コースはプログラミングに興味がある方、初めてプログラミングに触れる方などを対象にWeb制作に使用される様々な言語の習得を目的とした講義を行います
+                <?php the_field('coursediscription'); ?>
               </p>
             </div>
             <div class="service__page__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/course1.jpg" alt="Web制作マスターコースの画像">
+
+              <img src="<?php the_field('courseimg'); ?>" alt="Web制作マスターコースの画像">
             </div>
           </section>
           <section class="l-service__sub-content">
             <p class="service__content__sub-title">コース内容</p>
             <p class="service__content__text">
-              HTML・CSS・JavaScript・jQuery・PHP・WordPress、営業方法、案件対応の流れの習得
+              <?php the_field('coursecontent'); ?>
             </p>
             <div class="btn btn__service">
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -44,20 +51,22 @@
         <section class="l-service__inner">
           <section class="l-service__content" id="design">
             <div class="service__content__item">
-              <h3 class="service__content__title">Webデザインマスターコース</h3>
+              <h3 class="service__content__title">
+                <?php the_field('coursename-2'); ?>
+              </h3>
               <p class="service__content__sub-title">コース説明</p>
               <p class="service__content__text">
-                本コースはWebデザインに興味がある方を対象にWebデザインに必要なデザインの知識・デザインソフトの使い方等の習得を目的とした講義を行います
+                <?php the_field('coursediscription-2'); ?>
               </p>
             </div>
             <div class="service__page__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/course2.jpg" alt="Webデザインマスターコースの画像">
+              <img src="<?php the_field('courseimg-2'); ?>" alt="Webデザインマスターコースの画像">
             </div>
           </section>
           <section class="l-service__sub-content">
             <p class="service__content__sub-title">コース内容</p>
             <p class="service__content__text">
-              配色・心理現象などのデザインに通ずる基礎知識、Adobe系のデザインソフトの使い方の習得
+              <?php the_field('coursecontent-2'); ?>
             </p>
             <div class="btn btn__service">
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -69,20 +78,20 @@
         <section class="l-service__inner">
           <section class="l-service__content" id="enginer">
             <div class="service__content__item">
-              <h3 class="service__content__title">エンジニア転職支援コース</h3>
+              <h3 class="service__content__title"><?php the_field('coursename-3'); ?></h3>
               <p class="service__content__sub-title">コース説明</p>
               <p class="service__content__text">
-                本コースは既にエンジニアとしてのスキルをお持ちの方を対象に、エンジニア転職に必要な知識やポートフォリオの作成などエンジニア転職を最終目標としたコースとなります
+                <?php the_field('coursediscription-3'); ?>
               </p>
             </div>
             <div class="service__page__img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/course3.jpg" alt="エンジニア転職支援コースの画像">
+              <img src="<?php the_field('courseimg-3'); ?>" alt="エンジニア転職支援コースの画像">
             </div>
           </section>
           <section class="l-service__sub-content">
             <p class="service__content__sub-title">コース内容</p>
             <p class="service__content__text">
-              転職先の斡旋、ポートフォリオ作成、面接練習
+              <?php the_field('coursecontent-3'); ?>
             </p>
             <div class="btn btn__service">
               <a href="#" target="_blank" rel="noopener noreferrer">

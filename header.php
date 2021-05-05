@@ -7,6 +7,8 @@
     HOME | <?php bloginfo('name'); ?>
   <?php elseif (is_page()): ?>
     <?php the_title(); ?> | <?php bloginfo('name'); ?>
+  <?php elseif (is_page('contact')): ?>
+    <?php the_title(); ?> | <?php bloginfo('name'); ?>
   <?php else: ?>
     <?php bloginfo('name'); ?>
   <?php endif; ?>

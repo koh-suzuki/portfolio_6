@@ -18,7 +18,13 @@
 .header__logo {
   margin-left: 2vw;
   padding-left: 1vw;
-  color: #0A3355;
+  > a{
+    color: #0A3355;
+    &:hover {
+      opacity: .5;
+      text-decoration: none;
+    }
+  }
 }
 .header__nav {
   display: none;
@@ -33,6 +39,7 @@
   padding-bottom: 10px;
   > a {
     color: #707070;
+    text-decoration: none;
   }
   :hover {
     opacity: .5;

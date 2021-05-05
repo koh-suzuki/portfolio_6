@@ -3,9 +3,9 @@
   <nav class="header__nav">
     <ul class="header__list">
       <li class="header__item"><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
-      <li class="header__item"><a href="<?php echo esc_url(get_page_link(5)); ?>">学習コース</a></li>
-      <li class="header__item"><a href="/html/info.html">お知らせ</a></li>
-      <li class="header__item"><a href="/html/contact.html">お問い合せ</a></li>
+      <li class="header__item"><a href="<?php echo esc_url(home_url('/service')); ?>">学習コース</a></li>
+      <li class="header__item"><a href="<?php echo esc_url(home_url('/archive')); ?>">お知らせ</a></li>
+      <li class="header__item"><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合せ</a></li>
     </ul>
   </nav>
   <button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav" aria-expanded="false">
