@@ -35,11 +35,10 @@
       <small>Ⓒ 2021 AOSHIRO TECH All rights reserved</small>
     </p>
   </footer>
-  <?php get_footer(); ?>
-  
   <!-- includes/footer -->
   <?php get_template_part('includes/footer'); ?>
   <!-- includes/footer end -->
+  <?php get_footer(); ?>
 </body>
 
 </html>

@@ -2447,8 +2447,7 @@ ul {
   }
 }
 .contact__bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://my-portfolio2.local/wp-content/themes/portfolio_6/css/style.css/img/contact.jpg) no-repeat bottom / cover;
-  object-fit: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/contact.jpg) no-repeat bottom / cover;
   height: 300px;
   position: relative;
 }
@@ -2617,7 +2616,7 @@ ul {
 .info__item > .info {
   color: #707070;
 }
-.info__notice {
+.info__info {
   background-color: rgba(0, 162, 255, 0.376);
 }
 .info__event {
@@ -2851,16 +2850,16 @@ ul {
     display: inline-block;
   }
   .info__item {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    line-height: 1.875;
+    line-height: 2.0833333333;
     letter-spacing: 0em;
     color: #707070;
   }
   .info__item > .info {
     color: #707070;
   }
-  .info__notice {
+  .info__info {
     background-color: rgba(0, 162, 255, 0.376);
   }
   .info__event {

@@ -3,11 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <title>AOSHIRO TECH</title> -->
 <title>
-  <?php if (is_home()) : ?>
+  <?php if (is_front_page() || is_home()) : ?>
     HOME | <?php bloginfo('name'); ?>
   <?php elseif (is_page()): ?>
     <?php the_title(); ?> | <?php bloginfo('name'); ?>
   <?php elseif (is_page('contact')): ?>
+    <?php the_title(); ?> | <?php bloginfo('name'); ?>
+  <?php elseif (is_archive()): ?>
     <?php the_title(); ?> | <?php bloginfo('name'); ?>
   <?php else: ?>
     <?php bloginfo('name'); ?>
