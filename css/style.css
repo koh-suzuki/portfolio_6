@@ -1417,9 +1417,9 @@ ul {
     letter-spacing: 0em;
   }
   .service__title {
-    font-size: 4.6rem;
+    font-size: 4.1rem;
     font-weight: bold;
-    line-height: 1.0217391304;
+    line-height: 1.1463414634;
     letter-spacing: 0em;
   }
   .service__sub__title, .service__content__sub-title {
@@ -1429,8 +1429,8 @@ ul {
     letter-spacing: 0em;
   }
   .service__text, .service__content__text {
-    font-size: 2.8rem;
-    line-height: 1.6071428571;
+    font-size: 2.5rem;
+    line-height: 1.8;
     letter-spacing: 0em;
   }
   .service__content__title {
@@ -1576,6 +1576,12 @@ ul {
     font-size: 3.8rem;
     line-height: 1.4473684211;
     letter-spacing: 0.03em;
+  }
+  .service__title {
+    font-size: 4.7rem;
+    font-weight: bold;
+    line-height: 1.2127659574;
+    letter-spacing: 0em;
   }
   .service__sub__title, .service__content__sub-title {
     font-size: 4rem;
@@ -2451,20 +2457,20 @@ ul {
   height: 300px;
   position: relative;
 }
-.main__title {
+.contact__title {
   padding: 20px 0;
   background-color: #4daded;
   color: #fff;
 }
-.main__title::before, .main__title::after {
+.contact__title::before, .contact__title::after {
   border-top: 4px solid #fff;
   content: "";
   width: 30px;
 }
-.main__title::before {
+.contact__title::before {
   margin-right: 30px;
 }
-.main__title::after {
+.contact__title::after {
   margin-left: 30px;
 }
 .contact__text {
@@ -2535,7 +2541,7 @@ ul {
   .contact__bg {
     padding-top: 10%;
   }
-  .main__title {
+  .contact__title {
     padding: 40px 0;
   }
   .contact__text {
@@ -2634,7 +2640,7 @@ ul {
   flex-direction: column;
   padding: 0 3vw 78px;
 }
-.c-info__news {
+.c-info__news > a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2642,6 +2648,10 @@ ul {
   max-width: 600px;
   margin: 0 auto 70px;
   padding: 32px 2vw;
+  color: #000;
+}
+.c-info__news > a:hover {
+  opacity: 0.6;
 }
 .info__img {
   max-width: 800px;
@@ -2720,6 +2730,11 @@ ul {
   }
   .main__title {
     padding: 120px 0 40px;
+    background-color: #4daded;
+    color: #fff;
+  }
+  .main__title::before, .main__title::after {
+    border-top: 4px solid #fff;
   }
 }
 /* --------------------------------------
@@ -2739,7 +2754,7 @@ ul {
   .main__title {
     padding: 140px 0 40px;
   }
-  .c-info__news {
+  .c-info__news > a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2869,7 +2884,7 @@ ul {
     background-color: rgba(15, 227, 0, 0.376);
     /* info ページ */
   }
-  .c-info__news {
+  .c-info__news > a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2909,8 +2924,13 @@ ul {
 .form-control {
   height: 60px;
 }
+.form__wrap, .form-check {
+  display: flex;
+  align-items: center;
+}
 .form__label {
-  padding-left: 2.8rem;
+  display: flex;
+  flex-direction: column;
 }
 .form__radio {
   width: 2.8rem;
@@ -2929,6 +2949,7 @@ ul {
 .form__badge {
   padding: 0 3%;
   margin-left: 2%;
+  margin-bottom: 14px;
   background-color: #ffe669;
   border-radius: 15px;
 }
@@ -2950,6 +2971,24 @@ ul {
 .form__guid {
   margin-bottom: 50px;
 }
+/**********************
+ Contact Form 7
+ ***********************/
+.wpcf7 .wpcf7-list-item {
+  margin: 0;
+}
+.wpcf7 .wpcf7-list-item > label {
+  display: flex;
+  align-items: center;
+}
+.wpcf7 .wpcf7-list-item > label > input {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.wpcf7 .wpcf7-list-item-label {
+  margin-left: 15px;
+}
+/***********************/
 .form__guid {
   font-size: 2.4rem;
   font-weight: bold;
@@ -2957,7 +2996,7 @@ ul {
   letter-spacing: 0em;
   color: #707070;
 }
-.form__badge, .form__title, .form__text {
+.form__badge, .form__title, .form__text, .textarea__bd {
   font-size: 2.8rem;
   font-weight: bold;
   line-height: 1.5;

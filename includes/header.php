@@ -4,7 +4,7 @@
     <ul class="header__list">
       <li class="header__item"><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
       <li class="header__item"><a href="<?php echo esc_url(home_url('/service')); ?>">学習コース</a></li>
-      <li class="header__item"><a href="<?php echo esc_url(home_url('/archive')); ?>">お知らせ</a></li>
+      <li class="header__item"><a href="<?php echo esc_url(home_url('/topic')); ?>">お知らせ</a></li>
       <li class="header__item"><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合せ</a></li>
     </ul>
   </nav>

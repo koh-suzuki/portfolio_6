@@ -20,14 +20,25 @@
               <!-- 記事 -->
               <div class="c-info__news">
                 <a href="#">
-                  <figure class="info__img">
-                    <?php thr_post_thumbnail(array('alt' => 'ニュース記事の画像')); ?>
-                  </figure>
+                  <?php if (has_post_thumbnail()): ?>
+                    <figure class="info__img">
+                      <?php the_post_thumbnail(array('alt' => 'ニュース記事の画像')); ?>
+                    </figure>
+                  <?php else: ?>
+                    <figure class="info__img">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/blog5.jpg" alt="">
+                    </figure>
+                  <?php endif; ?>
                   <dl class="news__content">
                     <dt class="news__date">
                       <?php the_time(get_option('date_format')); ?>
                       <span class="news__bage">
-                        <?php the_category(); ?>
+                      <?php
+                      $category = get_the_category();
+                      if ( $category[0] ) {
+                      echo $category[0]->cat_name;
+                      }
+                      ?>
                       </span>
                     </dt>
                     <dd class="news__title">

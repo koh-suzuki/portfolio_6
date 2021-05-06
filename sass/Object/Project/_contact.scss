@@ -3,21 +3,21 @@
   height: 300px;
   position: relative;
 }
-.main__title {
+.contact__title {
   padding: 20px 0;
   background-color: #4DADED;
   color: #ffffff;
 }
-.main__title::before,
-.main__title::after {
+.contact__title::before,
+.contact__title::after {
   border-top: 4px solid #ffffff;
   content: "";
   width: 30px; 
 }
-.main__title::before {
+.contact__title::before {
   margin-right: 30px
 }
-.main__title::after {
+.contact__title::after {
   margin-left: 30px
 }
 .contact__text {
@@ -78,7 +78,7 @@
   .contact__bg {
     padding-top: 10%;
   }
-  .main__title {
+  .contact__title {
     padding: 40px 0;
   }
   .contact__text {

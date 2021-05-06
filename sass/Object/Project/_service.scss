@@ -419,7 +419,7 @@
     @include f_around(9.8, 11.4, bold, 0);
   }
   .service__title {
-    @include f_around(4.6, 4.7, bold, 0);
+    @include f_around(4.1, 4.7, bold, 0);
   }
   .service__sub__title,
   .service__content__sub-title {
@@ -427,7 +427,7 @@
   }
   .service__text,
   .service__content__text {
-    @include f_around(2.8, 4.5, false, 0);
+    @include f_around(2.5, 4.5, false, 0);
   }
   .service__content__title {
     @include f_around(3.8, 4.8, false, 0);
@@ -573,6 +573,9 @@
   .service__catch {
     @include f_around(3.8, 5.5, false, 30);
   }  
+  .service__title {
+    @include f_around(4.7, 5.7, bold, 0);
+  }
   .service__sub__title,
   .service__content__sub-title {
     @include f_around(4.0, 4.8, bold, 0);

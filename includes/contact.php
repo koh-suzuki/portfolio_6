@@ -1,5 +1,5 @@
 <section class="l-contact__wrapper" id="contact">
-  <h2 class="section__title main__title">
+  <h2 class="section__title contact__title">
     お問い合わせ
   </h2>
   <section class="contact__bg">

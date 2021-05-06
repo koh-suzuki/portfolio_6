@@ -7,8 +7,14 @@
 .form-control {
   height: 60px;
 }
+.form__wrap,
+.form-check {
+  display: flex;
+  align-items: center;
+}
 .form__label {
-  padding-left: 2.8rem;
+  display: flex;
+  flex-direction: column;
 }
 .form__radio {
   width: 2.8rem;
@@ -27,6 +33,7 @@
 .form__badge {
   padding: 0 3%;
   margin-left: 2%;
+  margin-bottom: 14px;
   background-color: #FFE669;
   border-radius: 15px;
 }
@@ -50,9 +57,26 @@
 .form__guid {
   margin-bottom: 50px;
 }
-// a:hover {
-//   text-decoration: none;
-// }
+
+/**********************
+Contact Form 7
+***********************/ 
+.wpcf7 .wpcf7-list-item {
+  margin: 0;
+  > label {
+    display: flex;
+    align-items: center;
+    > input {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+}
+.wpcf7 .wpcf7-list-item-label {
+  margin-left: 15px;
+}
+/***********************/
+
 
 .form__guid {
   @include f_around(2.4, 3.8, bold, 0);
@@ -60,7 +84,8 @@
 }
 .form__badge,
 .form__title,
-.form__text {
+.form__text,
+.textarea__bd {
   @include f_around(2.8, 4.2, bold, 0);
   color: #707070;
 }
