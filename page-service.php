@@ -15,7 +15,7 @@
         学習コース
       </h2>
       <section class="l-container">
-        <p class="page__map">TOP > 学習コース</p>
+        <?php get_template_part('includes/breadcrumbs'); ?>
         <section class="l-service__inner">
           <section class="l-service__content" id="web">
             <div class="service__content__item">

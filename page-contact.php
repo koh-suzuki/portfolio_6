@@ -16,7 +16,7 @@
         お問い合せ
       </h2>
       <section class="l-container page__pb">
-        <p class="page__map">TOP > お問い合せ</p>
+        <?php get_template_part('includes/breadcrumbs'); ?>
         <form action="" class="form">
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <?php the_content(); ?>

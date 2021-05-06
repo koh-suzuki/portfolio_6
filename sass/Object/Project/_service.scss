@@ -121,6 +121,13 @@
 
 .page__map {
   margin: 32px 0 32px 25px;
+  .home {
+    color: #707070;
+    &:hover {
+      opacity: .6;
+      text-decoration: none;
+    }
+  }
 }
 
 .service__content__sub-title {
