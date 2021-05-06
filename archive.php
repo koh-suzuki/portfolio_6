@@ -16,15 +16,8 @@
         <?php get_template_part('includes/breadcrumbs'); ?>
 
         <section class="l-info-page__wrapper">
-          <?php
-          global $post;
-          $args = array('posts_per_page' => 8);
-          $myposts = get_posts($args);
-          foreach ($myposts as $post) {
-            setup_postdata($post);
-          ?>
-            <?php if ($myposts) : ?>
-              <!-- <//?php while (have_posts()) : the_post(); ?> -->
+          <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
               <!-- 記事 -->
               <div class="c-info__news">
                 <a href="#">
@@ -60,40 +53,34 @@
               </div>
               <!-- 記事end -->
 
-              <!-- <//?php endwhile; ?> -->
-            <?php else : ?>
-              <!-- 記事 -->
-              <div class="c-info__news">
-                <figure class="info__img">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/blog1.jpg" alt="ニュース記事の画像">
-                </figure>
-                <dl class="news__content">
-                  <dt class="news__date">
-                  </dt>
-                  <dd class="news__title">
-                    準備中...
-                  </dd>
-                  <dd class="news__text">
-                    ただいま準備中です
-                  </dd>
-                </dl>
-              </div>
-              <!-- 記事end -->
-            <?php endif; ?>
-            <?php
-            }
-            wp_reset_postdata();
-            ?>
-
+            <?php endwhile; ?>
+          <?php else : ?>
+            <!-- 記事 -->
+            <div class="c-info__news">
+              <figure class="info__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/blog1.jpg" alt="ニュース記事の画像">
+              </figure>
+              <dl class="news__content">
+                <dt class="news__date">
+                </dt>
+                <dd class="news__title">
+                  準備中...
+                </dd>
+                <dd class="news__text">
+                  ただいま準備中です
+                </dd>
+              </dl>
+            </div>
+            <!-- 記事end -->
+          <?php endif; ?>
         </section>
-            <!-- ページネーション  -->
-            <?php
-              if (function_exists('pagenation')) {
-                // 関数が定義されていたらtrueになる
-                pagenation($args["posts_per_page"]);
-              }
-            ?>
-
+        <!-- ページネーション  -->
+        <div class="pagination__wrapper">
+          <?php if (function_exists('wp_pagenavi')):?>
+          <?php wp_pagenavi(); ?>
+          <?php else: ?>
+          <?php endif; ?>
+        </div>
       </section>
       <!-- //l-container -->
     </section>

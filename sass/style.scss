@@ -2,16 +2,16 @@
 // Foundation
 // ==========================================================================
 
-@import "foundation/_reset";
-@import "foundation/_base";
+@import "foundation/reset";
+@import "foundation/base";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 
-@import "layout/_footer";
-@import "layout/_header";
-@import "layout/_main";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
 // @import "layout/_sidebar";
 
 // ==========================================================================
@@ -31,14 +31,14 @@
 // Project
 // -----------------------------------------------------------------
 
-@import "object/project/_mv";
-@import "object/project/_service";
-@import "object/project/_section";
-@import "object/project/_work";
-@import "object/project/_faq";
-@import "object/project/_contact";
-@import "object/project/_info";
-@import "object/project/_form";
+@import "object/project/mv";
+@import "object/project/service";
+@import "object/project/section";
+@import "object/project/work";
+@import "object/project/faq";
+@import "object/project/contact";
+@import "object/project/info";
+@import "object/project/form";
 
 // -----------------------------------------------------------------
 // Utility
