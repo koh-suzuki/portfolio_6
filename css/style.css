@@ -308,6 +308,9 @@ ul {
 .btn:hover {
   opacity: 0.5;
 }
+.wrap {
+  overflow: hidden;
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -406,23 +409,23 @@ ul {
   opacity: 0.5;
   text-decoration: none;
 }
-.header__nav {
+.menu-menu-container {
   display: none;
 }
-.header__list {
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header__item {
+.menu-item {
   margin-left: 36px;
   padding-bottom: 10px;
 }
-.header__item > a {
+.menu-item > a {
   color: #707070;
   text-decoration: none;
 }
-.header__item :hover {
+.menu-item :hover {
   opacity: 0.5;
   border-bottom: 7px solid #40ace2;
 }
@@ -432,7 +435,7 @@ ul {
   line-height: 1.25;
   letter-spacing: 0em;
 }
-.header__item {
+.menu-item {
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.1875;
@@ -473,7 +476,7 @@ ul {
   outline: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-right: 3vw;
+  margin-right: 5%;
 }
 .p-hamburger:hover, .p-hamburger:focus {
   box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
@@ -558,16 +561,16 @@ ul {
   .header__inner {
     padding: 24px 0;
   }
-  .header__nav {
+  .menu-menu-container {
     display: block;
   }
   .c-button {
     display: none;
   }
-  .header__list {
+  .menu {
     margin-right: 2vw;
   }
-  .header__item {
+  .menu-item {
     font-size: 2.2rem;
     font-weight: bold;
     line-height: 1.2727272727;
@@ -635,7 +638,7 @@ ul {
   width: 82px;
   height: 82px;
   position: fixed;
-  right: 5%;
+  right: 10%;
   bottom: 5%;
   background: #fff;
   border-radius: 50%;
