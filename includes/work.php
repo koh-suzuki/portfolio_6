@@ -181,7 +181,7 @@
         <div class="experience__btn">
           <p class="experience__text">＼ まずは無料で！ ／</p>
           <p class="btn btn__experience">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url(home_url('contact')); ?>" target="_blank" rel="noopener noreferrer">
               無料体験に申し込む
             </a>
           </p>

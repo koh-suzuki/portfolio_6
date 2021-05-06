@@ -7,7 +7,7 @@
       無料体験のお申し込みから資料請求、ご不明な点の相談までお気軽にお問い合わせください
     </p>
     <div class="btn contact__main__btn">
-      <a href="#">
+      <a href="<?php echo esc_url(home_url('contact')); ?>">
         お問い合わせはこちらから
       </a>
     </div>

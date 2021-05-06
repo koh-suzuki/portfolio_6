@@ -9,10 +9,12 @@
 
         <li class="info__item__wrapper">
           <div class="info__item">
-            <span class="info__day">
-              <?php the_time(get_option('date_format')); ?>
-            </span>
-            <?php categories_label(); ?>
+            <div class="info__inner">
+              <span class="info__day">
+                <?php the_time(get_option('date_format')); ?>
+              </span>
+              <?php categories_label(); ?>
+            </div>
             <p class="info__content">
               <?php the_title(); ?>
             </p>
