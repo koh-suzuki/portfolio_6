@@ -103,12 +103,21 @@
     text-align: center;
     margin-top: 22px;
   }
-  .page__item {
+  .page__item,
+  .page__current {
     display: inline-block;
     padding: 14px 18px;
     margin-left: 24px;
     background-color: #ffffff;
     border: 1px solid #707070;
+  }
+  .page__item {
+    &:hover {
+      opacity: .6;
+    }
+    > a {
+      color: #000000;
+    }
   }
 
 
@@ -122,7 +131,8 @@
   .news__text {
     @include f_around(2, 3.2, bold, 0);
   }
-  .page__item {
+  .page__item,
+  .page__current {
     @include f_around(2.4, 4.8, bold, 0);
   }
 
@@ -223,7 +233,8 @@
   .news__text {
     @include f_around(2.1, 3.2, bold, 0);
   }
-  .page__item {
+  .page__item,
+  .page__current {
     @include f_around(2.4, 4.8, bold, 0);
   }
 }
@@ -307,7 +318,8 @@
   .news__text {
     @include f_around(2.8, 5.2, bold, 0);
   }
-  .page__item {
+  .page__item,
+  .page__current {
     @include f_around(2.4, 4.8, bold, 0);
   }
 }

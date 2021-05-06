@@ -20,25 +20,25 @@
               <!-- 記事 -->
               <div class="c-info__news">
                 <a href="#">
-                  <?php if (has_post_thumbnail()): ?>
+                  <?php if (has_post_thumbnail()) : ?>
                     <figure class="info__img">
-                      <?php the_post_thumbnail(array('alt' => 'ニュース記事の画像')); ?>
+                      <?php echo get_thumb_img('large'); ?>
                     </figure>
-                  <?php else: ?>
+                  <?php else : ?>
                     <figure class="info__img">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/blog5.jpg" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/blog5.jpg" alt="無題の画像">
                     </figure>
                   <?php endif; ?>
                   <dl class="news__content">
                     <dt class="news__date">
                       <?php the_time(get_option('date_format')); ?>
                       <span class="news__bage">
-                      <?php
-                      $category = get_the_category();
-                      if ( $category[0] ) {
-                      echo $category[0]->cat_name;
-                      }
-                      ?>
+                        <?php
+                        $category = get_the_category();
+                        if ($category[0]) {
+                          echo $category[0]->cat_name;
+                        }
+                        ?>
                       </span>
                     </dt>
                     <dd class="news__title">
@@ -62,7 +62,7 @@
                 <dt class="news__date">
                 </dt>
                 <dd class="news__title">
-                  準備中です
+                  準備中...
                 </dd>
                 <dd class="news__text">
                   ただいま準備中です
@@ -72,10 +72,13 @@
             <!-- 記事end -->
           <?php endif; ?>
 
-          <section class="pagination__wrapper">
-            <p class="page__item">1</p>
-            <p class="page__item">2</p>
-          </section>
+          <!-- ページネーション  -->
+          <?php
+          if (function_exists('pagenation')) {
+            // 関数が定義されていたらtrueになる
+            pagenation();
+          } ?>
+
         </section>
       </section>
       <!-- //l-container -->

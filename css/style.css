@@ -2677,12 +2677,18 @@ ul {
   text-align: center;
   margin-top: 22px;
 }
-.page__item {
+.page__item, .page__current {
   display: inline-block;
   padding: 14px 18px;
   margin-left: 24px;
   background-color: #fff;
   border: 1px solid #707070;
+}
+.page__item:hover {
+  opacity: 0.6;
+}
+.page__item > a {
+  color: #000;
 }
 .news__date, .news__bage {
   font-size: 2.4rem;
@@ -2702,7 +2708,7 @@ ul {
   line-height: 1.6;
   letter-spacing: 0em;
 }
-.page__item {
+.page__item, .page__current {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2;
@@ -2816,7 +2822,7 @@ ul {
     line-height: 1.5238095238;
     letter-spacing: 0em;
   }
-  .page__item {
+  .page__item, .page__current {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2;
@@ -2908,7 +2914,7 @@ ul {
     line-height: 1.8571428571;
     letter-spacing: 0em;
   }
-  .page__item {
+  .page__item, .page__current {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2;
