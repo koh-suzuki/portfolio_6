@@ -13,8 +13,9 @@
         お知らせ一覧
       </h2>
       <section class="l-container">
-        <?php get_template_part('includes/breadcrumbs'); ?>
-
+        <p class="page__map">
+          <a href="<?php echo esc_url(home_url('/')); ?>">TOP</a> &gt; お知らせ一覧
+        </p>
         <section class="l-info-page__wrapper">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>

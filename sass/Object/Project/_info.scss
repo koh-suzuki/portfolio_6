@@ -114,6 +114,12 @@
     text-align: center;
     margin-top: 22px;
   }
+  .page__map > a {
+    color: #707070;
+    &:hover {
+      opacity: .6;
+    }
+  }
   .wp-pagenavi .pages,
   .wp-pagenavi .page,
   .wp-pagenavi .nextpostslink,
