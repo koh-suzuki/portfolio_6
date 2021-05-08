@@ -19,7 +19,6 @@
         <section class="l-service__inner">
           <section class="l-service__content" id="web">
             <div class="service__content__item">
-              <!-- <h3 class="service__content__title">Web制作マスターコース</h3> -->
               <h3 class="service__content__title">
                 <?php
                 //基本の出力方法

@@ -30,7 +30,7 @@
 .work__point {
   position: absolute;
   top: 1%;
-  left: 30%;
+  left: 35%;
 }
 .balloon1{
   position: relative;
@@ -45,7 +45,7 @@
   display: block;
   width: 0;
   height: 0;
-  left: 47px;
+  left: 33%;
   bottom: -40px;
   border-right: 40px solid #FFE669;
   border-top: 35px solid transparent;
@@ -182,11 +182,11 @@
 }  
   
   .balloon1 {
-    @include f_around(3.6, 4, bold, 0);
+    @include f_around(2.6, 3, bold, 0);
     color: #707070;
   }
   .work__catch {
-    @include f_around(2.4, 3.6, bold, 0);
+    @include f_around(1.8, 2.6, bold, 0);
   }
   .work__title {
     @include f_around(1.8, 2.0, bold, 0);
@@ -372,7 +372,7 @@
     .balloon1::before {
       position: absolute;
       display: block;
-      left: 32px;
+      left: 33%;
       bottom: -34px;
       border-right: 30px solid #FFE669;
       border-top: 30px solid transparent;

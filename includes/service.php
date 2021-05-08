@@ -3,8 +3,14 @@
     <h2 class="section__title">
       学習コース
     </h2>
-    <p class="service__catch">
+    <p class="service__catch md__display">
       完全オンラインプログラミングスクール"AOSHIRO TECH" では<br>
+      お客様一人一人のご要望にお応えできるよう<br>
+      充実した学習コースをご用意しております
+    </p>
+    <p class="service__catch sp__display">
+      完全オンラインプログラミングスクール<br>
+      "AOSHIRO TECH" では<br>
       お客様一人一人のご要望にお応えできるよう<br>
       充実した学習コースをご用意しております
     </p>

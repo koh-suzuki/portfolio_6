@@ -9,8 +9,8 @@
     <?php the_title(); ?> | <?php bloginfo('name'); ?>
   <?php elseif (is_page('contact')): ?>
     <?php the_title(); ?> | <?php bloginfo('name'); ?>
-  <?php elseif (is_page('postlist')): ?>
-    <?php the_title(); ?> | <?php bloginfo('name'); ?>
+  <?php elseif (home_url('topic')): ?>
+    お知らせ一覧 | <?php bloginfo('name'); ?>
   <?php else: ?>
     <?php bloginfo('name'); ?>
   <?php endif; ?>

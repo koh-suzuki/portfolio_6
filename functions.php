@@ -5,13 +5,13 @@ add_action('init', function(){
 
 //category-label
 function categories_label() {
-    $cats = get_the_category();
-    foreach($cats as $cat){
-        echo '<a href="#" ';
-        echo 'class="info info__'.esc_attr($cat->slug).'">';
-        echo esc_html($cat->name);
-        echo '</a>';
-    }
+  $cats = get_the_category();
+  foreach($cats as $cat){
+      echo '<a href="#" ';
+      echo 'class="info info__'.esc_attr($cat->slug).'">';
+      echo esc_html($cat->name);
+      echo '</a>';
+  }
 }
 
 function post_has_archive($args, $post_type) {

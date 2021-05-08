@@ -586,12 +586,29 @@ ul {
   justify-content: center;
   text-align: center;
 }
+.section__title::before, .section__title::after {
+  border-top: 4px solid #707070;
+  content: "";
+  width: 4vw;
+}
+.section__title::before {
+  margin-right: 3vw;
+}
+.section__title::after {
+  margin-left: 3vw;
+}
 .section__title {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2;
   letter-spacing: 0em;
   color: #707070;
+}
+.sp__display {
+  display: block;
+}
+.md__display {
+  display: none;
 }
 /* --------------------------------------
  レスポンシブ min-width: 600px; 
@@ -635,8 +652,8 @@ ul {
 }
 #page_top {
   display: none;
-  width: 82px;
-  height: 82px;
+  width: 60px;
+  height: 65px;
   position: fixed;
   right: 10%;
   bottom: 5%;
@@ -657,7 +674,7 @@ ul {
   font-size: 5rem;
   color: #707070;
   position: absolute;
-  top: 10px;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
@@ -666,11 +683,10 @@ ul {
 }
 #page_top a::after {
   content: 'TOP';
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #707070;
   position: absolute;
-  top: 90px;
-  bottom: 0;
+  bottom: -63px;
   right: 0;
   left: 0;
   margin: auto;
@@ -689,6 +705,7 @@ ul {
 .l-mv-wrapper {
   width: 100%;
   height: 560px;
+  background: url(../img/mv.jpg);
   z-index: 1;
   background-size: cover;
   background-position: 50% 0%;
@@ -968,17 +985,6 @@ ul {
 .service__img > img {
   object-fit: cover;
   object-position: 50%;
-}
-.section__title::before, .section__title::after {
-  border-top: 4px solid #707070;
-  content: "";
-  width: 40px;
-}
-.section__title::before {
-  margin-right: 30px;
-}
-.section__title::after {
-  margin-left: 30px;
 }
 .service__inner {
   padding: 30px 0 50px;
@@ -1664,7 +1670,7 @@ ul {
 .work__point {
   position: absolute;
   top: 1%;
-  left: 30%;
+  left: 35%;
 }
 .balloon1 {
   position: relative;
@@ -1679,7 +1685,7 @@ ul {
   display: block;
   width: 0;
   height: 0;
-  left: 47px;
+  left: 33%;
   bottom: -40px;
   border-right: 40px solid #ffe669;
   border-top: 35px solid transparent;
@@ -1803,16 +1809,16 @@ ul {
   margin-right: 2vw;
 }
 .balloon1 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  line-height: 1.1111111111;
+  line-height: 1.1538461538;
   letter-spacing: 0em;
   color: #707070;
 }
 .work__catch {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.4444444444;
   letter-spacing: 0em;
 }
 .work__title {
@@ -2045,7 +2051,7 @@ ul {
   .balloon1::before {
     position: absolute;
     display: block;
-    left: 32px;
+    left: 33%;
     bottom: -34px;
     border-right: 30px solid #ffe669;
     border-top: 30px solid transparent;
@@ -3077,3 +3083,4 @@ ul {
     margin: 0 auto;
   }
 }
+/*# sourceMappingURL=style.css.map */

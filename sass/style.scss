@@ -12,7 +12,6 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main";
-// @import "layout/_sidebar";
 
 // ==========================================================================
 // Object
@@ -23,9 +22,7 @@
 // -----------------------------------------------------------------
 
 @import "object/component/top-btn";
-// @import "object/component/_dialog";
-// @import "object/component/_grid";
-// @import "object/component/_media";
+
 
 // -----------------------------------------------------------------
 // Project
@@ -40,13 +37,3 @@
 @import "object/project/info";
 @import "object/project/form";
 
-// -----------------------------------------------------------------
-// Utility
-// -----------------------------------------------------------------
-
-// @import "object/utility/_align";
-// @import "object/utility/_clearfix";
-// @import "object/utility/_margin";
-// @import "object/utility/_position";
-// @import "object/utility/_size";
-// @import "object/utility/_text";
