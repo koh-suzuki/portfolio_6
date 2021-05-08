@@ -20,18 +20,23 @@
           <section class="l-service__content" id="web">
             <div class="service__content__item">
               <h3 class="service__content__title">
+                <span class="service__title__border">
                 <?php
                 //基本の出力方法
                 the_field('coursename');
                 ?>
+                </span>
               </h3>
-              <p class="service__content__sub-title">コース説明</p>
+              <p class="service__content__sub-title">
+                <span class="service__sub-title__border">
+                  コース説明
+                </span>
+              </p>
               <p class="service__content__text">
                 <?php the_field('coursediscription'); ?>
               </p>
             </div>
             <div class="service__page__img">
-
               <img src="<?php the_field('courseimg'); ?>" alt="Web制作マスターコースの画像">
             </div>
           </section>
@@ -51,9 +56,15 @@
           <section class="l-service__content" id="design">
             <div class="service__content__item">
               <h3 class="service__content__title">
+              <span class="service__title__border">
                 <?php the_field('coursename-2'); ?>
+              </span>
               </h3>
-              <p class="service__content__sub-title">コース説明</p>
+              <p class="service__content__sub-title">
+                <span class="service__sub-title__border">
+                  コース説明
+                </span>
+              </p>
               <p class="service__content__text">
                 <?php the_field('coursediscription-2'); ?>
               </p>
@@ -77,8 +88,16 @@
         <section class="l-service__inner">
           <section class="l-service__content" id="enginer">
             <div class="service__content__item">
-              <h3 class="service__content__title"><?php the_field('coursename-3'); ?></h3>
-              <p class="service__content__sub-title">コース説明</p>
+              <h3 class="service__content__title">
+                <span class="service__title__border">
+                <?php the_field('coursename-3'); ?>
+                </span>
+              </h3>
+              <p class="service__content__sub-title">
+                <span class="service__sub-title__border">
+                  コース説明
+                </span>
+              </p>
               <p class="service__content__text">
                 <?php the_field('coursediscription-3'); ?>
               </p>

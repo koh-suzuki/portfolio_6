@@ -49,7 +49,6 @@
 }
 
 
-
   .info__item {
     @include f_around(1.4, 2, bold, 0);
     color: #707070;
@@ -68,9 +67,6 @@
   }
 
   /* info ページ */
-  .main__title {
-    padding: 120px 0 20px;
-  }
   .l-info-page__wrapper {
     display: flex;
     flex-direction: column;
@@ -114,20 +110,15 @@
     text-align: center;
     margin-top: 22px;
   }
-  .page__map > a {
-    color: #707070;
-    &:hover {
-      opacity: .6;
-    }
-  }
+  
   .wp-pagenavi .pages,
   .wp-pagenavi .page,
   .wp-pagenavi .nextpostslink,
   .wp-pagenavi .previouspostslink,
   .wp-pagenavi .current {
     display: inline-block;
-    padding: 14px 18px;
-    margin-left: 24px;
+    padding: 10px 20px;
+    margin-left: 10px;
     background-color: #ffffff;
     border: 1px solid #707070;
   }
@@ -145,20 +136,20 @@
 
   .news__date,
   .news__bage {
-    @include f_around(2.4, 4.8, bold, 0);
+    @include f_around(1.4, 3.8, bold, 0);
   }
   .news__title {
-    @include f_around(2.8, 5.2, bold, 0);
+    @include f_around(1.4, 2.2, bold, 0);
   }
   .news__text {
-    @include f_around(2, 3.2, bold, 0);
+    @include f_around(1.2, 2, bold, 0);
   }
   .pages,
   .page,
   .current,
   .nextpostslink,
   .previouspostslink {
-    @include f_around(2.4, 4.8, bold, 0);
+    @include f_around(1.4, 3.8, bold, 0);
   }
 
 /* --------------------------------------
@@ -175,15 +166,35 @@
     margin: 30px 5vw 0;
     padding: 0 3vw;
   }
-  .main__title {
-    padding: 120px 0 40px;
-    background-color: #4DADED;
-    color: #ffffff;
+  .info__img {
+    height: auto;
+    object-fit: cover;
   }
-  .main__title::before,
-  .main__title::after {
-    border-top: 4px solid #ffffff;
-    
+  .wp-pagenavi .pages,
+  .wp-pagenavi .page,
+  .wp-pagenavi .nextpostslink,
+  .wp-pagenavi .previouspostslink,
+  .wp-pagenavi .current {
+    padding: 14px 18px;
+    margin-left: 24px;
+  }
+
+  .news__date,
+  .news__bage {
+    @include f_around(2.4, 4.8, bold, 0);
+  }
+  .news__title {
+    @include f_around(2.8, 5.2, bold, 0);
+  }
+  .news__text {
+    @include f_around(2, 3.2, bold, 0);
+  }
+  .pages,
+  .page,
+  .current,
+  .nextpostslink,
+  .previouspostslink {
+    @include f_around(2.4, 4.8, bold, 0);
   }
 }
 

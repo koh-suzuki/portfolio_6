@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 140px 0 30px;
+  padding: 120px 0 30px;
   margin: 0 3vw;
 }
 .work__content {
@@ -29,8 +29,9 @@
 }
 .work__point {
   position: absolute;
-  top: 4%;
-  left: 35%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .balloon1{
   position: relative;
@@ -248,11 +249,11 @@
       display: block;
       width: 0;
       height: 0;
-      left: 27px;
-      bottom: -40px;
-      border-right: 40px solid #FFE669;
-      border-top: 35px solid transparent;
-      border-bottom: 35px solid transparent;
+      left: 30px;
+      bottom: -30px;
+      border-right: 25px solid #ffe669;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
       transform: rotate(-90deg);
     }
     .pattern {
@@ -358,8 +359,7 @@
       margin: 0 auto; 
     }
     .work__text {
-      margin-top: 35px;
-      width: 85%;
+      margin: 35px auto 0;
     }
     .work__item {
       position: relative;

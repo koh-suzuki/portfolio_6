@@ -396,7 +396,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 10px 0;
 }
 .header__logo {
   margin-left: 2vw;
@@ -430,7 +430,7 @@ ul {
   border-bottom: 7px solid #40ace2;
 }
 .header__logo {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: 0em;
@@ -553,6 +553,12 @@ ul {
   .header__inner {
     padding: 15px 0;
   }
+  .header__logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: 0em;
+  }
 }
 /* --------------------------------------
  レスポンシブ max-width: 1024px; 
@@ -604,11 +610,42 @@ ul {
   letter-spacing: 0em;
   color: #707070;
 }
+.main__title {
+  padding: 88px 0 20px;
+  background-color: #4daded;
+  color: #fff;
+}
+.main__title::before, .main__title::after {
+  border-top: 4px solid #fff;
+}
 .sp__display {
   display: block;
 }
 .md__display {
   display: none;
+}
+.page__map > a {
+  color: #707070;
+}
+.page__map > a:hover {
+  opacity: 0.6;
+}
+.page__map {
+  margin: 10px 0 10px;
+}
+.page__map .home {
+  color: #707070;
+}
+.page__map .home:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+.page__map {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4285714286;
+  letter-spacing: 0em;
+  color: #707070;
 }
 /* --------------------------------------
  レスポンシブ min-width: 600px; 
@@ -623,11 +660,25 @@ ul {
     line-height: 1.7142857143;
     letter-spacing: 0em;
   }
+  .main__title {
+    padding: 120px 0 40px;
+    background-color: #4daded;
+    color: #fff;
+  }
   .sp__display {
     display: none;
   }
   .md__display {
     display: block;
+  }
+  .page__map {
+    margin: 32px 0 32px 25px;
+  }
+  .page__map {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0em;
   }
 }
 /* --------------------------------------
@@ -653,7 +704,6 @@ ul {
     font-weight: bold;
     line-height: 1.0357142857;
     letter-spacing: 0em;
-    color: #707070;
   }
 }
 #page_top {
@@ -1080,26 +1130,20 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.page__map {
-  margin: 32px 0 32px 25px;
-}
-.page__map .home {
-  color: #707070;
-}
-.page__map .home:hover {
-  opacity: 0.6;
-  text-decoration: none;
-}
 .service__content__sub-title {
   width: 80px;
 }
 .service__content__title {
-  border-bottom: 4px solid #4daded;
   margin-bottom: 20px;
 }
+.service__title__border {
+  border-bottom: 4px solid #4daded;
+}
 .service__content__sub-title {
-  border-bottom: 1px solid #4daded;
   margin-bottom: 10px;
+}
+.service__sub-title__border {
+  border-bottom: 1px solid #4daded;
 }
 .service__content__text {
   margin-bottom: 30px;
@@ -1118,13 +1162,6 @@ ul {
   border-radius: 100px;
   color: #707070;
   background-color: #ffe669;
-}
-.page__map {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1.5;
-  letter-spacing: 0em;
-  color: #707070;
 }
 .btn {
   font-size: 1.8rem;
@@ -1284,8 +1321,8 @@ ul {
   }
   .service__img {
     position: absolute;
-    right: -20%;
-    bottom: -17%;
+    right: -10vw;
+    bottom: -6vw;
     z-index: 0;
     width: 327px;
     height: 426px;
@@ -1491,17 +1528,6 @@ ul {
     margin-top: 50px;
     color: #707070;
   }
-  .section__title::before, .section__title::after {
-    border-top: 4px solid #707070;
-    content: "";
-    width: 90px;
-  }
-  .section__title::before {
-    margin-right: 60px;
-  }
-  .section__title::after {
-    margin-left: 60px;
-  }
   .service__inner {
     max-width: 1685px;
     padding: 72px 0 50px;
@@ -1658,7 +1684,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 140px 0 30px;
+  padding: 120px 0 30px;
   margin: 0 3vw;
 }
 .work__content {
@@ -1675,8 +1701,9 @@ ul {
 }
 .work__point {
   position: absolute;
-  top: 4%;
-  left: 35%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .balloon1 {
   position: relative;
@@ -1907,11 +1934,11 @@ ul {
     display: block;
     width: 0;
     height: 0;
-    left: 27px;
-    bottom: -40px;
-    border-right: 40px solid #ffe669;
-    border-top: 35px solid transparent;
-    border-bottom: 35px solid transparent;
+    left: 30px;
+    bottom: -30px;
+    border-right: 25px solid #ffe669;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
     transform: rotate(-90deg);
   }
   .pattern {
@@ -2043,8 +2070,7 @@ ul {
     margin: 0 auto;
   }
   .work__text {
-    margin-top: 35px;
-    width: 85%;
+    margin: 35px auto 0;
   }
   .work__item {
     position: relative;
@@ -2664,9 +2690,6 @@ ul {
   background-color: rgba(15, 227, 0, 0.376);
 }
 /* info ページ */
-.main__title {
-  padding: 120px 0 20px;
-}
 .l-info-page__wrapper {
   display: flex;
   flex-direction: column;
@@ -2709,16 +2732,10 @@ ul {
   text-align: center;
   margin-top: 22px;
 }
-.page__map > a {
-  color: #707070;
-}
-.page__map > a:hover {
-  opacity: 0.6;
-}
 .wp-pagenavi .pages, .wp-pagenavi .page, .wp-pagenavi .nextpostslink, .wp-pagenavi .previouspostslink, .wp-pagenavi .current {
   display: inline-block;
-  padding: 14px 18px;
-  margin-left: 24px;
+  padding: 10px 20px;
+  margin-left: 10px;
   background-color: #fff;
   border: 1px solid #707070;
 }
@@ -2729,27 +2746,27 @@ ul {
   opacity: 0.6;
 }
 .news__date, .news__bage {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 2.7142857143;
   letter-spacing: 0em;
 }
 .news__title {
-  font-size: 2.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.8571428571;
+  line-height: 1.5714285714;
   letter-spacing: 0em;
 }
 .news__text {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  line-height: 1.6;
+  line-height: 1.6666666667;
   letter-spacing: 0em;
 }
 .pages, .page, .current, .nextpostslink, .previouspostslink {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  line-height: 2;
+  line-height: 2.7142857143;
   letter-spacing: 0em;
 }
 /* --------------------------------------
@@ -2766,13 +2783,37 @@ ul {
     margin: 30px 5vw 0;
     padding: 0 3vw;
   }
-  .main__title {
-    padding: 120px 0 40px;
-    background-color: #4daded;
-    color: #fff;
+  .info__img {
+    height: auto;
+    object-fit: cover;
   }
-  .main__title::before, .main__title::after {
-    border-top: 4px solid #fff;
+  .wp-pagenavi .pages, .wp-pagenavi .page, .wp-pagenavi .nextpostslink, .wp-pagenavi .previouspostslink, .wp-pagenavi .current {
+    padding: 14px 18px;
+    margin-left: 24px;
+  }
+  .news__date, .news__bage {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 0em;
+  }
+  .news__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.8571428571;
+    letter-spacing: 0em;
+  }
+  .news__text {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6;
+    letter-spacing: 0em;
+  }
+  .pages, .page, .current, .nextpostslink, .previouspostslink {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 0em;
   }
 }
 /* --------------------------------------
@@ -2974,7 +3015,7 @@ ul {
   height: 2.8rem;
 }
 .contact-button {
-  max-width: 430px;
+  width: 50%;
   padding: 10px 0;
   border-radius: 60px;
   border: 4px solid #707070;
@@ -3006,7 +3047,8 @@ ul {
   margin-bottom: 14px;
 }
 .form__guid {
-  margin-bottom: 50px;
+  width: 300px;
+  margin: 0 auto 50px;
 }
 /**********************
  Contact Form 7
@@ -3034,9 +3076,9 @@ ul {
   color: #707070;
 }
 .form__badge, .form__title, .form__text, .textarea__bd {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.4545454545;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -3054,9 +3096,6 @@ ul {
   letter-spacing: 0em;
   color: #707070;
 }
-.page__pb {
-  padding-bottom: 80px;
-}
 /* --------------------------------------
  レスポンシブ max-width: 600px; 
  ----------------------------------------*/
@@ -3064,17 +3103,18 @@ ul {
   .contact-button {
     width: 50%;
   }
-  .form__guid {
-    font-size: 3.2rem;
-    font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 0em;
-  }
   .contact-button {
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.3571428571;
     letter-spacing: 0em;
+  }
+  .form__badge, .form__title, .form__text, .textarea__bd {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    color: #707070;
   }
 }
 /* --------------------------------------

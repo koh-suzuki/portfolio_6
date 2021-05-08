@@ -21,7 +21,7 @@
   height: 2.8rem;
 }
 .contact-button {
-  max-width: 430px;
+  width: 50%;
   padding: 10px 0;
   border-radius: 60px;
   border: 4px solid #707070;
@@ -55,7 +55,8 @@
   margin-bottom: 14px;
 }
 .form__guid {
-  margin-bottom: 50px;
+  width: 300px;
+  margin: 0 auto 50px;
 }
 
 /**********************
@@ -86,7 +87,7 @@ Contact Form 7
 .form__title,
 .form__text,
 .textarea__bd {
-  @include f_around(2.8, 4.2, bold, 0);
+  @include f_around(2.2, 3.2, bold, 0);
   color: #707070;
 }
 .form__label {
@@ -97,10 +98,6 @@ Contact Form 7
   @include f_around(2.4, 3.8, bold, 0);
   color: #707070;
 }
-.page__pb {
-  padding-bottom: 80px;
-}
-
 
 /* --------------------------------------
 レスポンシブ max-width: 600px; 
@@ -109,12 +106,18 @@ Contact Form 7
   .contact-button {
     width: 50%;
   }
-  .form__guid {
-    @include f_around(3.2, 4.8, bold, 0);
-  }
+  
   .contact-button {
     @include f_around(2.8, 3.8, bold, 0);
   }
+
+.form__badge,
+.form__title,
+.form__text,
+.textarea__bd {
+  @include f_around(2.8, 4.2, bold, 0);
+  color: #707070;
+}
 }
 
 /* --------------------------------------
