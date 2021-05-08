@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 150px 0 70px;
+  padding: 140px 0 30px;
   margin: 0 3vw;
 }
 .work__content {
@@ -20,7 +20,7 @@
   text-align: center;
 }
 .work__img {
-  max-width: 300px;
+  max-width: 230px;
   height: auto;
   margin: 0 auto;
 }
@@ -29,12 +29,12 @@
 }
 .work__point {
   position: absolute;
-  top: 1%;
+  top: 4%;
   left: 35%;
 }
 .balloon1{
   position: relative;
-  padding: 20px 20px 10px;
+  padding: 15px 15px 5px;
   border-radius: 50%;
   text-align: center;
   background-color: #FFE669;
@@ -45,11 +45,11 @@
   display: block;
   width: 0;
   height: 0;
-  left: 33%;
-  bottom: -40px;
-  border-right: 40px solid #FFE669;
-  border-top: 35px solid transparent;
-  border-bottom: 35px solid transparent;
+  left: 36%;
+  bottom: -26px;
+  border-right: 25px solid #ffe669;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
   transform: rotate(-90deg);
 }
 .work__point__text {
@@ -182,7 +182,7 @@
 }  
   
   .balloon1 {
-    @include f_around(2.6, 3, bold, 0);
+    @include f_around(2, 3, bold, 0);
     color: #707070;
   }
   .work__catch {

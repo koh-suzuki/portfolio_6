@@ -1,7 +1,16 @@
 <section class="l-work__wrapper" id="work">
   <section class="work__inner">
-    <h2 class="section__title work__catch">
-      なぜ"AOSHIRO TECH"が選ばれるのか
+    <h2 class="sp__display">
+      <span class="section__title work__catch">
+        なぜ"AOSHIRO TECH"<br>
+        が選ばれるのか
+      </span>
+    </h2>
+    <h2 class="md__display">
+      <span class="section__title work__catch">
+        なぜ"AOSHIRO TECH"<br>
+        が選ばれるのか
+      </span>
     </h2>
     <section class="work__item">
       <figure class="work__img">
