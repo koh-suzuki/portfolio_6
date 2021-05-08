@@ -356,7 +356,7 @@
     }
     .work__content {
       width: 460px;
-      margin: 0 auto; 
+      margin: 0;
     }
     .work__text {
       margin: 35px auto 0;
@@ -368,6 +368,8 @@
       justify-content: space-between;
       align-items: flex-end;
       padding: 75px 0;
+      max-width: 950px;
+      margin: 0 auto;
     }
     .balloon1::before {
       position: absolute;
@@ -381,7 +383,8 @@
     .work__point {
       position: absolute;
       top: 28%;
-      left: 37.5%;
+      left: 44%;
+      transform: translate(-50%, -50%);
     }
     .balloon1 {
       padding: 20px 15px 5px;
@@ -489,9 +492,7 @@
       margin: 0 auto 130px;
     }
     .work__content {
-      text-align: left;
-      width: 680px;
-      margin: 0; 
+      width: 690px;
     }
     .work__item {
       position: relative;
@@ -499,11 +500,24 @@
       justify-content: space-between;
       align-items: flex-end;
       padding: 75px 0;
-      margin: 0;
+      max-width: 1400px;
+      margin: 0 auto;
     }
     .work__img {
       max-width: 300px;
       margin-left: 6vw;
+    }
+    .absolute__reverse {
+      position: absolute;
+      left: -170px;
+      bottom: -20%;
+      z-index: 0;
+    }
+    .work__point {
+      position: absolute;
+      top: 28%;
+      left: 37%;
+      transform: translate(-50%, -50%);
     }
     .balloon1::before {
       position: absolute;
@@ -576,6 +590,12 @@
       width: 280px;
       height: 230px;
       margin: 0;
+    }
+    .absolute__reverse {
+      position: absolute;
+      left: -390px;
+      bottom: -20%;
+      z-index: 0;
     }
     .work__point {
       position: absolute;

@@ -87,15 +87,20 @@ $(function () {
   /* ===============================================*/
   /* ハンバーガーボタン
   /*=============================================== */
-  (function () {
-    $('#js-buttonHamburger').click(function () {
-      $('body').toggleClass('is-drawerActive');
-  
-      if ($(this).attr('aria-expanded') == 'false') {
-        $(this).attr('aria-expanded', true);
-      } else {
-        $(this).attr('aria-expanded', false);
-      }
-    });
-  }) ();
+  $('#js-buttonHamburger').click(function () {
+    $('body').toggleClass('is-drawerActive');
+    $('.menu-menu-container').fadeToggle(800);    
+    $('body').toggleClass('noscroll');
+    $('html').toggleClass('noscroll');
+
+    if ($(this).attr('aria-expanded') == 'false') {
+      $(this).attr('aria-expanded', true);
+    } else {
+      $(this).attr('aria-expanded', false);
+    }
+  });
+
+  // $('#js-buttonHamburger').on('click',function(){
+  // });
+
 });

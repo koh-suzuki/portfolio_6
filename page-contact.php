@@ -23,6 +23,8 @@
           <?php endwhile;
           endif; ?>
       </section>
+    </section>
+      <div id="page_top"><a href="#header"></a></div>
   </main>
   <footer class="footer">
     <p class="footer__logo">AOSHIRO TECH</p>
