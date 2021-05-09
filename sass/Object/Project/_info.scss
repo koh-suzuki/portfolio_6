@@ -50,7 +50,7 @@
 
 
   .info__item {
-    @include f_around(1.4, 2, bold, 0);
+    @include f_around(1.2, 1.8, bold, 0);
     color: #707070;
   }
   .info {

@@ -89,6 +89,7 @@ $(function () {
   /*=============================================== */
   $('#js-buttonHamburger').click(function () {
     $('body').toggleClass('is-drawerActive');
+    $('.menu-menu-container').toggleClass('open');
     $('.menu-menu-container').fadeToggle(800);    
     $('body').toggleClass('noscroll');
     $('html').toggleClass('noscroll');

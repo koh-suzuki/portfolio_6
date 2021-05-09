@@ -72,6 +72,7 @@
 .teacher__text {
   text-align: center;
   padding: 50px 0;
+  margin: 0 4vw;
 }
 .teacher__img {
   position: relative;
@@ -199,7 +200,7 @@
   }
   .teacher__text,
   .teacher__name {
-    @include f_around(1.8, 2.8, bold, 0);
+    @include f_around(1.6, 2.6, bold, 0);
     color: #707070;
   }
 

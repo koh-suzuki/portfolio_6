@@ -409,13 +409,6 @@ ul {
   opacity: 0.5;
   text-decoration: none;
 }
-.menu-item {
-  padding-bottom: 10px;
-}
-.menu-item > a {
-  color: #707070;
-  text-decoration: none;
-}
 .header__logo {
   font-size: 2rem;
   font-weight: bold;
@@ -423,9 +416,9 @@ ul {
   letter-spacing: 0em;
 }
 .menu-item {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  line-height: 1.7142857143;
+  line-height: 1.6538461538;
   letter-spacing: 0em;
 }
 .c-button {
@@ -533,9 +526,11 @@ ul {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.menu-menu-container {
+.menu-menu-container, .menu {
   /* ハンバーガーメニューが開いたスタイル */
   display: none;
+}
+.open {
   position: fixed;
   top: 0;
   left: 0;
@@ -544,7 +539,7 @@ ul {
   height: 100vh;
   background-color: #fff;
 }
-.menu {
+.open .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -561,6 +556,13 @@ ul {
 body.noscroll, html.noscroll {
   overflow: hidden;
 }
+.menu-item {
+  padding-bottom: 10px;
+}
+.menu-item > a {
+  color: #707070;
+  text-decoration: none;
+}
 /* --------------------------------------
  レスポンシブ min-width: 600px; 
  ----------------------------------------*/
@@ -574,11 +576,6 @@ body.noscroll, html.noscroll {
   .menu-item :hover {
     opacity: 0.5;
     border-bottom: 7px solid #40ace2;
-  }
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .header__logo {
     font-size: 2.4rem;
@@ -608,6 +605,14 @@ body.noscroll, html.noscroll {
   }
   .menu {
     margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
   }
   .menu-item {
     font-size: 2.2rem;
@@ -1815,6 +1820,7 @@ body.noscroll, html.noscroll {
 .teacher__text {
   text-align: center;
   padding: 50px 0;
+  margin: 0 4vw;
 }
 .teacher__img {
   position: relative;
@@ -1942,9 +1948,9 @@ body.noscroll, html.noscroll {
   color: #707070;
 }
 .teacher__text, .teacher__name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.5555555556;
+  line-height: 1.625;
   letter-spacing: 0em;
   color: #707070;
 }
@@ -2765,9 +2771,9 @@ body.noscroll, html.noscroll {
   padding: 20px 0 10px;
 }
 .info__item {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  line-height: 1.4285714286;
+  line-height: 1.5;
   letter-spacing: 0em;
   color: #707070;
 }

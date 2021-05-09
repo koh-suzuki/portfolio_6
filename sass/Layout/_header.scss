@@ -26,19 +26,12 @@
     }
   }
 }
-.menu-item {
-  padding-bottom: 10px;
-  > a {
-    color: #707070;
-    text-decoration: none;
-  }
-}
 
 .header__logo {
   @include f_around(2, 2.5, bold, 0);
 }
 .menu-item {
-  @include f_around(2.8, 4.8, bold, 0);
+  @include f_around(2.6, 4.3, bold, 0);
 }
 
 .c-button {
@@ -163,8 +156,11 @@ background-color: #707070;
 
 
 /* ハンバーガーメニューが開いたスタイル */
-.menu-menu-container {
+.menu-menu-container,
+.menu {
   display: none;
+}
+.open {
   position: fixed;
   top: 0;      
   left: 0;       
@@ -172,8 +168,8 @@ background-color: #707070;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-}
-.menu {
+} 
+.open .menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,6 +189,14 @@ html.noscroll{
   overflow: hidden;
 }
 
+.menu-item {
+  padding-bottom: 10px;
+  > a {
+    color: #707070;
+    text-decoration: none;
+  }
+}
+
 /* --------------------------------------
 レスポンシブ min-width: 600px; 
 ----------------------------------------*/
@@ -207,12 +211,6 @@ html.noscroll{
       border-bottom: 7px solid #40ACE2;
     }
   }
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .header__logo {
     @include f_around(2.4, 3, bold, 0);
   }
@@ -228,13 +226,21 @@ html.noscroll{
     padding: 24px 0;
   }
   .menu-menu-container {
-    display: block;
+    display: block;  
   }
   .c-button {
     display: none;
   }
   .menu {
     margin-right: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
   }
   .menu-item {
     @include f_around(2.2, 2.8, bold, 0);
